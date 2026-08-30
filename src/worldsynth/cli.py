@@ -42,7 +42,9 @@ def list_maps(root: RootOption = Path(".")) -> None:
     """List canonical authored maps."""
     bundle = _load(root)
     for map_id, spec in sorted(bundle.maps.items()):
-        typer.echo(f"{map_id:24} {spec.map_type:10} {spec.dimensions.width}x{spec.dimensions.height}  {spec.display_name}")
+        typer.echo(
+            f"{map_id:24} {spec.map_type:10} {spec.dimensions.width}x{spec.dimensions.height}  {spec.display_name}"
+        )
 
 
 @app.command()
@@ -99,7 +101,9 @@ def preview(
     map_id: str,
     overlays: Annotated[
         str,
-        typer.Option(help="Comma-separated overlays: objects,collision,walkability,zones,spawns,transitions,landmarks,edges or none."),
+        typer.Option(
+            help="Comma-separated overlays: objects,collision,walkability,zones,spawns,transitions,landmarks,edges or none."
+        ),
     ] = ",".join(sorted(DEFAULT_OVERLAYS)),
     output: Annotated[Path | None, typer.Option("--output", "-o")] = None,
     root: RootOption = Path("."),
@@ -109,7 +113,11 @@ def preview(
     result = compile_bundle(bundle, only_map=map_id)
     if not result.report.success:
         _fail(report_text(result.report))
-    selected = set() if overlays.strip().lower() == "none" else {part.strip() for part in overlays.split(",") if part.strip()}
+    selected = (
+        set()
+        if overlays.strip().lower() == "none"
+        else {part.strip() for part in overlays.split(",") if part.strip()}
+    )
     valid = DEFAULT_OVERLAYS | {"walkability"}
     unknown = selected - valid
     if unknown:
@@ -122,7 +130,9 @@ def preview(
 @app.command()
 def inspect(
     map_id: str,
-    as_json: Annotated[bool, typer.Option("--json", help="Print normalized compiled JSON.")] = False,
+    as_json: Annotated[
+        bool, typer.Option("--json", help="Print normalized compiled JSON.")
+    ] = False,
     root: RootOption = Path("."),
 ) -> None:
     """Inspect derived semantics without writing build products."""
@@ -142,7 +152,9 @@ def inspect(
         "interactions": len(compiled.interactions),
         "encounter_zones": sum(zone.kind == "encounter" for zone in compiled.zones),
     }
-    typer.echo(f"{compiled.display_name} [{compiled.map_id}] {compiled.width}x{compiled.height} seed={compiled.seed}")
+    typer.echo(
+        f"{compiled.display_name} [{compiled.map_id}] {compiled.width}x{compiled.height} seed={compiled.seed}"
+    )
     typer.echo(f"canonical_hash={compiled.canonical_hash}")
     typer.echo(json.dumps(counts, indent=2, sort_keys=True))
     typer.echo("Walkability (# blocked, . open):")
@@ -151,7 +163,9 @@ def inspect(
 
 @app.command("clean-generated")
 def clean_generated(
-    yes: Annotated[bool, typer.Option("--yes", help="Confirm removal of generated build products.")] = False,
+    yes: Annotated[
+        bool, typer.Option("--yes", help="Confirm removal of generated build products.")
+    ] = False,
     root: RootOption = Path("."),
 ) -> None:
     """Safely remove only known generated directories; canonical content is untouched."""

@@ -199,11 +199,70 @@
     }
   ],
   "build_metadata": {
-    "generator_version": "worldsynth-gen-1",
+    "generator_version": "worldsynth-gen-2",
     "reproducible": true,
     "source_schema_version": 1
   },
-  "canonical_hash": "a8fee66b65a3ca57df32b6d7dba2b368fe93388f990eb5dcc39dade352a74af2",
+  "canonical_hash": "1c56a778d40306f6056f550de653c10aa1eaa3f746e52220fcf94008c2e40258",
+  "collision_rects": [
+    {
+      "height": 1,
+      "width": 14,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "height": 8,
+      "width": 1,
+      "x": 0,
+      "y": 1
+    },
+    {
+      "height": 8,
+      "width": 1,
+      "x": 13,
+      "y": 1
+    },
+    {
+      "height": 1,
+      "width": 2,
+      "x": 2,
+      "y": 2
+    },
+    {
+      "height": 1,
+      "width": 2,
+      "x": 10,
+      "y": 2
+    },
+    {
+      "height": 1,
+      "width": 2,
+      "x": 6,
+      "y": 5
+    },
+    {
+      "height": 1,
+      "width": 6,
+      "x": 0,
+      "y": 9
+    },
+    {
+      "height": 1,
+      "width": 6,
+      "x": 8,
+      "y": 9
+    }
+  ],
+  "composition_decisions": [
+    {
+      "archetype_ids": [],
+      "cells": [],
+      "grammar": "uniform_fallback",
+      "id": "uniform_fallback_00",
+      "rationale": "Legacy seeded decoration distribution retained outside the visual milestone map."
+    }
+  ],
   "decorative_layers": [],
   "diagnostics": [
     {
@@ -260,6 +319,7 @@
       ],
       "color": "#635047",
       "generated": false,
+      "grammar_id": null,
       "id": "west_shelves",
       "interaction_id": "ecology_notes",
       "landmark_id": null,
@@ -273,6 +333,8 @@
         "research"
       ],
       "transition_id": null,
+      "variant_id": null,
+      "visual_layers": [],
       "visual_rect": {
         "height": 1,
         "width": 2,
@@ -295,6 +357,7 @@
       ],
       "color": "#635047",
       "generated": false,
+      "grammar_id": null,
       "id": "east_shelves",
       "interaction_id": null,
       "landmark_id": null,
@@ -308,6 +371,8 @@
         "research"
       ],
       "transition_id": null,
+      "variant_id": null,
+      "visual_layers": [],
       "visual_rect": {
         "height": 1,
         "width": 2,
@@ -330,6 +395,7 @@
       ],
       "color": "#805537",
       "generated": false,
+      "grammar_id": null,
       "id": "specimen_table",
       "interaction_id": null,
       "landmark_id": null,
@@ -342,6 +408,8 @@
         "furniture"
       ],
       "transition_id": null,
+      "variant_id": null,
+      "visual_layers": [],
       "visual_rect": {
         "height": 1,
         "width": 2,
@@ -350,8 +418,2598 @@
       }
     }
   ],
+  "protected_visual_cells": [
+    {
+      "x": 3,
+      "y": 3
+    },
+    {
+      "x": 7,
+      "y": 3
+    },
+    {
+      "x": 7,
+      "y": 7
+    },
+    {
+      "x": 6,
+      "y": 9
+    },
+    {
+      "x": 7,
+      "y": 9
+    }
+  ],
+  "render_layers": {
+    "base": [
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 1,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 2,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 2,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 3,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_moss"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 4,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 3,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 5,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 6,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 7,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 8,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 9,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 10,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 2,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 11,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_moss"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 12,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_crack"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 0
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 1
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 6,
+        "position": {
+          "x": 1,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 2,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 3,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 4,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 5,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 6,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 7,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 8,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 9,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 10,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 14,
+        "position": {
+          "x": 11,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 12,
+        "position": {
+          "x": 12,
+          "y": 1
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 1
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 3,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 2
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 7,
+        "position": {
+          "x": 1,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 2,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 3,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 4,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 5,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 6,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 7,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 8,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 9,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 10,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 11,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 13,
+        "position": {
+          "x": 12,
+          "y": 2
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 2
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 3
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 7,
+        "position": {
+          "x": 1,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 2,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 3,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 4,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 5,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 6,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 7,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 8,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 9,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 10,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 11,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 13,
+        "position": {
+          "x": 12,
+          "y": 3
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 3,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 3
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 3,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 4
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 7,
+        "position": {
+          "x": 1,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 2,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 3,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 4,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 5,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 6,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 7,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 8,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 9,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 10,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 11,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 13,
+        "position": {
+          "x": 12,
+          "y": 4
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 4
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 5
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 7,
+        "position": {
+          "x": 1,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 2,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 3,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 4,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 5,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 6,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 7,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 8,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 9,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 10,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 11,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 13,
+        "position": {
+          "x": 12,
+          "y": 5
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 5
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 6
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 7,
+        "position": {
+          "x": 1,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 2,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 3,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 4,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 5,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 6,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 7,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 8,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 9,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 10,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 11,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 13,
+        "position": {
+          "x": 12,
+          "y": 6
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 6
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 7
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 7,
+        "position": {
+          "x": 1,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 2,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 3,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 4,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 5,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 6,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 7,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 8,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 9,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 10,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 11,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 13,
+        "position": {
+          "x": 12,
+          "y": 7
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 3,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 7
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 8
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 3,
+        "position": {
+          "x": 1,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 2,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 3,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 4,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_warm"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 5,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 6,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 15,
+        "position": {
+          "x": 7,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 8,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 9,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 10,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 11,
+        "position": {
+          "x": 11,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 9,
+        "position": {
+          "x": 12,
+          "y": 8
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 2,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 8
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_moss"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 0,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 1,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 2,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 3,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 4,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 5,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 3,
+        "position": {
+          "x": 6,
+          "y": 9
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 7
+        },
+        "mask": 9,
+        "position": {
+          "x": 7,
+          "y": 9
+        },
+        "terrain_id": "wood_floor",
+        "variant_id": "wood_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 8,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 1,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 9,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_crack"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 10,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 2,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 11,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_moss"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 2,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 12,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_moss"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 0,
+          "y": 6
+        },
+        "mask": 0,
+        "position": {
+          "x": 13,
+          "y": 9
+        },
+        "terrain_id": "stone_floor",
+        "variant_id": "stone_base"
+      }
+    ],
+    "walls": [
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 6,
+          "y": 9
+        },
+        "mask": 6,
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_6"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 1,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 2,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 3,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 4,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 5,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 6,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 7,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 8,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 9,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 10,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 11,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 12,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 12,
+          "y": 9
+        },
+        "mask": 12,
+        "position": {
+          "x": 13,
+          "y": 0
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_12"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 1
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 1
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 2
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 2
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 3
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 3
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 4
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 4
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 5
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 5
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 6
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 6
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 7
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 7
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 0,
+          "y": 8
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 5,
+          "y": 9
+        },
+        "mask": 5,
+        "position": {
+          "x": 13,
+          "y": 8
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_5"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 3,
+          "y": 9
+        },
+        "mask": 3,
+        "position": {
+          "x": 0,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_3"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 1,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 2,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 3,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 4,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 8,
+          "y": 9
+        },
+        "mask": 8,
+        "position": {
+          "x": 5,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_8"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 2,
+          "y": 9
+        },
+        "mask": 2,
+        "position": {
+          "x": 8,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_2"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 9,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 10,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 11,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 10,
+          "y": 9
+        },
+        "mask": 10,
+        "position": {
+          "x": 12,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_10"
+      },
+      {
+        "asset_path": "assets/tiles/lumenfold_terrain_atlas.svg",
+        "atlas_cell": {
+          "x": 9,
+          "y": 9
+        },
+        "mask": 9,
+        "position": {
+          "x": 13,
+          "y": 9
+        },
+        "terrain_id": "wall",
+        "variant_id": "wall_mask_9"
+      }
+    ]
+  },
+  "render_stats": {
+    "blocked_cell_count": 48,
+    "collision_reduction_ratio": 6.0,
+    "collision_shape_count": 8,
+    "object_layer_counts": {
+      "main": 3,
+      "static_structures": 0,
+      "y_sorted_entities_props": 3
+    },
+    "tile_layer_counts": {
+      "base": 140,
+      "walls": 42
+    }
+  },
   "seed": 303,
-  "source_content_hash": "1cef771c3d5abe0a5bc41f51c71cedc760487f257104ec48b563df59ff92efbb",
+  "source_content_hash": "0d276c9b0100bff6200384e3c6f638b11eea33d74dda359537c991c9c57dfc2c",
   "spawns": [
     {
       "id": "doorway_arrival",

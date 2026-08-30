@@ -3,13 +3,13 @@
   "format_version": 1,
   "issues": [],
   "map_hashes": {
-    "alchemist_interior": "2043bb5af6953b02b54192ac8e661923849f6057493ac4e54a277084a969b902",
-    "echo_cave": "52ee569d7657e3a605ee540433a8144812e9e2c3345cae492733b82a42d3e813",
-    "lanternmarket": "0830f501c5287dc5c71bf25f508c17116e17255a29e09b3d057c9869a4729be5",
-    "mosswood_route": "e9a7daac6670c07081e3d76f2095b904a48f836b0dedcd8ab2b06d5ba83eacc2",
-    "research_lodge_interior": "a8fee66b65a3ca57df32b6d7dba2b368fe93388f990eb5dcc39dade352a74af2",
-    "sunmeadow_route": "d223764b83dfb9fb94cf6964e84357a602e911c65ac6979332fb491042ca38e4",
-    "tavern_interior": "0474d34df0f4047dc508c8e41c90c2c7f7c81b759674af7e57d3aa6e6077eb23"
+    "alchemist_interior": "96829bf1f600cfc2d922f031faae6b33f2190b9c19df0b1c3395e51c229ff524",
+    "echo_cave": "0828a38280960ae80e8a6758128f90d958912e34983b25b4af15e69adedc6844",
+    "lanternmarket": "b1f23826ad2906342a5b95d1c5cef520f21e9ad83ac73e95668357f7a7d214c8",
+    "mosswood_route": "643004b93b22a9296f8ebc044dfe0a42fd630880f9f4479ff6e16b6afc03fc81",
+    "research_lodge_interior": "1c56a778d40306f6056f550de653c10aa1eaa3f746e52220fcf94008c2e40258",
+    "sunmeadow_route": "b97f6229450c8137e972d78c4c449ceea6ac166e55967614a55670914d9a646d",
+    "tavern_interior": "e8ddcbee03ee7c1aa72062d36b09b92c6edb822b403b7c7f84b2abd3769a89b4"
   },
   "success": true,
   "warnings": 0

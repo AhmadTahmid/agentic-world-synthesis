@@ -12,6 +12,7 @@ var transition_lock_until := 0
 var debug_all := false
 var message_until := 0
 var current_interaction: Dictionary = {}
+var persistence_enabled := true
 
 var map_label: Label
 var prompt_label: Label
@@ -20,13 +21,14 @@ var debug_label: Label
 
 
 func _ready() -> void:
+	persistence_enabled = not OS.has_environment("WORLDSYNTH_NO_SAVE")
 	_ensure_input_actions()
 	_create_ui()
 	manifest = _read_json("res://generated/world_manifest.json")
 	if manifest.is_empty() or not manifest.has("start_map"):
 		_show_fatal("World manifest is missing or malformed. Run `worldsynth build` first.")
 		return
-	var saved := _read_json(SAVE_PATH) if FileAccess.file_exists(SAVE_PATH) else {}
+	var saved := _read_json(SAVE_PATH) if persistence_enabled and FileAccess.file_exists(SAVE_PATH) else {}
 	var start_id := str(saved.get("map_id", manifest["start_map"]))
 	if not manifest["maps"].has(start_id):
 		start_id = str(manifest["start_map"])
@@ -50,6 +52,7 @@ func _ensure_input_actions() -> void:
 	_add_keys("debug_transitions", [KEY_4])
 	_add_keys("debug_anchors", [KEY_5])
 	_add_keys("debug_neighbors", [KEY_6])
+	_add_keys("debug_semantic_colors", [KEY_7])
 
 
 func _add_keys(action: StringName, keycodes: Array) -> void:
@@ -147,6 +150,9 @@ func load_world_map(map_id: String, spawn_data: Dictionary = {}) -> bool:
 	if not is_instance_valid(player):
 		player = PLAYER_SCRIPT.new()
 		runtime.actor_layer.add_child(player)
+		if not player.configure_visual(manifest.get("player_visual", {})):
+			_show_fatal("Player visual contract is missing or malformed.")
+			return false
 	else:
 		player.reparent(runtime.actor_layer)
 	current_map_id = map_id
@@ -182,7 +188,8 @@ func _process(_delta: float) -> void:
 		var neighbors: Array[String] = []
 		for edge in runtime.map_data["edge_contracts"]:
 			neighbors.append(str(edge["neighbor_map"]))
-		debug_label.text = "F3 debug | 1 collision 2 walk 3 zones\n4 transitions 5 anchors 6 neighbors\nmap: %s\ntile: %s,%s\nneighbors: %s" % [current_map_id, tile.x, tile.y, ", ".join(neighbors) if not neighbors.is_empty() else "portal-only"]
+		var stats: Dictionary = runtime.map_data.get("render_stats", {})
+		debug_label.text = "F3 all | 1 collision 2 walk 3 zones\n4 transitions 5 anchors 6 neighbors 7 semantic\nmap: %s  tile: %s,%s\nblocked: %s  shapes: %s  ratio: %.2fx\ntiles: %s\nneighbors: %s" % [current_map_id, tile.x, tile.y, stats.get("blocked_cell_count", 0), runtime.collision_shape_count, float(stats.get("collision_reduction_ratio", 0.0)), str(stats.get("tile_layer_counts", {})), ", ".join(neighbors) if not neighbors.is_empty() else "portal-only"]
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -199,7 +206,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		var debug_actions := {
 			"debug_collision": "collision", "debug_walkability": "walkability",
 			"debug_zones": "zones", "debug_transitions": "transitions",
-			"debug_anchors": "anchors", "debug_neighbors": "neighbors"
+			"debug_anchors": "anchors", "debug_neighbors": "neighbors",
+			"debug_semantic_colors": "semantic_colors"
 		}
 		for action in debug_actions:
 			if event.is_action_pressed(action) and is_instance_valid(runtime):
@@ -213,7 +221,9 @@ func _on_transition_requested(transition: Dictionary) -> void:
 	if Time.get_ticks_msec() < transition_lock_until:
 		return
 	transition_lock_until = Time.get_ticks_msec() + 700
-	load_world_map(str(transition["target_map"]), transition["target_spawn"])
+	# Body-entered signals run during the physics query flush. Deferring the map
+	# swap prevents collision objects being removed while Godot locks the space.
+	load_world_map.call_deferred(str(transition["target_map"]), transition["target_spawn"])
 
 
 func _on_encounter_triggered(zone: Dictionary) -> void:
@@ -237,7 +247,7 @@ func _show_fatal(text: String) -> void:
 
 
 func _save_game(show_notice: bool) -> void:
-	if not is_instance_valid(player) or current_map_id.is_empty():
+	if not persistence_enabled or not is_instance_valid(player) or current_map_id.is_empty():
 		return
 	var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
 	if file == null:

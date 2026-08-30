@@ -5,6 +5,8 @@ var speed := 150.0
 var movement_enabled := true
 var facing := Vector2.DOWN
 var camera: Camera2D
+var animated_sprite: AnimatedSprite2D
+var visual_ready := false
 
 
 func _ready() -> void:
@@ -23,7 +25,59 @@ func _ready() -> void:
 	camera.position_smoothing_enabled = true
 	camera.position_smoothing_speed = 7.0
 	add_child(camera)
-	queue_redraw()
+
+
+func configure_visual(data: Dictionary) -> bool:
+	if data.is_empty() or not data.has("animation"):
+		push_error("World manifest has no valid player_visual animation contract.")
+		return false
+	var resource_path := "res://" + str(data.get("asset_path", ""))
+	if not ResourceLoader.exists(resource_path):
+		push_error("Player sprite sheet is missing: %s" % resource_path)
+		return false
+	var texture := load(resource_path) as Texture2D
+	if texture == null:
+		push_error("Player sprite sheet could not be loaded: %s" % resource_path)
+		return false
+	var animation: Dictionary = data["animation"]
+	var frame_size: Dictionary = animation.get("frame_size", {})
+	if frame_size.is_empty():
+		push_error("Player animation has no frame_size.")
+		return false
+	var frames := SpriteFrames.new()
+	frames.remove_animation("default")
+	var directions: Dictionary = animation.get("directions", {})
+	for direction in ["down", "left", "right", "up"]:
+		if not directions.has(direction):
+			return false
+		frames.add_animation("walk_" + direction)
+		frames.set_animation_speed("walk_" + direction, float(animation["fps"]))
+		frames.set_animation_loop("walk_" + direction, true)
+		frames.add_animation("idle_" + direction)
+		var row := int(directions[direction])
+		for frame_index in int(animation["frames"]):
+			var atlas := AtlasTexture.new()
+			atlas.atlas = texture
+			atlas.region = Rect2(
+				frame_index * int(frame_size["width"]), row * int(frame_size["height"]),
+				int(frame_size["width"]), int(frame_size["height"])
+			)
+			frames.add_frame("walk_" + direction, atlas)
+		var idle_atlas := AtlasTexture.new()
+		idle_atlas.atlas = texture
+		idle_atlas.region = Rect2(
+			int(animation.get("idle_frame", 0)) * int(frame_size["width"]), row * int(frame_size["height"]),
+			int(frame_size["width"]), int(frame_size["height"])
+		)
+		frames.add_frame("idle_" + direction, idle_atlas)
+	animated_sprite = AnimatedSprite2D.new()
+	animated_sprite.name = "PlayerSprite"
+	animated_sprite.sprite_frames = frames
+	animated_sprite.position = Vector2(0, -8)
+	add_child(animated_sprite)
+	visual_ready = true
+	animated_sprite.play("idle_down")
+	return true
 
 
 func configure_camera(map_size_pixels: Vector2) -> void:
@@ -45,16 +99,15 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * speed
 	if direction.length_squared() > 0.0:
 		facing = direction
+	if visual_ready:
+		var direction_name := _direction_name()
+		var animation_name := ("walk_" if direction.length_squared() > 0.0 else "idle_") + direction_name
+		if animated_sprite.animation != animation_name:
+			animated_sprite.play(animation_name)
 	move_and_slide()
-	queue_redraw()
 
 
-func _draw() -> void:
-	# Original provisional player art, drawn at runtime and replaceable independently of maps.
-	draw_circle(Vector2(0, 4), 10.0, Color("#253744"))
-	draw_circle(Vector2(0, -4), 8.0, Color("#f2d0a5"))
-	draw_polygon(
-		PackedVector2Array([Vector2(-10, 1), Vector2(10, 1), Vector2(7, 17), Vector2(-7, 17)]),
-		PackedColorArray([Color("#d96d4c")])
-	)
-	draw_line(Vector2.ZERO, facing * 9.0, Color("#fff3b0"), 2.0)
+func _direction_name() -> String:
+	if abs(facing.x) > abs(facing.y):
+		return "right" if facing.x > 0 else "left"
+	return "down" if facing.y > 0 else "up"

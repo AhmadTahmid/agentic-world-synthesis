@@ -67,17 +67,34 @@ def validate_sources(bundle: ContentBundle, only_map: str | None = None) -> list
     terrain_ids = set(bundle.bible.traversal.passable_terrain) | set(
         bundle.bible.traversal.blocked_terrain
     )
+    terrain_visuals = bundle.assets.terrain_by_id()
+
+    if bundle.assets.schema_version >= 2:
+        for terrain_id in sorted(terrain_ids - set(terrain_visuals)):
+            issues.append(
+                _issue(
+                    "error",
+                    "missing_terrain_visual",
+                    f"Terrain {terrain_id!r} has traversal semantics but no visual definition.",
+                )
+            )
 
     if bundle.bible.world_id != bundle.graph.world_id:
         issues.append(_issue("error", "world_id_mismatch", "World bible and graph IDs differ."))
     if bundle.graph.start_map not in maps:
         issues.append(
-            _issue("error", "missing_start_map", f"Start map {bundle.graph.start_map!r} is missing.")
+            _issue(
+                "error", "missing_start_map", f"Start map {bundle.graph.start_map!r} is missing."
+            )
         )
     for node_id in sorted(set(graph_nodes) - set(maps)):
-        issues.append(_issue("error", "missing_map_spec", f"World node {node_id!r} has no map spec."))
+        issues.append(
+            _issue("error", "missing_map_spec", f"World node {node_id!r} has no map spec.")
+        )
     for map_id in sorted(set(maps) - set(graph_nodes)):
-        issues.append(_issue("error", "missing_world_node", f"Map {map_id!r} has no world graph node."))
+        issues.append(
+            _issue("error", "missing_world_node", f"Map {map_id!r} has no world graph node.")
+        )
 
     endpoint_use: Counter[tuple[str, str]] = Counter()
     graph_adjacency: dict[str, set[str]] = {node_id: set() for node_id in graph_nodes}
@@ -135,7 +152,11 @@ def validate_sources(bundle: ContentBundle, only_map: str | None = None) -> list
         for node in bundle.graph.nodes:
             if node.required and node.id not in reached:
                 issues.append(
-                    _issue("error", "unreachable_world_node", f"Required node {node.id!r} is unreachable.")
+                    _issue(
+                        "error",
+                        "unreachable_world_node",
+                        f"Required node {node.id!r} is unreachable.",
+                    )
                 )
 
     for connection in bundle.graph.connections:
@@ -167,7 +188,9 @@ def validate_sources(bundle: ContentBundle, only_map: str | None = None) -> list
                 )
             )
         if spec.biome not in biome_ids:
-            issues.append(_issue("error", "unknown_biome", f"Unknown biome {spec.biome!r}.", map_id))
+            issues.append(
+                _issue("error", "unknown_biome", f"Unknown biome {spec.biome!r}.", map_id)
+            )
         for terrain_id in [spec.base_terrain] + [r.terrain_id for r in spec.terrain_regions]:
             if terrain_id not in terrain_ids:
                 issues.append(
@@ -177,17 +200,28 @@ def validate_sources(bundle: ContentBundle, only_map: str | None = None) -> list
             if path.terrain_id and path.terrain_id not in terrain_ids:
                 issues.append(
                     _issue(
-                        "error", "unknown_terrain", f"Path {path.id!r} uses unknown terrain.", map_id
+                        "error",
+                        "unknown_terrain",
+                        f"Path {path.id!r} uses unknown terrain.",
+                        map_id,
                     )
                 )
             for point in path.points:
                 if not _point_in_bounds(point, spec):
                     issues.append(
-                        _issue("error", "point_out_of_bounds", f"Path {path.id!r} point is outside map.", map_id, point)
+                        _issue(
+                            "error",
+                            "point_out_of_bounds",
+                            f"Path {path.id!r} point is outside map.",
+                            map_id,
+                            point,
+                        )
                     )
         for region in spec.terrain_regions:
             if not _rect_in_bounds(region.rect, spec):
-                issues.append(_issue("error", "rect_out_of_bounds", "Terrain region is outside map.", map_id))
+                issues.append(
+                    _issue("error", "rect_out_of_bounds", "Terrain region is outside map.", map_id)
+                )
         for placement in spec.structures + spec.props:
             if placement.archetype_id not in archetypes:
                 issues.append(
@@ -200,43 +234,142 @@ def validate_sources(bundle: ContentBundle, only_map: str | None = None) -> list
                     )
                 )
             if not _point_in_bounds(placement.position, spec):
-                issues.append(_issue("error", "object_out_of_bounds", f"Object {placement.id!r} is outside map.", map_id, placement.position))
+                issues.append(
+                    _issue(
+                        "error",
+                        "object_out_of_bounds",
+                        f"Object {placement.id!r} is outside map.",
+                        map_id,
+                        placement.position,
+                    )
+                )
         for family in spec.generation.decoration_families:
             if family not in archetypes:
-                issues.append(_issue("error", "missing_archetype", f"Decoration family {family!r} is missing.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "missing_archetype",
+                        f"Decoration family {family!r} is missing.",
+                        map_id,
+                    )
+                )
         for transition in spec.transitions:
             if not _rect_in_bounds(transition.rect, spec):
-                issues.append(_issue("error", "transition_out_of_bounds", f"Transition {transition.id!r} is outside map.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "transition_out_of_bounds",
+                        f"Transition {transition.id!r} is outside map.",
+                        map_id,
+                    )
+                )
             if not _point_in_bounds(transition.target_spawn, maps.get(transition.target_map, spec)):
-                issues.append(_issue("error", "target_spawn_out_of_bounds", f"Transition {transition.id!r} target spawn is outside target map.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "target_spawn_out_of_bounds",
+                        f"Transition {transition.id!r} target spawn is outside target map.",
+                        map_id,
+                    )
+                )
             if transition.target_map not in maps:
-                issues.append(_issue("error", "bad_transition_target", f"Transition {transition.id!r} targets missing map.", map_id))
-            elif _transition_lookup(bundle, transition.target_map, transition.target_transition) is None:
-                issues.append(_issue("error", "bad_transition_target", f"Transition {transition.id!r} targets missing endpoint.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "bad_transition_target",
+                        f"Transition {transition.id!r} targets missing map.",
+                        map_id,
+                    )
+                )
+            elif (
+                _transition_lookup(bundle, transition.target_map, transition.target_transition)
+                is None
+            ):
+                issues.append(
+                    _issue(
+                        "error",
+                        "bad_transition_target",
+                        f"Transition {transition.id!r} targets missing endpoint.",
+                        map_id,
+                    )
+                )
         for spawn in spec.spawns:
             if not _point_in_bounds(spawn.position, spec):
-                issues.append(_issue("error", "spawn_out_of_bounds", f"Spawn {spawn.id!r} is outside map.", map_id, spawn.position))
+                issues.append(
+                    _issue(
+                        "error",
+                        "spawn_out_of_bounds",
+                        f"Spawn {spawn.id!r} is outside map.",
+                        map_id,
+                        spawn.position,
+                    )
+                )
         for interaction in spec.interactions:
             if not _point_in_bounds(interaction.position, spec):
-                issues.append(_issue("error", "interaction_out_of_bounds", f"Interaction {interaction.id!r} is outside map.", map_id, interaction.position))
+                issues.append(
+                    _issue(
+                        "error",
+                        "interaction_out_of_bounds",
+                        f"Interaction {interaction.id!r} is outside map.",
+                        map_id,
+                        interaction.position,
+                    )
+                )
         for zone in spec.encounter_zones + spec.zones:
             if not _rect_in_bounds(zone.rect, spec):
-                issues.append(_issue("error", "invalid_zone_geometry", f"Zone {zone.id!r} is outside map.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "invalid_zone_geometry",
+                        f"Zone {zone.id!r} is outside map.",
+                        map_id,
+                    )
+                )
         for landmark in spec.landmarks:
             if not _point_in_bounds(landmark.position, spec):
-                issues.append(_issue("error", "landmark_out_of_bounds", f"Landmark {landmark.id!r} is outside map.", map_id, landmark.position))
+                issues.append(
+                    _issue(
+                        "error",
+                        "landmark_out_of_bounds",
+                        f"Landmark {landmark.id!r} is outside map.",
+                        map_id,
+                        landmark.position,
+                    )
+                )
             if landmark.unique_key:
                 previous = unique_landmarks.get(landmark.unique_key)
                 if previous:
-                    issues.append(_issue("error", "duplicate_unique_landmark", f"Landmark key {landmark.unique_key!r} appears in {previous!r} and {map_id!r}."))
+                    issues.append(
+                        _issue(
+                            "error",
+                            "duplicate_unique_landmark",
+                            f"Landmark key {landmark.unique_key!r} appears in {previous!r} and {map_id!r}.",
+                        )
+                    )
                 unique_landmarks[landmark.unique_key] = map_id
         for edge in spec.edge_contracts:
-            axis_size = spec.dimensions.width if edge.side in ("north", "south") else spec.dimensions.height
+            axis_size = (
+                spec.dimensions.width if edge.side in ("north", "south") else spec.dimensions.height
+            )
             if edge.position + edge.width > axis_size:
-                issues.append(_issue("error", "edge_out_of_bounds", f"{edge.side} edge contract exceeds boundary.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "edge_out_of_bounds",
+                        f"{edge.side} edge contract exceeds boundary.",
+                        map_id,
+                    )
+                )
             neighbor = maps.get(edge.neighbor_map)
             if neighbor is None:
-                issues.append(_issue("error", "missing_edge_neighbor", f"Edge references missing {edge.neighbor_map!r}.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "missing_edge_neighbor",
+                        f"Edge references missing {edge.neighbor_map!r}.",
+                        map_id,
+                    )
+                )
                 continue
             reverse = next(
                 (
@@ -247,7 +380,14 @@ def validate_sources(bundle: ContentBundle, only_map: str | None = None) -> list
                 None,
             )
             if reverse is None:
-                issues.append(_issue("error", "unpaired_edge_contract", f"No reverse edge contract in {neighbor.map_id!r}.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "unpaired_edge_contract",
+                        f"No reverse edge contract in {neighbor.map_id!r}.",
+                        map_id,
+                    )
+                )
             elif (
                 edge.feature,
                 edge.position,
@@ -265,16 +405,106 @@ def validate_sources(bundle: ContentBundle, only_map: str | None = None) -> list
                 reverse.transition_type,
                 reverse.traversable,
             ):
-                issues.append(_issue("error", "edge_contract_mismatch", f"Edge contract with {neighbor.map_id!r} is incompatible.", map_id))
+                issues.append(
+                    _issue(
+                        "error",
+                        "edge_contract_mismatch",
+                        f"Edge contract with {neighbor.map_id!r} is incompatible.",
+                        map_id,
+                    )
+                )
 
     for archetype in bundle.assets.archetypes:
         asset_path = bundle.root / Path(archetype.asset_path)
         if not asset_path.is_file():
-            issues.append(_issue("error", "missing_asset_file", f"Archetype {archetype.id!r} asset does not exist: {archetype.asset_path}"))
+            issues.append(
+                _issue(
+                    "error",
+                    "missing_asset_file",
+                    f"Archetype {archetype.id!r} asset does not exist: {archetype.asset_path}",
+                )
+            )
         expected_width = archetype.tile_size.width * bundle.assets.tile_size
         expected_height = archetype.tile_size.height * bundle.assets.tile_size
-        if archetype.pixel_size.width != expected_width or archetype.pixel_size.height != expected_height:
-            issues.append(_issue("error", "asset_scale_mismatch", f"Archetype {archetype.id!r} pixel and tile sizes disagree with registry tile scale."))
+        if (
+            archetype.pixel_size.width != expected_width
+            or archetype.pixel_size.height != expected_height
+        ):
+            issues.append(
+                _issue(
+                    "error",
+                    "asset_scale_mismatch",
+                    f"Archetype {archetype.id!r} pixel and tile sizes disagree with registry tile scale.",
+                )
+            )
+        for layer in archetype.visual_layers:
+            if not (bundle.root / Path(layer.asset_path)).is_file():
+                issues.append(
+                    _issue(
+                        "error",
+                        "missing_asset_file",
+                        f"Layer {archetype.id!r}.{layer.role} does not exist: {layer.asset_path}",
+                    )
+                )
+    for terrain_id, visual in sorted(terrain_visuals.items()):
+        if (
+            visual.tile_dimensions.width != bundle.assets.tile_size
+            or visual.tile_dimensions.height != bundle.assets.tile_size
+        ):
+            issues.append(
+                _issue(
+                    "error",
+                    "terrain_scale_mismatch",
+                    f"Terrain {terrain_id!r} does not match the {bundle.assets.tile_size}px world tile scale.",
+                )
+            )
+        references = [visual.base_tile, *visual.variants, *visual.decals]
+        for reference in references:
+            if not (bundle.root / Path(reference.asset_path)).is_file():
+                issues.append(
+                    _issue(
+                        "error",
+                        "missing_asset_file",
+                        f"Terrain tile {reference.id!r} does not exist: {reference.asset_path}",
+                    )
+                )
+        if (
+            visual.adjacency_set
+            and not (bundle.root / Path(visual.adjacency_set.asset_path)).is_file()
+        ):
+            issues.append(
+                _issue(
+                    "error",
+                    "missing_asset_file",
+                    f"Terrain adjacency atlas for {terrain_id!r} does not exist: {visual.adjacency_set.asset_path}",
+                )
+            )
+        unknown_neighbors = set(visual.legal_neighbors) - set(terrain_visuals)
+        if unknown_neighbors:
+            issues.append(
+                _issue(
+                    "error",
+                    "unknown_terrain_neighbor",
+                    f"Terrain {terrain_id!r} allows unknown neighbors: {sorted(unknown_neighbors)}.",
+                )
+            )
+        if visual.underlay_terrain_id and visual.underlay_terrain_id not in terrain_visuals:
+            issues.append(
+                _issue(
+                    "error",
+                    "unknown_terrain_underlay",
+                    f"Terrain {terrain_id!r} uses unknown underlay {visual.underlay_terrain_id!r}.",
+                )
+            )
+        expected_passable = terrain_id in bundle.bible.traversal.passable_terrain
+        if visual.movement.passable != expected_passable:
+            issues.append(
+                _issue(
+                    "error",
+                    "terrain_movement_mismatch",
+                    f"Terrain {terrain_id!r} visual movement semantics disagree with the world bible.",
+                )
+            )
     return issues
 
 
@@ -323,6 +553,51 @@ def _center(rect: Rect) -> tuple[int, int]:
 def validate_compiled_map(compiled: CompiledMap, bundle: ContentBundle) -> list[Diagnostic]:
     issues: list[Diagnostic] = []
     blocked = {(point.x, point.y) for point in compiled.blocked_cells}
+    if compiled.collision_rects:
+        merged_cells = {
+            (point.x, point.y)
+            for rectangle in compiled.collision_rects
+            for point in rectangle.cells()
+        }
+        if merged_cells != blocked:
+            issues.append(
+                _issue(
+                    "error",
+                    "collision_merge_mismatch",
+                    "Merged collision rectangles do not exactly cover authoritative blocked cells.",
+                    compiled.map_id,
+                )
+            )
+    for layer_name, tiles in compiled.render_layers.items():
+        for tile in tiles:
+            if not (0 <= tile.position.x < compiled.width and 0 <= tile.position.y < compiled.height):
+                issues.append(
+                    _issue(
+                        "error",
+                        "render_tile_out_of_bounds",
+                        f"Render layer {layer_name!r} contains a tile outside the map.",
+                        compiled.map_id,
+                        tile.position,
+                    )
+                )
+    protected_visual = {(point.x, point.y) for point in compiled.protected_visual_cells}
+    generated_collision = {
+        (point.x, point.y)
+        for item in compiled.decorative_layers
+        for point in item.collision_cells
+    }
+    overlap = protected_visual & generated_collision
+    if overlap:
+        cell = min(overlap, key=lambda point: (point[1], point[0]))
+        issues.append(
+            _issue(
+                "error",
+                "generated_decoration_in_protected_area",
+                "Generated decoration overlaps an explicit visual-grammar protected cell.",
+                compiled.map_id,
+                Point(x=cell[0], y=cell[1]),
+            )
+        )
     collision_owner: dict[tuple[int, int], str] = {}
     for item in compiled.objects + compiled.decorative_layers:
         if (
@@ -331,61 +606,183 @@ def validate_compiled_map(compiled: CompiledMap, bundle: ContentBundle) -> list[
             or item.visual_rect.x + item.visual_rect.width > compiled.width
             or item.visual_rect.y + item.visual_rect.height > compiled.height
         ):
-            issues.append(_issue("error", "visual_out_of_bounds", f"Object {item.id!r} visual bounds leave the map.", compiled.map_id, item.position))
+            issues.append(
+                _issue(
+                    "error",
+                    "visual_out_of_bounds",
+                    f"Object {item.id!r} visual bounds leave the map.",
+                    compiled.map_id,
+                    item.position,
+                )
+            )
         for point in item.collision_cells:
             cell = (point.x, point.y)
             previous = collision_owner.get(cell)
             if previous:
-                issues.append(_issue("error", "forbidden_overlap", f"Objects {previous!r} and {item.id!r} overlap collision at {cell}.", compiled.map_id, point))
+                issues.append(
+                    _issue(
+                        "error",
+                        "forbidden_overlap",
+                        f"Objects {previous!r} and {item.id!r} overlap collision at {cell}.",
+                        compiled.map_id,
+                        point,
+                    )
+                )
             collision_owner[cell] = item.id
             if not (0 <= point.x < compiled.width and 0 <= point.y < compiled.height):
-                issues.append(_issue("error", "collision_out_of_bounds", f"Object {item.id!r} collision leaves map.", compiled.map_id, point))
+                issues.append(
+                    _issue(
+                        "error",
+                        "collision_out_of_bounds",
+                        f"Object {item.id!r} collision leaves map.",
+                        compiled.map_id,
+                        point,
+                    )
+                )
     for spawn in compiled.spawns:
         cell = (spawn.position.x, spawn.position.y)
         if cell in blocked:
-            issues.append(_issue("error", "spawn_in_collision", f"Spawn {spawn.id!r} is blocked.", compiled.map_id, spawn.position))
+            issues.append(
+                _issue(
+                    "error",
+                    "spawn_in_collision",
+                    f"Spawn {spawn.id!r} is blocked.",
+                    compiled.map_id,
+                    spawn.position,
+                )
+            )
     for transition in compiled.transitions:
         overlap = _rect_cells(transition.rect) & blocked
         if overlap:
             point = Point(x=min(overlap)[0], y=min(overlap)[1])
-            issues.append(_issue("error", "transition_in_collision", f"Transition {transition.id!r} is blocked.", compiled.map_id, point))
+            issues.append(
+                _issue(
+                    "error",
+                    "transition_in_collision",
+                    f"Transition {transition.id!r} is blocked.",
+                    compiled.map_id,
+                    point,
+                )
+            )
     for item in compiled.objects:
         if item.transition_id:
             linked_transition = next(
                 (entry for entry in compiled.transitions if entry.id == item.transition_id), None
             )
             if linked_transition is None:
-                issues.append(_issue("error", "missing_object_transition", f"Object {item.id!r} refers to absent transition.", compiled.map_id, item.position))
+                issues.append(
+                    _issue(
+                        "error",
+                        "missing_object_transition",
+                        f"Object {item.id!r} refers to absent transition.",
+                        compiled.map_id,
+                        item.position,
+                    )
+                )
             elif _rect_cells(linked_transition.rect) & blocked:
-                issues.append(_issue("error", "blocked_doorway", f"Doorway for {item.id!r} is blocked.", compiled.map_id, item.position))
-        if item.interaction_id and not any(entry.id == item.interaction_id for entry in compiled.interactions):
-            issues.append(_issue("error", "missing_object_interaction", f"Object {item.id!r} refers to absent interaction.", compiled.map_id, item.position))
+                issues.append(
+                    _issue(
+                        "error",
+                        "blocked_doorway",
+                        f"Doorway for {item.id!r} is blocked.",
+                        compiled.map_id,
+                        item.position,
+                    )
+                )
+        if item.interaction_id and not any(
+            entry.id == item.interaction_id for entry in compiled.interactions
+        ):
+            issues.append(
+                _issue(
+                    "error",
+                    "missing_object_interaction",
+                    f"Object {item.id!r} refers to absent interaction.",
+                    compiled.map_id,
+                    item.position,
+                )
+            )
 
     critical: list[tuple[str, tuple[int, int]]] = []
-    critical.extend((f"spawn {item.id}", (item.position.x, item.position.y)) for item in compiled.spawns if item.required)
-    critical.extend((f"transition {item.id}", _center(item.rect)) for item in compiled.transitions if item.mandatory)
-    critical.extend((f"landmark {item.id}", (item.position.x, item.position.y)) for item in compiled.landmarks if item.required)
-    critical.extend((f"interaction {item.id}", (item.position.x, item.position.y)) for item in compiled.interactions)
+    critical.extend(
+        (f"spawn {item.id}", (item.position.x, item.position.y))
+        for item in compiled.spawns
+        if item.required
+    )
+    critical.extend(
+        (f"transition {item.id}", _center(item.rect))
+        for item in compiled.transitions
+        if item.mandatory
+    )
+    critical.extend(
+        (f"landmark {item.id}", (item.position.x, item.position.y))
+        for item in compiled.landmarks
+        if item.required
+    )
+    critical.extend(
+        (f"interaction {item.id}", (item.position.x, item.position.y))
+        for item in compiled.interactions
+    )
     if critical:
         reachable = _bfs(compiled, critical[0][1])
         for label, cell in critical:
             if cell not in reachable:
-                issues.append(_issue("error", "unreachable_critical", f"{label.capitalize()} cannot reach the critical path.", compiled.map_id, Point(x=cell[0], y=cell[1])))
+                issues.append(
+                    _issue(
+                        "error",
+                        "unreachable_critical",
+                        f"{label.capitalize()} cannot reach the critical path.",
+                        compiled.map_id,
+                        Point(x=cell[0], y=cell[1]),
+                    )
+                )
         for spawn in compiled.spawns:
-            if spawn.kind == "npc" and spawn.required and (spawn.position.x, spawn.position.y) not in reachable:
-                issues.append(_issue("error", "unreachable_npc", f"Mandatory NPC {spawn.id!r} is unreachable.", compiled.map_id, spawn.position))
+            if (
+                spawn.kind == "npc"
+                and spawn.required
+                and (spawn.position.x, spawn.position.y) not in reachable
+            ):
+                issues.append(
+                    _issue(
+                        "error",
+                        "unreachable_npc",
+                        f"Mandatory NPC {spawn.id!r} is unreachable.",
+                        compiled.map_id,
+                        spawn.position,
+                    )
+                )
 
     total = compiled.width * compiled.height
     object_fraction = len(collision_owner) / total
     open_fraction = sum(row.count(".") for row in compiled.walkability) / total
     density = bundle.bible.density
     if object_fraction > density.max_prop_fraction:
-        issues.append(_issue("warning", "excessive_prop_density", f"Collision props cover {object_fraction:.1%} of the map.", compiled.map_id))
+        issues.append(
+            _issue(
+                "warning",
+                "excessive_prop_density",
+                f"Collision props cover {object_fraction:.1%} of the map.",
+                compiled.map_id,
+            )
+        )
     if open_fraction < density.min_open_fraction:
-        issues.append(_issue("warning", "insufficient_open_space", f"Only {open_fraction:.1%} of the map is walkable.", compiled.map_id))
+        issues.append(
+            _issue(
+                "warning",
+                "insufficient_open_space",
+                f"Only {open_fraction:.1%} of the map is walkable.",
+                compiled.map_id,
+            )
+        )
     authored_and_generated = len(compiled.objects) + len(compiled.decorative_layers)
     if compiled.map_type != "interior" and authored_and_generated < total * 0.01:
-        issues.append(_issue("warning", "excessive_empty_space", "Map has very little visual punctuation.", compiled.map_id))
+        issues.append(
+            _issue(
+                "warning",
+                "excessive_empty_space",
+                "Map has very little visual punctuation.",
+                compiled.map_id,
+            )
+        )
 
     safe_cells: set[tuple[int, int]] = set()
     encounter_cells: set[tuple[int, int]] = set()
@@ -395,7 +792,14 @@ def validate_compiled_map(compiled: CompiledMap, bundle: ContentBundle) -> list[
         elif zone.kind == "encounter":
             encounter_cells.update(_rect_cells(zone.rect))
     if safe_cells & encounter_cells:
-        issues.append(_issue("warning", "encounter_over_safe_zone", "An encounter zone overlaps a safe zone.", compiled.map_id))
+        issues.append(
+            _issue(
+                "warning",
+                "encounter_over_safe_zone",
+                "An encounter zone overlaps a safe zone.",
+                compiled.map_id,
+            )
+        )
 
     source_spec = bundle.maps[compiled.map_id]
     for path in source_spec.paths:
@@ -438,8 +842,7 @@ def validate_compiled_map(compiled: CompiledMap, bundle: ContentBundle) -> list[
         for item in compiled.objects:
             if item.transition_id and "building" in item.tags:
                 distance = min(
-                    abs(item.position.x - x) + abs(item.position.y - y)
-                    for x, y in path_cells
+                    abs(item.position.x - x) + abs(item.position.y - y) for x, y in path_cells
                 )
                 if distance > 6:
                     issues.append(
@@ -455,13 +858,24 @@ def validate_compiled_map(compiled: CompiledMap, bundle: ContentBundle) -> list[
     required_landmarks = [item for item in compiled.landmarks if item.required]
     for index, left in enumerate(required_landmarks):
         for right in required_landmarks[index + 1 :]:
-            distance = abs(left.position.x - right.position.x) + abs(left.position.y - right.position.y)
+            distance = abs(left.position.x - right.position.x) + abs(
+                left.position.y - right.position.y
+            )
             if distance < density.landmark_min_distance:
-                issues.append(_issue("warning", "landmarks_too_close", f"Landmarks {left.id!r} and {right.id!r} are only {distance} tiles apart.", compiled.map_id))
+                issues.append(
+                    _issue(
+                        "warning",
+                        "landmarks_too_close",
+                        f"Landmarks {left.id!r} and {right.id!r} are only {distance} tiles apart.",
+                        compiled.map_id,
+                    )
+                )
     return issues
 
 
-def build_report(issues: Iterable[Diagnostic], maps: Iterable[CompiledMap] = ()) -> ValidationReport:
+def build_report(
+    issues: Iterable[Diagnostic], maps: Iterable[CompiledMap] = ()
+) -> ValidationReport:
     issue_list = list(issues)
     errors = sum(item.severity == "error" for item in issue_list)
     warnings = sum(item.severity == "warning" for item in issue_list)
@@ -470,13 +884,18 @@ def build_report(issues: Iterable[Diagnostic], maps: Iterable[CompiledMap] = ())
         errors=errors,
         warnings=warnings,
         issues=issue_list,
-        map_hashes={item.map_id: item.canonical_hash for item in sorted(maps, key=lambda m: m.map_id)},
+        map_hashes={
+            item.map_id: item.canonical_hash for item in sorted(maps, key=lambda m: m.map_id)
+        },
     )
 
 
 def report_text(report: ValidationReport) -> str:
     status = "PASS" if report.success else "FAIL"
-    lines = [f"WorldSynth validation: {status}", f"Errors: {report.errors}  Warnings: {report.warnings}"]
+    lines = [
+        f"WorldSynth validation: {status}",
+        f"Errors: {report.errors}  Warnings: {report.warnings}",
+    ]
     for issue in report.issues:
         location = f" ({issue.location.x},{issue.location.y})" if issue.location else ""
         scope = f"[{issue.map_id}] " if issue.map_id else ""
@@ -485,5 +904,7 @@ def report_text(report: ValidationReport) -> str:
         lines.append("No issues.")
     if report.map_hashes:
         lines.append("Map hashes:")
-        lines.extend(f"  {map_id}: {hash_value}" for map_id, hash_value in report.map_hashes.items())
+        lines.extend(
+            f"  {map_id}: {hash_value}" for map_id, hash_value in report.map_hashes.items()
+        )
     return "\n".join(lines) + "\n"

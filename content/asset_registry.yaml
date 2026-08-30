@@ -1,5 +1,6 @@
-schema_version: 1
+schema_version: 2
 tile_size: 32
+player_archetype_id: lumen_scout
 archetypes:
   - id: tavern_house
     asset_path: assets/objects/tavern_house.svg
@@ -10,6 +11,10 @@ archetypes:
     collision: {kind: rect, rect: {x: -2, y: -3, width: 5, height: 4}}
     interaction_sockets: [{id: sign, offset: {x: -2, y: 0}, prompt: Read tavern sign}]
     doorway_sockets: [{id: main_door, offset: {x: 0, y: 0}, prompt: Enter}]
+    visual_layers:
+      - {role: shadow, asset_path: assets/objects/layers/building_shadow.svg, pixel_size: {width: 160, height: 128}}
+      - {role: base, asset_path: assets/objects/layers/tavern_base.svg, pixel_size: {width: 160, height: 128}}
+      - {role: foreground, asset_path: assets/objects/layers/tavern_roof.svg, pixel_size: {width: 160, height: 128}}
     tags: [building, warm, timber, tavern]
     color: "#c77945"
     license: &project_license {creator: WorldSynth sample project, source_url: project://assets, license: CC0-1.0, attribution_required: false}
@@ -21,6 +26,10 @@ archetypes:
     render_category: structure
     collision: {kind: rect, rect: {x: -2, y: -3, width: 5, height: 4}}
     doorway_sockets: [{id: main_door, offset: {x: 0, y: 0}, prompt: Enter}]
+    visual_layers:
+      - {role: shadow, asset_path: assets/objects/layers/building_shadow.svg, pixel_size: {width: 160, height: 128}}
+      - {role: base, asset_path: assets/objects/layers/alchemist_base.svg, pixel_size: {width: 160, height: 128}}
+      - {role: foreground, asset_path: assets/objects/layers/alchemist_roof.svg, pixel_size: {width: 160, height: 128}}
     tags: [building, warm, timber, alchemy]
     color: "#7a6cb0"
     license: *project_license
@@ -32,6 +41,10 @@ archetypes:
     render_category: structure
     collision: {kind: rect, rect: {x: -2, y: -3, width: 5, height: 4}}
     doorway_sockets: [{id: main_door, offset: {x: 0, y: 0}, prompt: Enter}]
+    visual_layers:
+      - {role: shadow, asset_path: assets/objects/layers/building_shadow.svg, pixel_size: {width: 160, height: 128}}
+      - {role: base, asset_path: assets/objects/layers/lodge_base.svg, pixel_size: {width: 160, height: 128}}
+      - {role: foreground, asset_path: assets/objects/layers/lodge_roof.svg, pixel_size: {width: 160, height: 128}}
     tags: [building, warm, timber, research]
     color: "#598c8c"
     license: *project_license
@@ -43,6 +56,10 @@ archetypes:
     render_category: structure
     collision: {kind: rect, rect: {x: -1, y: -1, width: 3, height: 2}}
     interaction_sockets: [{id: inscription, offset: {x: 0, y: 1}, prompt: Read inscription}]
+    visual_layers:
+      - {role: shadow, asset_path: assets/objects/layers/beacon_shadow.svg, pixel_size: {width: 96, height: 96}}
+      - {role: base, asset_path: assets/objects/layers/beacon_base.svg, pixel_size: {width: 96, height: 96}}
+      - {role: foreground, asset_path: assets/objects/layers/beacon_glow.svg, pixel_size: {width: 96, height: 96}}
     tags: [landmark, lantern, stone]
     color: "#e0b44f"
     license: *project_license
@@ -64,6 +81,10 @@ archetypes:
     ground_anchor: {x: 1, y: 2}
     render_category: prop
     collision: {kind: rect, rect: {x: 0, y: 0, width: 1, height: 1}}
+    visual_layers:
+      - {role: shadow, asset_path: assets/objects/layers/tree_shadow.svg, pixel_size: {width: 64, height: 96}}
+      - {role: base, asset_path: assets/objects/layers/tree_trunk.svg, pixel_size: {width: 64, height: 96}}
+      - {role: foreground, asset_path: assets/objects/layers/tree_canopy.svg, pixel_size: {width: 64, height: 96}}
     tags: [forest, temperate, tree]
     variants: [round, forked]
     color: "#315f3e"
@@ -149,4 +170,145 @@ archetypes:
     collision: {kind: rect, rect: {x: -1, y: 0, width: 2, height: 1}}
     tags: [interior, furniture, research]
     color: "#635047"
+    license: *project_license
+  - id: lumen_scout
+    asset_path: assets/characters/lumen_scout.svg
+    pixel_size: {width: 128, height: 192}
+    tile_size: {width: 4, height: 6}
+    ground_anchor: {x: 0, y: 1}
+    render_category: character
+    collision: {kind: none}
+    tags: [character, player, original]
+    animation:
+      frames: 4
+      fps: 8.0
+      row: 0
+      frame_size: {width: 32, height: 48}
+      directions: {down: 0, left: 1, right: 2, up: 3}
+      idle_frame: 0
+    color: "#f2c879"
+    license: *project_license
+
+terrains:
+  - terrain_id: grass
+    tile_family: lumenfold_ground
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [grass, cobble, dirt_path, water]
+    render_layer: base
+    base_tile: {id: grass_base, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 0, y: 0}, weight: 7}
+    variants:
+      - {id: grass_soft, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 1, y: 0}, weight: 2}
+      - {id: grass_tuft, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 2, y: 0}, weight: 1}
+      - {id: grass_warm, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 3, y: 0}, weight: 1}
+    decals:
+      - {id: grass_decal_amber, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 0, y: 11}, weight: 1}
+      - {id: grass_decal_bloom, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 1, y: 11}, weight: 1}
+    movement: {passable: true, speed_multiplier: 1.0, collision: none}
+    license: *project_license
+  - terrain_id: forest_floor
+    tile_family: lumenfold_ground
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [forest_floor, dirt_path, water]
+    render_layer: base
+    base_tile: {id: forest_base, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 0, y: 4}, weight: 7}
+    variants:
+      - {id: forest_moss, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 1, y: 4}, weight: 2}
+      - {id: forest_leaf, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 2, y: 4}, weight: 1}
+      - {id: forest_dark, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 3, y: 4}, weight: 1}
+    decals:
+      - {id: forest_decal_leaf, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 2, y: 11}, weight: 1}
+    movement: {passable: true, speed_multiplier: 0.9, collision: none}
+    license: *project_license
+  - terrain_id: meadow
+    tile_family: lumenfold_ground
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [meadow, dirt_path, water]
+    render_layer: base
+    base_tile: {id: meadow_base, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 0, y: 5}, weight: 7}
+    variants:
+      - {id: meadow_gold, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 1, y: 5}, weight: 2}
+      - {id: meadow_flower, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 2, y: 5}, weight: 1}
+      - {id: meadow_dry, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 3, y: 5}, weight: 1}
+    movement: {passable: true, speed_multiplier: 1.0, collision: none}
+    license: *project_license
+  - terrain_id: stone_floor
+    tile_family: lumenfold_ground
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [stone_floor, cave_path, wall]
+    render_layer: base
+    base_tile: {id: stone_base, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 0, y: 6}, weight: 8}
+    variants:
+      - {id: stone_crack, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 1, y: 6}, weight: 1}
+      - {id: stone_moss, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 2, y: 6}, weight: 1}
+      - {id: stone_warm, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 3, y: 6}, weight: 1}
+    movement: {passable: true, speed_multiplier: 1.0, collision: none}
+    license: *project_license
+  - terrain_id: wood_floor
+    tile_family: lumenfold_ground
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [wood_floor]
+    render_layer: base
+    base_tile: {id: wood_base, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 0, y: 7}, weight: 5}
+    variants:
+      - {id: wood_warm, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 1, y: 7}, weight: 1}
+    movement: {passable: true, speed_multiplier: 1.0, collision: none}
+    license: *project_license
+  - terrain_id: cobble
+    tile_family: lumenfold_cardinal
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [cobble, grass]
+    render_layer: path
+    base_tile: {id: cobble_full, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 15, y: 1}, weight: 1}
+    adjacency_set: {convention: cardinal_4_nesw, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, first_cell: {x: 0, y: 1}}
+    movement: {passable: true, speed_multiplier: 1.0, collision: none}
+    underlay_terrain_id: grass
+    license: *project_license
+  - terrain_id: dirt_path
+    tile_family: lumenfold_cardinal
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [dirt_path, grass, forest_floor, meadow]
+    render_layer: path
+    base_tile: {id: dirt_full, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 15, y: 2}, weight: 1}
+    adjacency_set: {convention: cardinal_4_nesw, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, first_cell: {x: 0, y: 2}}
+    movement: {passable: true, speed_multiplier: 1.0, collision: none}
+    underlay_terrain_id: grass
+    license: *project_license
+  - terrain_id: water
+    tile_family: lumenfold_cardinal
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [water, grass, forest_floor, meadow]
+    render_layer: water
+    base_tile: {id: water_full, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 15, y: 3}, weight: 1}
+    adjacency_set: {convention: cardinal_4_nesw, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, first_cell: {x: 0, y: 3}}
+    animation: {frames: [{x: 15, y: 3}, {x: 14, y: 3}], fps: 2.0}
+    movement: {passable: false, speed_multiplier: 1.0, collision: blocked}
+    underlay_terrain_id: grass
+    license: *project_license
+  - terrain_id: cave_path
+    tile_family: lumenfold_cardinal
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [cave_path, stone_floor, wall]
+    render_layer: path
+    base_tile: {id: cave_path_full, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 15, y: 8}, weight: 1}
+    adjacency_set: {convention: cardinal_4_nesw, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, first_cell: {x: 0, y: 8}}
+    movement: {passable: true, speed_multiplier: 1.0, collision: none}
+    underlay_terrain_id: stone_floor
+    license: *project_license
+  - terrain_id: wall
+    tile_family: lumenfold_cardinal
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [wall, stone_floor, cave_path]
+    render_layer: wall
+    base_tile: {id: wall_full, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 15, y: 9}, weight: 1}
+    adjacency_set: {convention: cardinal_4_nesw, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, first_cell: {x: 0, y: 9}}
+    movement: {passable: false, speed_multiplier: 1.0, collision: blocked}
+    underlay_terrain_id: stone_floor
+    license: *project_license
+  - terrain_id: void
+    tile_family: lumenfold_ground
+    tile_dimensions: {width: 32, height: 32}
+    legal_neighbors: [void]
+    render_layer: base
+    base_tile: {id: void_base, asset_path: assets/tiles/lumenfold_terrain_atlas.svg, atlas_cell: {x: 0, y: 10}, weight: 1}
+    movement: {passable: false, speed_multiplier: 1.0, collision: blocked}
     license: *project_license

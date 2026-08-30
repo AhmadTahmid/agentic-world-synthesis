@@ -33,10 +33,7 @@ class Rect(StrictModel):
         ]
 
     def contains(self, point: Point) -> bool:
-        return (
-            self.x <= point.x < self.x + self.width
-            and self.y <= point.y < self.y + self.height
-        )
+        return self.x <= point.x < self.x + self.width and self.y <= point.y < self.y + self.height
 
 
 class Dimensions(StrictModel):
@@ -90,6 +87,70 @@ class AnimationInfo(StrictModel):
     frames: int = Field(ge=1)
     fps: float = Field(gt=0)
     row: int = Field(ge=0, default=0)
+    frame_size: AssetDimensions | None = None
+    directions: dict[Literal["down", "left", "right", "up"], int] = Field(default_factory=dict)
+    idle_frame: int = Field(ge=0, default=0)
+
+
+class VisualLayerDefinition(StrictModel):
+    role: Literal["shadow", "base", "main", "foreground"]
+    asset_path: str
+    pixel_size: AssetDimensions
+    offset_pixels: Point = Field(default_factory=lambda: Point(x=0, y=0))
+    opacity: float = Field(gt=0, le=1, default=1)
+
+
+class TerrainTileRef(StrictModel):
+    id: Identifier
+    asset_path: str
+    atlas_cell: Point
+    weight: int = Field(ge=1, default=1)
+
+
+class TerrainAdjacencySet(StrictModel):
+    convention: Literal["cardinal_4_nesw"] = "cardinal_4_nesw"
+    asset_path: str
+    first_cell: Point
+    supported_masks: list[int] = Field(default_factory=lambda: list(range(16)))
+
+    @model_validator(mode="after")
+    def complete_cardinal_set(self) -> TerrainAdjacencySet:
+        if sorted(self.supported_masks) != list(range(16)):
+            raise ValueError("cardinal adjacency set must support masks 0 through 15")
+        return self
+
+
+class TerrainAnimationInfo(StrictModel):
+    frames: list[Point] = Field(min_length=2)
+    fps: float = Field(gt=0)
+
+
+class TerrainMovementSemantics(StrictModel):
+    passable: bool
+    speed_multiplier: float = Field(gt=0, default=1)
+    collision: Literal["none", "blocked"]
+
+    @model_validator(mode="after")
+    def collision_matches_passability(self) -> TerrainMovementSemantics:
+        if self.passable == (self.collision == "blocked"):
+            raise ValueError("blocked terrain must be impassable and passable terrain unblocked")
+        return self
+
+
+class TerrainVisualDefinition(StrictModel):
+    terrain_id: Identifier
+    tile_family: Identifier
+    tile_dimensions: AssetDimensions
+    legal_neighbors: list[Identifier] = Field(default_factory=list)
+    render_layer: Literal["base", "path", "water", "wall"]
+    base_tile: TerrainTileRef
+    variants: list[TerrainTileRef] = Field(default_factory=list)
+    adjacency_set: TerrainAdjacencySet | None = None
+    decals: list[TerrainTileRef] = Field(default_factory=list)
+    animation: TerrainAnimationInfo | None = None
+    movement: TerrainMovementSemantics
+    underlay_terrain_id: Identifier | None = None
+    license: LicenseInfo
 
 
 class AssetArchetype(StrictModel):
@@ -105,25 +166,45 @@ class AssetArchetype(StrictModel):
     doorway_sockets: list[Socket] = Field(default_factory=list)
     tags: list[Identifier] = Field(default_factory=list)
     animation: AnimationInfo | None = None
+    visual_layers: list[VisualLayerDefinition] = Field(default_factory=list)
     variants: list[str] = Field(default_factory=list)
     color: str = Field(pattern=r"^#[0-9A-Fa-f]{6}$")
     license: LicenseInfo
 
+    @model_validator(mode="after")
+    def validate_visual_layers(self) -> AssetArchetype:
+        roles = [layer.role for layer in self.visual_layers]
+        if len(roles) != len(set(roles)):
+            raise ValueError(f"archetype {self.id} visual layer roles must be unique")
+        if roles and "main" not in roles and "base" not in roles:
+            raise ValueError(f"archetype {self.id} layered visual needs a base or main layer")
+        return self
+
 
 class AssetRegistry(StrictModel):
-    schema_version: Literal[1]
+    schema_version: Literal[1, 2]
     tile_size: int = Field(gt=0)
     archetypes: list[AssetArchetype]
+    terrains: list[TerrainVisualDefinition] = Field(default_factory=list)
+    player_archetype_id: Identifier | None = None
 
     @model_validator(mode="after")
     def unique_archetypes(self) -> AssetRegistry:
         ids = [item.id for item in self.archetypes]
         if len(ids) != len(set(ids)):
             raise ValueError("asset archetype IDs must be unique")
+        terrain_ids = [item.terrain_id for item in self.terrains]
+        if len(terrain_ids) != len(set(terrain_ids)):
+            raise ValueError("terrain visual IDs must be unique")
+        if self.player_archetype_id is not None and self.player_archetype_id not in ids:
+            raise ValueError("player_archetype_id must reference a registered archetype")
         return self
 
     def by_id(self) -> dict[str, AssetArchetype]:
         return {item.id: item for item in self.archetypes}
+
+    def terrain_by_id(self) -> dict[str, TerrainVisualDefinition]:
+        return {item.terrain_id: item for item in self.terrains}
 
 
 class BiomeDefinition(StrictModel):
@@ -383,6 +464,44 @@ class CompiledObject(StrictModel):
     transition_id: Identifier | None = None
     landmark_id: Identifier | None = None
     generated: bool = False
+    variant_id: str | None = None
+    grammar_id: Identifier | None = None
+    visual_layers: list[VisualLayerDefinition] = Field(default_factory=list)
+
+
+class CompiledTerrainTile(StrictModel):
+    position: Point
+    terrain_id: Identifier
+    asset_path: str
+    atlas_cell: Point
+    mask: int = Field(ge=0, le=15, default=15)
+    variant_id: Identifier
+
+
+class CompositionDecision(StrictModel):
+    id: Identifier
+    grammar: Literal[
+        "vegetation_cluster",
+        "forest_edge",
+        "roadside",
+        "landmark_clearing",
+        "building_setback",
+        "sightline",
+        "door_clearance",
+        "intersection_clearance",
+        "uniform_fallback",
+    ]
+    cells: list[Point]
+    archetype_ids: list[Identifier] = Field(default_factory=list)
+    rationale: str
+
+
+class RenderStats(StrictModel):
+    blocked_cell_count: int = Field(ge=0)
+    collision_shape_count: int = Field(ge=0)
+    collision_reduction_ratio: float = Field(ge=0)
+    tile_layer_counts: dict[str, int] = Field(default_factory=dict)
+    object_layer_counts: dict[str, int] = Field(default_factory=dict)
 
 
 class CompiledMap(StrictModel):
@@ -411,6 +530,11 @@ class CompiledMap(StrictModel):
     asset_references: list[Identifier]
     build_metadata: dict[str, str | int | bool]
     diagnostics: list[Diagnostic]
+    render_layers: dict[str, list[CompiledTerrainTile]] = Field(default_factory=dict)
+    protected_visual_cells: list[Point] = Field(default_factory=list)
+    composition_decisions: list[CompositionDecision] = Field(default_factory=list)
+    collision_rects: list[Rect] = Field(default_factory=list)
+    render_stats: RenderStats | None = None
 
 
 class ValidationReport(StrictModel):

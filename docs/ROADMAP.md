@@ -1,12 +1,18 @@
 # Roadmap
 
-Completed work is limited to milestone 1. Later items describe intended sequencing, not shipped capability.
+Completed work is limited to the deterministic foundation and the Lanternmarket visual-quality gate described below. Later items describe intended sequencing, not shipped capability.
 
 ## 1. Deterministic world compiler — current vertical slice
 
 Versioned schemas, YAML sources, authored anchors, bounded seeded filling, normalized JSON, hashes, topology/spatial/world validators, previews, CLI, seven-map Lumenfold sample, provisional asset registry, and a data-driven Godot runtime.
 
 Remaining hardening within this milestone: add CI across supported operating systems and automated movement/input simulation beyond the passing Godot 4.7.2 loader smoke test.
+
+### Lanternmarket visual world grammar â€” current quality gate
+
+The compiler now has typed terrain families, cardinal adjacency masks, deterministic visual variants, inspectable town composition grammars, protected visual cells, layered archetypes, asset-file provenance hashes, and equivalent merged collision rectangles. Godot normally renders compiled atlas cells with `TileMapLayer`, separate shadow/static/Y-sorted/foreground/debug layers, and an original four-direction player sheet. Five reproducible captures document Lanternmarket and its semantic debug view.
+
+This is a cohesive original CC0 provisional pack suitable for commercial use, not final production illustration. Other maps continue to compile and load through the generic renderer, but they have not passed a visual-composition review and are not claimed at Lanternmarket's quality level.
 
 ## 2. Stronger procedural layouts
 

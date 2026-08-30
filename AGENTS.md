@@ -28,11 +28,12 @@ Run the game after installing Godot 4.x:
 godot --path game --editor
 godot --path game
 godot_console --headless --path game --script res://scripts/smoke_test.gd
+godot_console --path game --script res://scripts/showcase_capture.gd
 ```
 
 ## Determinism
 
-The same source specifications, asset registry, generator version, configuration, and seed must produce the same logical compiled maps and canonical hashes. Do not put wall-clock timestamps, absolute paths, or platform-dependent ordering into canonical output. Sort sets and mappings before serialization. Record automatic repairs as diagnostics; never silently mutate authored intent.
+The same source specifications, registered asset bytes, asset registry, generator version, configuration, and seed must produce the same logical compiled maps and canonical hashes. Do not put wall-clock timestamps, absolute paths, or platform-dependent ordering into canonical output. Sort sets and mappings before serialization. Record automatic repairs as diagnostics; never silently mutate authored intent.
 
 ## Adding content safely
 

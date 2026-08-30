@@ -9,7 +9,19 @@ The included original setting contains seven playable map definitions:
 - Echo Cave, a small looped dungeon;
 - the Wayfarer's Wick tavern, Violet Alembic, and Field Scholar Lodge interiors.
 
-The runtime supports movement, collision, smooth bounded camera tracking, Y-sorted objects, paired map transitions, interaction prompts, visible encounter placeholders, save/load, and semantic debug overlays.
+The runtime supports movement, merged semantic collision, smooth bounded camera tracking, layered/Y-sorted objects, paired map transitions, interaction prompts, visible encounter placeholders, save/load, and semantic debug overlays. Lanternmarket is the visual-quality gate: its normal presentation uses a deterministic `TileMapLayer` stack, original layered art, composition grammar, and a four-direction animated player instead of the fallback color diagram.
+
+## Lanternmarket visual slice
+
+![Lanternmarket central market](generated/showcase/central_market.png)
+
+![Lanternmarket tavern entrance](generated/showcase/tavern_entrance.png)
+
+The same area can be viewed through the authoritative semantic contract:
+
+![Lanternmarket semantic debug view](generated/showcase/semantic_debug.png)
+
+The included visual pack is original CC0 project art and commercially safe to use. It is a cohesive polished provisional pack, not a claim of final production illustration.
 
 ## Deliberate limits
 
@@ -75,6 +87,7 @@ First run `worldsynth build`, then:
 godot --path game --editor
 godot --path game
 godot_console --headless --path game --script res://scripts/smoke_test.gd
+godot_console --path game --script res://scripts/showcase_capture.gd
 ```
 
 Godot 4.7.2 is installed under `%LOCALAPPDATA%\Programs\Godot` and that folder is on the user `PATH`. Restart terminals that were already open when PATH was updated.
@@ -85,11 +98,11 @@ Controls:
 - E or Space: interact
 - F5: save current map and position
 - F3: toggle every debug overlay
-- 1-6: collision, walkability, encounter zones, transitions, object anchors, neighbor edge contracts
+- 1-7: collision, walkability, encounter zones, transitions, object anchors, neighbor edge contracts, diagnostic semantic colors
 
 Entering an encounter zone shows the exact compiled encounter-table ID in a visible placeholder notification. Saves use `user://worldsynth_save.json` and are updated on transitions.
 
-Godot 4.7.2 stable passed both the dedicated engine smoke test and a normal headless project startup. The smoke test confirmed the initial map, player, 103 collision shapes, and 5 Lanternmarket transitions. Interactive keyboard traversal was not manually exercised by automation.
+Godot 4.7.2 stable passed both the dedicated engine smoke test and a normal headless project startup. The smoke test confirms the initial map, animated player, production tile layers, 105 blocked cells represented by 25 merged collision shapes, and 5 Lanternmarket transitions. The showcase command needs a graphics context (do not pass `--headless`) and reproducibly writes five PNGs to `generated/showcase/`.
 
 ## Edit a map
 
@@ -104,7 +117,7 @@ Do not edit generated JSON. See [CONTENT_AUTHORING.md](docs/CONTENT_AUTHORING.md
 ## Add or replace an asset
 
 1. Put original, CC0, or equivalently commercial-safe art under `assets/`.
-2. Add a versioned archetype to `content/asset_registry.yaml`, including pixel/tile dimensions, ground anchor, explicit collision, sockets, tags, color fallback, and full license metadata.
+2. Add a versioned archetype to `content/asset_registry.yaml`, including pixel/tile dimensions, ground anchor, explicit collision, optional visual layers, sockets, tags, color fallback, and full license metadata. Terrain families additionally declare atlas coordinates, N/E/S/W adjacency metadata, legal neighbors, variants/decals, movement semantics, and provenance.
 3. Add the license text or source record under `assets/licenses/`.
 4. Reference the archetype from a map and rebuild.
 

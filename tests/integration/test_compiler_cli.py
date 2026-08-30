@@ -34,6 +34,10 @@ def test_full_build_writes_runtime_previews_and_reports(repo_root: Path, tmp_pat
         (tmp_path / "game" / "generated" / "world_manifest.json").read_text(encoding="utf-8")
     )
     assert manifest["start_map"] == "lanternmarket"
+    assert manifest["player_visual"]["id"] == "lumen_scout"
+    assert "assets/tiles/lumenfold_terrain_atlas.svg" in manifest["asset_content_hashes"]
+    assert (tmp_path / "game" / "assets" / "tiles" / "lumenfold_terrain_atlas.svg").is_file()
+    assert (tmp_path / "game" / "assets" / "characters" / "lumen_scout.svg").is_file()
     assert (tmp_path / "generated" / "previews" / "echo_cave.png").is_file()
     assert (tmp_path / "generated" / "reports" / "validation.txt").is_file()
     second = build_project(tmp_path)
@@ -89,7 +93,9 @@ def test_cli_returns_nonzero_on_blocking_reference_error(repo_root: Path, tmp_pa
     _copy_project_inputs(repo_root, tmp_path)
     graph_path = tmp_path / "content" / "world_graph.yaml"
     graph_path.write_text(
-        graph_path.read_text(encoding="utf-8").replace("to_transition: market_gate", "to_transition: absent_gate", 1),
+        graph_path.read_text(encoding="utf-8").replace(
+            "to_transition: market_gate", "to_transition: absent_gate", 1
+        ),
         encoding="utf-8",
     )
     result = runner.invoke(app, ["validate", "--root", str(tmp_path)])

@@ -4,6 +4,7 @@ extends Node2D
 var map_data: Dictionary
 var tile_size := 32
 var debug_flags := {
+	"semantic_colors": false,
 	"collision": false,
 	"walkability": false,
 	"zones": false,
@@ -52,12 +53,13 @@ func _data_rect(data: Dictionary) -> Rect2:
 func _draw() -> void:
 	if map_data.is_empty():
 		return
-	var terrain: Array = map_data["terrain"]
-	for y in terrain.size():
-		var row: Array = terrain[y]
-		for x in row.size():
-			var terrain_id := str(row[x])
-			draw_rect(_cell_rect(x, y), Color(str(TERRAIN_COLORS.get(terrain_id, "#d13f7c"))))
+	if debug_flags["semantic_colors"]:
+		var terrain: Array = map_data["terrain"]
+		for y in terrain.size():
+			var row: Array = terrain[y]
+			for x in row.size():
+				var terrain_id := str(row[x])
+				draw_rect(_cell_rect(x, y), Color(str(TERRAIN_COLORS.get(terrain_id, "#d13f7c"))), true)
 	if debug_flags["walkability"]:
 		for y in map_data["walkability"].size():
 			var row: String = map_data["walkability"][y]

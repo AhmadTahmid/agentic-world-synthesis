@@ -32,6 +32,10 @@ paths:
 
 Regions are applied in order, so a later passable rectangle can intentionally cut a doorway through an earlier wall. Paths preserve authored endpoints; the seed affects only small edge variation.
 
+Every semantic terrain ID in the world bible must also have a `terrains` entry in `content/asset_registry.yaml`. Terrain visuals declare a 32-pixel tile family, base/variant atlas cells, legal neighbors, optional decals/animation, movement and collision semantics, and complete license provenance. Edge families use the documented cardinal mask convention `N=1`, `E=2`, `S=4`, `W=8`, with atlas columns 0 through 15. Gameplay collision still comes from compiled semantics, never from painted pixels.
+
+Layered object archetypes may declare `shadow`, `base` or `main`, and `foreground` asset roles. Layer assets share the archetype's visual rectangle and may add a pixel offset. The ground anchor continues to control Y sorting; visual layers do not redefine collision or door sockets.
+
 ## Add an edge contract
 
 Both maps must declare compatible contracts on opposite sides:

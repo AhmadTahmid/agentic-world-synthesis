@@ -1,38 +1,125 @@
 {
+  "asset_content_hashes": {
+    "assets/characters/lumen_scout.svg": "fcb525f13423255a8d865f3542a8cb77f174ba6d4dd59f502b8bdf88b3dabdaf",
+    "assets/objects/alchemist_house.svg": "e6256fde0fe5488f9c51015eaf2403e53d519468fa62c33e6bb50c05a94c4b5b",
+    "assets/objects/beacon_fountain.svg": "4899bf6eef27cab3b5df969debe3cc004d511fe466aa4dd101727beb45bb4d8d",
+    "assets/objects/bookshelf.svg": "0a4511110643916de6e7743f01a5fec0d544ca8b0f2e03ecf2c000ee7bcdbc70",
+    "assets/objects/broadleaf_tree.svg": "2097f16aa7f6ed396b58a57460d0f397ba25c5f08f94b43b9b72d5db7264a7b7",
+    "assets/objects/cave_mouth.svg": "02b74619ce57ba9c4464cfd70933b670e8d5cc6fc025fa7807bbc74b83c1855b",
+    "assets/objects/echo_crystal.svg": "bf6c2dfca258ce4b1f5a9a3c9b93c12e132db3dc5736556a268b10f6834fe912",
+    "assets/objects/layers/alchemist_base.svg": "511c00b8f70e2096ac58f74c6be757806800c31f365f87e2fcc187bbf2a49027",
+    "assets/objects/layers/alchemist_roof.svg": "0ebe6d69188c9e401a3e8b1fb92634a68eca68d3602aef27407510e8239dc882",
+    "assets/objects/layers/beacon_base.svg": "3524914d4881c3e6214078147eed3e61502faf7dc7e923bd1fb004f376581847",
+    "assets/objects/layers/beacon_glow.svg": "327cdb045094ec8ab9565aefc599284f3333db4b07c4803b881e8a3853e7ebbb",
+    "assets/objects/layers/beacon_shadow.svg": "0233f5c738998bbfeaefa3c14e1dea743e1be4b07255b6aa553824a1a974eee1",
+    "assets/objects/layers/building_shadow.svg": "fe1047fd7d7dba36e6e03df42b7fe242a1120a0771928327eaf98468224ceb08",
+    "assets/objects/layers/lodge_base.svg": "f84b449596041be2d6a578d8eb83f7771c4f1028255a0ef5f67c6789e457f3b8",
+    "assets/objects/layers/lodge_roof.svg": "0a321146dea49733a839a4de3fc0653895679e946d349df26f293b7955eb55ac",
+    "assets/objects/layers/tavern_base.svg": "81601a608c48f32c3ec7c4221fcd07df32667571831c329af276ce4378b59def",
+    "assets/objects/layers/tavern_roof.svg": "69b048310fdbb1b0fd5f925bb2305dfe27dddf4ff26ad9e290d3b2f9c2d8dbb9",
+    "assets/objects/layers/tree_canopy.svg": "183dbdfbe190b48394ff2e40fef859fc5327f329b9f49e4de5392b9e893b21af",
+    "assets/objects/layers/tree_shadow.svg": "73fe8834478ecf656fde22c7567c2734da1f9105b459a011dc32165242068e90",
+    "assets/objects/layers/tree_trunk.svg": "997e11cb0cbd5f0e0117387682b44890337a71369dd074be989c427e77de9a11",
+    "assets/objects/meadow_shrub.svg": "66d140042cf88a2aa695b552286e8ff7883972c84acb6a6161e3037a0b641ae9",
+    "assets/objects/mossy_stone.svg": "28ec622d999c6ad4dd8768dc2db54bb611650aadb51149f2fc2cd768a100e425",
+    "assets/objects/research_lodge.svg": "8a705b8365f649b169554068f607f265812df1448be11d51a03e35369b85db5a",
+    "assets/objects/reward_chest.svg": "2a2153aaae97d2975eb9c15d6a473a9ea0f6c2c04b49211eef297aafa979d2d5",
+    "assets/objects/signpost.svg": "a7f0d1446ddb9cc9bb90f599d328189acd85ca8833a60c906891e63712ad14e7",
+    "assets/objects/tavern_house.svg": "2af03ab7d69cd5d46d799d5e53dfc9c151cb0a71cef0e3da8bd529e679edc333",
+    "assets/objects/tavern_table.svg": "ee702c3aa8193703e9cb94b264f1a8cbc09cfd33f31bb3d48f5bbe96b7a22bfa",
+    "assets/objects/work_counter.svg": "8f8baf3ffed86c07031c9fa86bc18643f844ddbd5690e0e2b61a337da57295cd",
+    "assets/tiles/lumenfold_terrain_atlas.svg": "846e7f3b60f047da324942b08fd5a764f4d86bb0bb6679f9906285332e67c4fb"
+  },
   "format_version": 1,
-  "generator_version": "worldsynth-gen-1",
+  "generator_version": "worldsynth-gen-2",
   "maps": {
     "alchemist_interior": {
-      "canonical_hash": "2043bb5af6953b02b54192ac8e661923849f6057493ac4e54a277084a969b902",
+      "canonical_hash": "96829bf1f600cfc2d922f031faae6b33f2190b9c19df0b1c3395e51c229ff524",
       "path": "maps/alchemist_interior.json"
     },
     "echo_cave": {
-      "canonical_hash": "52ee569d7657e3a605ee540433a8144812e9e2c3345cae492733b82a42d3e813",
+      "canonical_hash": "0828a38280960ae80e8a6758128f90d958912e34983b25b4af15e69adedc6844",
       "path": "maps/echo_cave.json"
     },
     "lanternmarket": {
-      "canonical_hash": "0830f501c5287dc5c71bf25f508c17116e17255a29e09b3d057c9869a4729be5",
+      "canonical_hash": "b1f23826ad2906342a5b95d1c5cef520f21e9ad83ac73e95668357f7a7d214c8",
       "path": "maps/lanternmarket.json"
     },
     "mosswood_route": {
-      "canonical_hash": "e9a7daac6670c07081e3d76f2095b904a48f836b0dedcd8ab2b06d5ba83eacc2",
+      "canonical_hash": "643004b93b22a9296f8ebc044dfe0a42fd630880f9f4479ff6e16b6afc03fc81",
       "path": "maps/mosswood_route.json"
     },
     "research_lodge_interior": {
-      "canonical_hash": "a8fee66b65a3ca57df32b6d7dba2b368fe93388f990eb5dcc39dade352a74af2",
+      "canonical_hash": "1c56a778d40306f6056f550de653c10aa1eaa3f746e52220fcf94008c2e40258",
       "path": "maps/research_lodge_interior.json"
     },
     "sunmeadow_route": {
-      "canonical_hash": "d223764b83dfb9fb94cf6964e84357a602e911c65ac6979332fb491042ca38e4",
+      "canonical_hash": "b97f6229450c8137e972d78c4c449ceea6ac166e55967614a55670914d9a646d",
       "path": "maps/sunmeadow_route.json"
     },
     "tavern_interior": {
-      "canonical_hash": "0474d34df0f4047dc508c8e41c90c2c7f7c81b759674af7e57d3aa6e6077eb23",
+      "canonical_hash": "e8ddcbee03ee7c1aa72062d36b09b92c6edb822b403b7c7f84b2abd3769a89b4",
       "path": "maps/tavern_interior.json"
     }
   },
+  "player_visual": {
+    "animation": {
+      "directions": {
+        "down": 0,
+        "left": 1,
+        "right": 2,
+        "up": 3
+      },
+      "fps": 8.0,
+      "frame_size": {
+        "height": 48,
+        "width": 32
+      },
+      "frames": 4,
+      "idle_frame": 0,
+      "row": 0
+    },
+    "asset_path": "assets/characters/lumen_scout.svg",
+    "collision": {
+      "cells": [],
+      "kind": "none",
+      "polygon": [],
+      "rect": null
+    },
+    "color": "#f2c879",
+    "doorway_sockets": [],
+    "ground_anchor": {
+      "x": 0,
+      "y": 1
+    },
+    "id": "lumen_scout",
+    "interaction_sockets": [],
+    "license": {
+      "attribution_required": false,
+      "creator": "WorldSynth sample project",
+      "license": "CC0-1.0",
+      "source_url": "project://assets"
+    },
+    "pixel_size": {
+      "height": 192,
+      "width": 128
+    },
+    "render_category": "character",
+    "tags": [
+      "character",
+      "player",
+      "original"
+    ],
+    "tile_size": {
+      "height": 6,
+      "width": 4
+    },
+    "variants": [],
+    "visual_layers": [],
+    "y_sort": true
+  },
   "reproducible": true,
-  "source_bundle_hash": "cfbf4bb38372a918b9e58bd73c4c3bc69fc7cdf1e579d236c939b584650fa8ae",
+  "source_bundle_hash": "9f5b776740b72d0024e4844136805c9b3b0017afb48623bd24e2d8d65b29f7f3",
   "start_map": "lanternmarket",
   "world_id": "lumenfold",
   "world_title": "Lumenfold"

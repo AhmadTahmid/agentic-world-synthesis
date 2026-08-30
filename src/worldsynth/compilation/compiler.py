@@ -6,7 +6,7 @@ from pathlib import Path
 
 from worldsynth import GENERATOR_VERSION
 from worldsynth.domain.models import CompiledMap, Diagnostic, ValidationReport
-from worldsynth.generation.generator import compile_layout
+from worldsynth.generation.generator import asset_content_hashes, compile_layout
 from worldsynth.rendering.preview import render_preview
 from worldsynth.schemas.loader import ContentBundle, load_bundle
 from worldsynth.util import canonical_json, content_hash, write_text_if_changed
@@ -93,23 +93,39 @@ def _write_outputs(result: BuildResult, *, previews: bool = True) -> None:
                 "bible": result.bundle.bible,
                 "graph": result.bundle.graph,
                 "assets": result.bundle.assets,
+                "asset_content_hashes": asset_content_hashes(result.bundle),
                 "maps": result.bundle.maps,
                 "generator_version": GENERATOR_VERSION,
             }
         ),
+        "asset_content_hashes": asset_content_hashes(result.bundle),
         "reproducible": True,
     }
+    player_archetype = result.bundle.assets.by_id().get(
+        result.bundle.assets.player_archetype_id or ""
+    )
+    if player_archetype is not None:
+        manifest["player_visual"] = player_archetype.model_dump(mode="json")
     manifest_text = canonical_json(manifest, pretty=True)
     write_text_if_changed(root / "generated" / "manifests" / "world_manifest.json", manifest_text)
     write_text_if_changed(root / "game" / "generated" / "world_manifest.json", manifest_text)
+    asset_paths: set[str] = set()
     for reference in sorted(
         {ref for compiled in result.maps.values() for ref in compiled.asset_references}
     ):
         archetype = result.bundle.assets.by_id().get(reference)
         if archetype is None:
             continue
-        source = root / archetype.asset_path
-        relative = Path(archetype.asset_path)
+        asset_paths.add(archetype.asset_path)
+        asset_paths.update(layer.asset_path for layer in archetype.visual_layers)
+    if player_archetype is not None:
+        asset_paths.add(player_archetype.asset_path)
+    for compiled in result.maps.values():
+        for tiles in compiled.render_layers.values():
+            asset_paths.update(tile.asset_path for tile in tiles)
+    for asset_path in sorted(asset_paths):
+        source = root / asset_path
+        relative = Path(asset_path)
         if relative.parts and relative.parts[0] == "assets":
             relative = Path(*relative.parts[1:])
         target = root / "game" / "assets" / relative

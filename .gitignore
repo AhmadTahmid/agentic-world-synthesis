@@ -8,4 +8,6 @@ __pycache__/
 .godot/
 game/.godot/
 game/.import/
+*.import
+*.uid
 *.tmp

@@ -2,6 +2,7 @@ class_name WorldSynthMapRuntime
 extends Node2D
 
 const MAP_CANVAS_SCRIPT := preload("res://scripts/map_canvas.gd")
+const TILE_RENDERER_SCRIPT := preload("res://scripts/tile_renderer.gd")
 const RUNTIME_OBJECT_SCRIPT := preload("res://scripts/runtime_object.gd")
 const PLAYER_SCRIPT := preload("res://scripts/player.gd")
 
@@ -11,6 +12,10 @@ signal encounter_triggered(zone: Dictionary)
 var map_data: Dictionary
 var tile_size := 32
 var actor_layer: Node2D
+var structure_layer: Node2D
+var shadow_layer: Node2D
+var foreground_layer: Node2D
+var tile_renderer
 var canvas
 var transition_count := 0
 var collision_shape_count := 0
@@ -40,15 +45,34 @@ func load_map(map_id: String) -> bool:
 		if row.size() != int(map_data["width"]):
 			return _fail("Compiled map %s has a terrain row with the wrong width." % map_id)
 	tile_size = int(map_data["tile_size"])
-	canvas = MAP_CANVAS_SCRIPT.new()
-	canvas.name = "MapCanvas"
-	canvas.z_index = -1000
-	add_child(canvas)
-	canvas.configure(map_data)
+	tile_renderer = TILE_RENDERER_SCRIPT.new()
+	tile_renderer.name = "ProductionTileRenderer"
+	add_child(tile_renderer)
+	if not tile_renderer.configure(map_data):
+		return _fail("Failed to construct production tile layers for %s." % map_id)
+	shadow_layer = Node2D.new()
+	shadow_layer.name = "GroundShadows"
+	shadow_layer.z_index = -200
+	add_child(shadow_layer)
+	structure_layer = Node2D.new()
+	structure_layer.name = "StaticStructures"
+	structure_layer.z_index = -10
+	add_child(structure_layer)
 	actor_layer = Node2D.new()
 	actor_layer.name = "YSortedActors"
 	actor_layer.y_sort_enabled = true
 	add_child(actor_layer)
+	foreground_layer = Node2D.new()
+	foreground_layer.name = "ForegroundOverhangs"
+	foreground_layer.z_index = 500
+	add_child(foreground_layer)
+	canvas = MAP_CANVAS_SCRIPT.new()
+	canvas.name = "SemanticDebugOverlay"
+	canvas.z_index = 1000
+	add_child(canvas)
+	canvas.configure(map_data)
+	if tile_renderer.rendered_counts.is_empty():
+		canvas.toggle_flag("semantic_colors")
 	if not _create_objects():
 		return false
 	_create_collision()
@@ -66,8 +90,10 @@ func _fail(message: String) -> bool:
 func _create_objects() -> bool:
 	for data in map_data["decorative_layers"] + map_data["objects"]:
 		var item := RUNTIME_OBJECT_SCRIPT.new()
-		actor_layer.add_child(item)
-		if not item.configure(data, tile_size):
+		var tags: Array = data.get("tags", [])
+		var parent := structure_layer if tags.has("building") else actor_layer
+		parent.add_child(item)
+		if not item.configure(data, tile_size, shadow_layer, foreground_layer):
 			return _fail("Failed to instantiate object %s in map %s." % [data.get("id", "?"), map_data["map_id"]])
 	return true
 
@@ -78,12 +104,16 @@ func _create_collision() -> void:
 	body.collision_layer = 1
 	body.collision_mask = 0
 	add_child(body)
-	for point in map_data["blocked_cells"]:
+	var rectangles: Array = map_data.get("collision_rects", [])
+	if rectangles.is_empty():
+		for point in map_data["blocked_cells"]:
+			rectangles.append({"x": point["x"], "y": point["y"], "width": 1, "height": 1})
+	for rect in rectangles:
 		var shape_node := CollisionShape2D.new()
 		var shape := RectangleShape2D.new()
-		shape.size = Vector2(tile_size, tile_size)
+		shape.size = Vector2(float(rect["width"]) * tile_size, float(rect["height"]) * tile_size)
 		shape_node.shape = shape
-		shape_node.position = Vector2((float(point["x"]) + 0.5) * tile_size, (float(point["y"]) + 0.5) * tile_size)
+		shape_node.position = Vector2((float(rect["x"]) + float(rect["width"]) / 2.0) * tile_size, (float(rect["y"]) + float(rect["height"]) / 2.0) * tile_size)
 		body.add_child(shape_node)
 		collision_shape_count += 1
 

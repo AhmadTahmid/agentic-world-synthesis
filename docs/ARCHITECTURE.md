@@ -20,20 +20,23 @@ Only `content/` and the registered assets are canonical. `generated/` is review/
 
 ## Domain boundaries
 
-`worldsynth.domain` defines strict version-1 Pydantic models:
+`worldsynth.domain` defines strict, versioned Pydantic models. The asset registry is schema 2; compiled maps remain backward-compatible format 1 with defaulted visual fields:
 
 - `WorldBible` supplies real compiler inputs: tile scale, known terrain, biome path style/decor density, traversal, progression, and quality thresholds.
 - `WorldGraph` owns map nodes, transition endpoints, danger progression, story gates, and reachability.
 - `EdgeContract` makes outdoor boundary continuations mechanical rather than visual guesses.
-- `AssetArchetype` binds replaceable visuals to anchors, dimensions, explicit footprints, sockets, tags, variants, animation metadata, and licensing.
+- `TerrainVisualDefinition` binds semantic terrain IDs to replaceable tile families, legal neighbors, cardinal adjacency sets, variants/decals, movement semantics, and licensing.
+- `AssetArchetype` binds replaceable visuals to anchors, dimensions, explicit footprints, sockets, layered shadow/base/main/foreground roles, variants, animation metadata, and licensing.
 - `MapSpec` keeps authored terrain rectangles, polylines, anchors, doors, zones, spawns, landmarks, constraints, and narrative readable.
-- `CompiledMap` is the normalized Godot contract: raster terrain, objects, explicit collision cells, walkability rows, interactions, transitions, zones, assets, deterministic metadata, and diagnostics.
+- `CompiledMap` is the normalized Godot contract: raster terrain, deterministic render-layer tiles/masks, composition decisions, protected cells, layered objects, explicit blocked cells plus equivalent merged rectangles, walkability rows, interactions, transitions, zones, assets, deterministic metadata, and diagnostics.
 
 Unknown input fields are rejected. This prevents misspellings from becoming ignored author intent.
 
 ## Deterministic generation
 
-The generator first lays authored terrain rectangles, then rasterizes Bresenham path segments and their widths. A seed may add small edge variation. It compiles explicit object footprints, protects paths/transitions/spawns/interactions/landmarks/reserved rectangles, and shuffles decoration candidates with a PRNG seeded by generator version, map ID, and effective seed. Candidates that violate bounds, spacing, blocked terrain, or protected areas are skipped.
+The generator first lays authored terrain rectangles, then rasterizes Bresenham path segments and their widths. A seed may add small edge variation. It compiles explicit object footprints and protects source-map paths, transition rectangles, spawns, interactions, landmarks, and reserves. A transition's `target_spawn` belongs to the destination map and is never treated as a source-map protected cell.
+
+Lanternmarket then applies explicit composition grammars for landmark clearings, building setbacks, protected sightlines, door/intersection clearance, roadside accents, and vegetation clusters. Decisions and affected cells are serialized rather than hidden. Atlas variants use stable SHA-256-derived rolls. Cardinal terrain masks use `N=1`, `E=2`, `S=4`, `W=8`; out-of-bounds is unset, so isolated is 0, interior is 15, and a top-left tile joined east/south is 6.
 
 There is no hidden topology synthesis. A new seed never moves authored transitions, structures, interactions, landmarks, or narrative anchors. Stable sorting and canonical JSON eliminate set/dictionary ordering differences. No timestamps or absolute paths enter normalized output.
 
@@ -51,9 +54,9 @@ Errors make the report fail and the CLI exit nonzero. Warnings require review bu
 
 ## Godot integration
 
-The Godot 4 runtime reads only `game/generated/world_manifest.json` and normalized map JSON. `WorldSynthMapRuntime` validates required fields, renders terrain, creates one collision shape per explicit blocked cell, loads registered SVG assets, creates transition/encounter `Area2D`s, and exposes nearest interactions. It emits helpful loader errors for absent JSON, malformed dimensions, unsupported formats, or missing textures.
+The Godot 4 runtime reads only `game/generated/world_manifest.json` and normalized map JSON. `WorldSynthMapRuntime` validates required fields and builds actual `TileMapLayer` nodes for base terrain, transitions, paths, decals, water, and walls. Semantic blocked cells remain authoritative; deterministic rectangle merging reduces physics nodes without changing their union. It loads registered layered SVG assets, creates transition/encounter `Area2D`s, and exposes nearest interactions. The previous color renderer is now an explicit diagnostic overlay.
 
-Objects and the player share a `y_sort_enabled` actor layer and use ground anchors as their sort origin. A `CharacterBody2D` supplies movement/collision and owns the smooth bounded camera. The main node handles transitions, prompts, encounter notices, save state, and overlay input. Runtime code never imports Python, calls a network service, or regenerates a map.
+Object bases/trunks and the animated player share a `y_sort_enabled` actor layer and use ground anchors as their sort origin. Shadows render below it; roof/canopy overhangs render above it. A `CharacterBody2D` supplies movement/collision independent of animation frames and owns the smooth bounded camera. The main node defers transition-driven reloads outside physics-query callbacks. Runtime code never imports Python, calls a network service, or regenerates a map.
 
 ## Provider and concept-image seams
 
