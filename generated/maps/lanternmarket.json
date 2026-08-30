@@ -1,0 +1,3038 @@
+{
+  "asset_references": [
+    "alchemist_house",
+    "beacon_fountain",
+    "broadleaf_tree",
+    "meadow_shrub",
+    "research_lodge",
+    "reward_chest",
+    "signpost",
+    "tavern_house"
+  ],
+  "biome": "lanternmarket",
+  "blocked_cells": [
+    {
+      "x": 31,
+      "y": 2
+    },
+    {
+      "x": 32,
+      "y": 2
+    },
+    {
+      "x": 33,
+      "y": 2
+    },
+    {
+      "x": 34,
+      "y": 2
+    },
+    {
+      "x": 35,
+      "y": 2
+    },
+    {
+      "x": 36,
+      "y": 2
+    },
+    {
+      "x": 37,
+      "y": 2
+    },
+    {
+      "x": 31,
+      "y": 3
+    },
+    {
+      "x": 32,
+      "y": 3
+    },
+    {
+      "x": 33,
+      "y": 3
+    },
+    {
+      "x": 34,
+      "y": 3
+    },
+    {
+      "x": 35,
+      "y": 3
+    },
+    {
+      "x": 36,
+      "y": 3
+    },
+    {
+      "x": 37,
+      "y": 3
+    },
+    {
+      "x": 3,
+      "y": 4
+    },
+    {
+      "x": 31,
+      "y": 4
+    },
+    {
+      "x": 32,
+      "y": 4
+    },
+    {
+      "x": 33,
+      "y": 4
+    },
+    {
+      "x": 34,
+      "y": 4
+    },
+    {
+      "x": 35,
+      "y": 4
+    },
+    {
+      "x": 36,
+      "y": 4
+    },
+    {
+      "x": 37,
+      "y": 4
+    },
+    {
+      "x": 1,
+      "y": 5
+    },
+    {
+      "x": 7,
+      "y": 5
+    },
+    {
+      "x": 8,
+      "y": 5
+    },
+    {
+      "x": 9,
+      "y": 5
+    },
+    {
+      "x": 10,
+      "y": 5
+    },
+    {
+      "x": 11,
+      "y": 5
+    },
+    {
+      "x": 18,
+      "y": 5
+    },
+    {
+      "x": 19,
+      "y": 5
+    },
+    {
+      "x": 20,
+      "y": 5
+    },
+    {
+      "x": 21,
+      "y": 5
+    },
+    {
+      "x": 22,
+      "y": 5
+    },
+    {
+      "x": 31,
+      "y": 5
+    },
+    {
+      "x": 32,
+      "y": 5
+    },
+    {
+      "x": 33,
+      "y": 5
+    },
+    {
+      "x": 34,
+      "y": 5
+    },
+    {
+      "x": 35,
+      "y": 5
+    },
+    {
+      "x": 36,
+      "y": 5
+    },
+    {
+      "x": 37,
+      "y": 5
+    },
+    {
+      "x": 7,
+      "y": 6
+    },
+    {
+      "x": 8,
+      "y": 6
+    },
+    {
+      "x": 9,
+      "y": 6
+    },
+    {
+      "x": 10,
+      "y": 6
+    },
+    {
+      "x": 11,
+      "y": 6
+    },
+    {
+      "x": 18,
+      "y": 6
+    },
+    {
+      "x": 19,
+      "y": 6
+    },
+    {
+      "x": 20,
+      "y": 6
+    },
+    {
+      "x": 21,
+      "y": 6
+    },
+    {
+      "x": 22,
+      "y": 6
+    },
+    {
+      "x": 29,
+      "y": 6
+    },
+    {
+      "x": 30,
+      "y": 6
+    },
+    {
+      "x": 31,
+      "y": 6
+    },
+    {
+      "x": 32,
+      "y": 6
+    },
+    {
+      "x": 33,
+      "y": 6
+    },
+    {
+      "x": 7,
+      "y": 7
+    },
+    {
+      "x": 8,
+      "y": 7
+    },
+    {
+      "x": 9,
+      "y": 7
+    },
+    {
+      "x": 10,
+      "y": 7
+    },
+    {
+      "x": 11,
+      "y": 7
+    },
+    {
+      "x": 18,
+      "y": 7
+    },
+    {
+      "x": 19,
+      "y": 7
+    },
+    {
+      "x": 20,
+      "y": 7
+    },
+    {
+      "x": 21,
+      "y": 7
+    },
+    {
+      "x": 22,
+      "y": 7
+    },
+    {
+      "x": 29,
+      "y": 7
+    },
+    {
+      "x": 30,
+      "y": 7
+    },
+    {
+      "x": 31,
+      "y": 7
+    },
+    {
+      "x": 32,
+      "y": 7
+    },
+    {
+      "x": 33,
+      "y": 7
+    },
+    {
+      "x": 7,
+      "y": 8
+    },
+    {
+      "x": 8,
+      "y": 8
+    },
+    {
+      "x": 10,
+      "y": 8
+    },
+    {
+      "x": 11,
+      "y": 8
+    },
+    {
+      "x": 18,
+      "y": 8
+    },
+    {
+      "x": 19,
+      "y": 8
+    },
+    {
+      "x": 21,
+      "y": 8
+    },
+    {
+      "x": 22,
+      "y": 8
+    },
+    {
+      "x": 29,
+      "y": 8
+    },
+    {
+      "x": 30,
+      "y": 8
+    },
+    {
+      "x": 31,
+      "y": 8
+    },
+    {
+      "x": 32,
+      "y": 8
+    },
+    {
+      "x": 33,
+      "y": 8
+    },
+    {
+      "x": 29,
+      "y": 9
+    },
+    {
+      "x": 30,
+      "y": 9
+    },
+    {
+      "x": 32,
+      "y": 9
+    },
+    {
+      "x": 33,
+      "y": 9
+    },
+    {
+      "x": 7,
+      "y": 14
+    },
+    {
+      "x": 19,
+      "y": 14
+    },
+    {
+      "x": 20,
+      "y": 14
+    },
+    {
+      "x": 21,
+      "y": 14
+    },
+    {
+      "x": 19,
+      "y": 15
+    },
+    {
+      "x": 20,
+      "y": 15
+    },
+    {
+      "x": 21,
+      "y": 15
+    },
+    {
+      "x": 38,
+      "y": 17
+    },
+    {
+      "x": 1,
+      "y": 19
+    },
+    {
+      "x": 32,
+      "y": 19
+    },
+    {
+      "x": 24,
+      "y": 20
+    },
+    {
+      "x": 32,
+      "y": 21
+    },
+    {
+      "x": 4,
+      "y": 22
+    },
+    {
+      "x": 23,
+      "y": 23
+    },
+    {
+      "x": 31,
+      "y": 25
+    },
+    {
+      "x": 38,
+      "y": 25
+    }
+  ],
+  "build_metadata": {
+    "generator_version": "worldsynth-gen-1",
+    "reproducible": true,
+    "source_schema_version": 1
+  },
+  "canonical_hash": "0830f501c5287dc5c71bf25f508c17116e17255a29e09b3d057c9869a4729be5",
+  "decorative_layers": [
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 3,
+          "y": 4
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0000",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 3,
+        "y": 4
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 7,
+          "y": 14
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0001",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 7,
+        "y": 14
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 6,
+        "y": 12
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0002",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 15,
+        "y": 25
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 15,
+        "y": 25
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0003",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 2,
+        "y": 21
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 2,
+        "y": 21
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0004",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 33,
+        "y": 23
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 33,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0005",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 15,
+        "y": 7
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 15,
+        "y": 7
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 32,
+          "y": 19
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0006",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 32,
+        "y": 19
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 31,
+        "y": 17
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 1,
+          "y": 19
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0007",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 1,
+        "y": 19
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 0,
+        "y": 17
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0008",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 6,
+        "y": 24
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 6,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 1,
+          "y": 5
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0009",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 1,
+        "y": 5
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0010",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 11,
+        "y": 22
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 11,
+        "y": 22
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0011",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 6,
+        "y": 16
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 6,
+        "y": 16
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0012",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 8,
+        "y": 3
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 8,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 32,
+          "y": 21
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0013",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 32,
+        "y": 21
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 31,
+        "y": 19
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 38,
+          "y": 17
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0014",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 38,
+        "y": 17
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 37,
+        "y": 15
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0015",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 5,
+        "y": 27
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 5,
+        "y": 27
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0016",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 3,
+        "y": 6
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 3,
+        "y": 6
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0017",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 3,
+        "y": 17
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 3,
+        "y": 17
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0018",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 29,
+        "y": 24
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 29,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0019",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 26,
+        "y": 4
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 26,
+        "y": 4
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 38,
+          "y": 25
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0020",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 38,
+        "y": 25
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 37,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 31,
+          "y": 25
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0021",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 31,
+        "y": 25
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 30,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0022",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 16,
+        "y": 7
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 16,
+        "y": 7
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 24,
+          "y": 20
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0023",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 24,
+        "y": 20
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 23,
+        "y": 18
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0024",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 11,
+        "y": 3
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 11,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0025",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 3,
+        "y": 1
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 3,
+        "y": 1
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "generated_decorations",
+      "location": null,
+      "map_id": "lanternmarket",
+      "message": "Placed 26 of 26 requested decorations using seed 41021.",
+      "repair": null,
+      "severity": "info"
+    }
+  ],
+  "display_name": "Lanternmarket",
+  "edge_contracts": [
+    {
+      "biome": "mosswood",
+      "elevation": 0,
+      "feature": "road",
+      "neighbor_map": "mosswood_route",
+      "position": 19,
+      "side": "north",
+      "transition_type": "edge",
+      "traversable": true,
+      "width": 3
+    },
+    {
+      "biome": "sunmeadow",
+      "elevation": 0,
+      "feature": "road",
+      "neighbor_map": "sunmeadow_route",
+      "position": 13,
+      "side": "east",
+      "transition_type": "edge",
+      "traversable": true,
+      "width": 3
+    }
+  ],
+  "format_version": 1,
+  "height": 28,
+  "interactions": [
+    {
+      "id": "tavern_sign",
+      "position": {
+        "x": 7,
+        "y": 9
+      },
+      "prompt": "Read",
+      "radius": 1.5,
+      "text": "The Wayfarer's Wick — hot broth, dry boots, brighter stories."
+    },
+    {
+      "id": "beacon_inscription",
+      "position": {
+        "x": 20,
+        "y": 16
+      },
+      "prompt": "Read",
+      "radius": 1.5,
+      "text": "Carry light outward; bring wonder home."
+    },
+    {
+      "id": "route_sign",
+      "position": {
+        "x": 23,
+        "y": 24
+      },
+      "prompt": "Read",
+      "radius": 1.5,
+      "text": "North: Mosswood. East: Sunmeadow. Mind the singing stones."
+    },
+    {
+      "id": "grove_reward",
+      "position": {
+        "x": 4,
+        "y": 23
+      },
+      "prompt": "Open",
+      "radius": 1.5,
+      "text": "You found a sealed vial of dawn-dew. (Reward placeholder)"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "town_beacon",
+      "position": {
+        "x": 20,
+        "y": 16
+      },
+      "required": true,
+      "unique_key": "lumenfold_heart"
+    },
+    {
+      "id": "secret_grove",
+      "position": {
+        "x": 4,
+        "y": 23
+      },
+      "required": false,
+      "unique_key": "dawn_dew_cache"
+    }
+  ],
+  "map_id": "lanternmarket",
+  "map_type": "settlement",
+  "objects": [
+    {
+      "archetype_id": "tavern_house",
+      "asset_path": "assets/objects/tavern_house.svg",
+      "collision_cells": [
+        {
+          "x": 7,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 6
+        },
+        {
+          "x": 7,
+          "y": 7
+        },
+        {
+          "x": 7,
+          "y": 8
+        },
+        {
+          "x": 8,
+          "y": 5
+        },
+        {
+          "x": 8,
+          "y": 6
+        },
+        {
+          "x": 8,
+          "y": 7
+        },
+        {
+          "x": 8,
+          "y": 8
+        },
+        {
+          "x": 9,
+          "y": 5
+        },
+        {
+          "x": 9,
+          "y": 6
+        },
+        {
+          "x": 9,
+          "y": 7
+        },
+        {
+          "x": 10,
+          "y": 5
+        },
+        {
+          "x": 10,
+          "y": 6
+        },
+        {
+          "x": 10,
+          "y": 7
+        },
+        {
+          "x": 10,
+          "y": 8
+        },
+        {
+          "x": 11,
+          "y": 5
+        },
+        {
+          "x": 11,
+          "y": 6
+        },
+        {
+          "x": 11,
+          "y": 7
+        },
+        {
+          "x": 11,
+          "y": 8
+        }
+      ],
+      "color": "#c77945",
+      "generated": false,
+      "id": "wayfarer_tavern",
+      "interaction_id": "tavern_sign",
+      "landmark_id": null,
+      "position": {
+        "x": 9,
+        "y": 8
+      },
+      "tags": [
+        "building",
+        "warm",
+        "timber",
+        "tavern"
+      ],
+      "transition_id": "tavern_door",
+      "visual_rect": {
+        "height": 4,
+        "width": 5,
+        "x": 7,
+        "y": 5
+      }
+    },
+    {
+      "archetype_id": "alchemist_house",
+      "asset_path": "assets/objects/alchemist_house.svg",
+      "collision_cells": [
+        {
+          "x": 18,
+          "y": 5
+        },
+        {
+          "x": 18,
+          "y": 6
+        },
+        {
+          "x": 18,
+          "y": 7
+        },
+        {
+          "x": 18,
+          "y": 8
+        },
+        {
+          "x": 19,
+          "y": 5
+        },
+        {
+          "x": 19,
+          "y": 6
+        },
+        {
+          "x": 19,
+          "y": 7
+        },
+        {
+          "x": 19,
+          "y": 8
+        },
+        {
+          "x": 20,
+          "y": 5
+        },
+        {
+          "x": 20,
+          "y": 6
+        },
+        {
+          "x": 20,
+          "y": 7
+        },
+        {
+          "x": 21,
+          "y": 5
+        },
+        {
+          "x": 21,
+          "y": 6
+        },
+        {
+          "x": 21,
+          "y": 7
+        },
+        {
+          "x": 21,
+          "y": 8
+        },
+        {
+          "x": 22,
+          "y": 5
+        },
+        {
+          "x": 22,
+          "y": 6
+        },
+        {
+          "x": 22,
+          "y": 7
+        },
+        {
+          "x": 22,
+          "y": 8
+        }
+      ],
+      "color": "#7a6cb0",
+      "generated": false,
+      "id": "violet_alembic",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 20,
+        "y": 8
+      },
+      "tags": [
+        "building",
+        "warm",
+        "timber",
+        "alchemy"
+      ],
+      "transition_id": "alchemist_door",
+      "visual_rect": {
+        "height": 4,
+        "width": 5,
+        "x": 18,
+        "y": 5
+      }
+    },
+    {
+      "archetype_id": "research_lodge",
+      "asset_path": "assets/objects/research_lodge.svg",
+      "collision_cells": [
+        {
+          "x": 29,
+          "y": 6
+        },
+        {
+          "x": 29,
+          "y": 7
+        },
+        {
+          "x": 29,
+          "y": 8
+        },
+        {
+          "x": 29,
+          "y": 9
+        },
+        {
+          "x": 30,
+          "y": 6
+        },
+        {
+          "x": 30,
+          "y": 7
+        },
+        {
+          "x": 30,
+          "y": 8
+        },
+        {
+          "x": 30,
+          "y": 9
+        },
+        {
+          "x": 31,
+          "y": 6
+        },
+        {
+          "x": 31,
+          "y": 7
+        },
+        {
+          "x": 31,
+          "y": 8
+        },
+        {
+          "x": 32,
+          "y": 6
+        },
+        {
+          "x": 32,
+          "y": 7
+        },
+        {
+          "x": 32,
+          "y": 8
+        },
+        {
+          "x": 32,
+          "y": 9
+        },
+        {
+          "x": 33,
+          "y": 6
+        },
+        {
+          "x": 33,
+          "y": 7
+        },
+        {
+          "x": 33,
+          "y": 8
+        },
+        {
+          "x": 33,
+          "y": 9
+        }
+      ],
+      "color": "#598c8c",
+      "generated": false,
+      "id": "field_lodge",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 31,
+        "y": 9
+      },
+      "tags": [
+        "building",
+        "warm",
+        "timber",
+        "research"
+      ],
+      "transition_id": "lodge_door",
+      "visual_rect": {
+        "height": 4,
+        "width": 5,
+        "x": 29,
+        "y": 6
+      }
+    },
+    {
+      "archetype_id": "beacon_fountain",
+      "asset_path": "assets/objects/beacon_fountain.svg",
+      "collision_cells": [
+        {
+          "x": 19,
+          "y": 14
+        },
+        {
+          "x": 19,
+          "y": 15
+        },
+        {
+          "x": 20,
+          "y": 14
+        },
+        {
+          "x": 20,
+          "y": 15
+        },
+        {
+          "x": 21,
+          "y": 14
+        },
+        {
+          "x": 21,
+          "y": 15
+        }
+      ],
+      "color": "#e0b44f",
+      "generated": false,
+      "id": "heart_beacon",
+      "interaction_id": "beacon_inscription",
+      "landmark_id": "town_beacon",
+      "position": {
+        "x": 20,
+        "y": 15
+      },
+      "tags": [
+        "landmark",
+        "lantern",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 3,
+        "x": 19,
+        "y": 13
+      }
+    },
+    {
+      "archetype_id": "signpost",
+      "asset_path": "assets/objects/signpost.svg",
+      "collision_cells": [
+        {
+          "x": 23,
+          "y": 23
+        }
+      ],
+      "color": "#8d613d",
+      "generated": false,
+      "id": "road_sign",
+      "interaction_id": "route_sign",
+      "landmark_id": null,
+      "position": {
+        "x": 23,
+        "y": 23
+      },
+      "tags": [
+        "sign",
+        "town"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 23,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "reward_chest",
+      "asset_path": "assets/objects/reward_chest.svg",
+      "collision_cells": [
+        {
+          "x": 4,
+          "y": 22
+        }
+      ],
+      "color": "#c79039",
+      "generated": false,
+      "id": "grove_cache",
+      "interaction_id": "grove_reward",
+      "landmark_id": "secret_grove",
+      "position": {
+        "x": 4,
+        "y": 22
+      },
+      "tags": [
+        "reward",
+        "interactable"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 4,
+        "y": 22
+      }
+    }
+  ],
+  "seed": 41021,
+  "source_content_hash": "433a52092e1b7e9b07c3a0b10e67c27096b96b0b6ca2cd7db2d2848ab1cffdca",
+  "spawns": [
+    {
+      "id": "player_start",
+      "kind": "player",
+      "position": {
+        "x": 20,
+        "y": 23
+      },
+      "required": true
+    },
+    {
+      "id": "market_warden",
+      "kind": "npc",
+      "position": {
+        "x": 16,
+        "y": 16
+      },
+      "required": true
+    }
+  ],
+  "terrain": [
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "dirt_path",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ],
+    [
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "cobble",
+      "cobble",
+      "cobble",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass",
+      "grass"
+    ]
+  ],
+  "tile_size": 32,
+  "transitions": [
+    {
+      "id": "mosswood_gate",
+      "kind": "edge",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 3,
+        "x": 19,
+        "y": 0
+      },
+      "target_map": "mosswood_route",
+      "target_spawn": {
+        "x": 20,
+        "y": 25
+      },
+      "target_transition": "market_gate"
+    },
+    {
+      "id": "sunmeadow_gate",
+      "kind": "edge",
+      "mandatory": true,
+      "rect": {
+        "height": 3,
+        "width": 1,
+        "x": 39,
+        "y": 13
+      },
+      "target_map": "sunmeadow_route",
+      "target_spawn": {
+        "x": 2,
+        "y": 14
+      },
+      "target_transition": "market_gate"
+    },
+    {
+      "id": "tavern_door",
+      "kind": "door",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 1,
+        "x": 9,
+        "y": 8
+      },
+      "target_map": "tavern_interior",
+      "target_spawn": {
+        "x": 7,
+        "y": 7
+      },
+      "target_transition": "exit_to_market"
+    },
+    {
+      "id": "alchemist_door",
+      "kind": "door",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 1,
+        "x": 20,
+        "y": 8
+      },
+      "target_map": "alchemist_interior",
+      "target_spawn": {
+        "x": 7,
+        "y": 7
+      },
+      "target_transition": "exit_to_market"
+    },
+    {
+      "id": "lodge_door",
+      "kind": "door",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 1,
+        "x": 31,
+        "y": 9
+      },
+      "target_map": "research_lodge_interior",
+      "target_spawn": {
+        "x": 7,
+        "y": 7
+      },
+      "target_transition": "exit_to_market"
+    }
+  ],
+  "walkability": [
+    "........................................",
+    "........................................",
+    "...............................#######..",
+    "...............................#######..",
+    "...#...........................#######..",
+    ".#.....#####......#####........#######..",
+    ".......#####......#####......#####......",
+    ".......#####......#####......#####......",
+    ".......##.##......##.##......#####......",
+    ".............................##.##......",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    ".......#...........###..................",
+    "...................###..................",
+    "........................................",
+    "......................................#.",
+    "........................................",
+    ".#..............................#.......",
+    "........................#...............",
+    "................................#.......",
+    "....#...................................",
+    ".......................#................",
+    "........................................",
+    "...............................#......#.",
+    "........................................",
+    "........................................"
+  ],
+  "width": 40,
+  "zones": [
+    {
+      "encounter_table": null,
+      "id": "market_safe_area",
+      "kind": "safe",
+      "rate": 0.0,
+      "rect": {
+        "height": 20,
+        "width": 30,
+        "x": 5,
+        "y": 4
+      },
+      "tags": [
+        "settlement"
+      ]
+    },
+    {
+      "encounter_table": null,
+      "id": "quiet_west_grove",
+      "kind": "secret",
+      "rate": 0.0,
+      "rect": {
+        "height": 7,
+        "width": 7,
+        "x": 1,
+        "y": 19
+      },
+      "tags": [
+        "reward"
+      ]
+    }
+  ]
+}

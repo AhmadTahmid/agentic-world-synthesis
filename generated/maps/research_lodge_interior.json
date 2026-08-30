@@ -1,0 +1,587 @@
+{
+  "asset_references": [
+    "bookshelf",
+    "tavern_table"
+  ],
+  "biome": "lantern_interior",
+  "blocked_cells": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "y": 0
+    },
+    {
+      "x": 3,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "y": 0
+    },
+    {
+      "x": 9,
+      "y": 0
+    },
+    {
+      "x": 10,
+      "y": 0
+    },
+    {
+      "x": 11,
+      "y": 0
+    },
+    {
+      "x": 12,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 1
+    },
+    {
+      "x": 13,
+      "y": 1
+    },
+    {
+      "x": 0,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 3,
+      "y": 2
+    },
+    {
+      "x": 10,
+      "y": 2
+    },
+    {
+      "x": 11,
+      "y": 2
+    },
+    {
+      "x": 13,
+      "y": 2
+    },
+    {
+      "x": 0,
+      "y": 3
+    },
+    {
+      "x": 13,
+      "y": 3
+    },
+    {
+      "x": 0,
+      "y": 4
+    },
+    {
+      "x": 13,
+      "y": 4
+    },
+    {
+      "x": 0,
+      "y": 5
+    },
+    {
+      "x": 6,
+      "y": 5
+    },
+    {
+      "x": 7,
+      "y": 5
+    },
+    {
+      "x": 13,
+      "y": 5
+    },
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 13,
+      "y": 6
+    },
+    {
+      "x": 0,
+      "y": 7
+    },
+    {
+      "x": 13,
+      "y": 7
+    },
+    {
+      "x": 0,
+      "y": 8
+    },
+    {
+      "x": 13,
+      "y": 8
+    },
+    {
+      "x": 0,
+      "y": 9
+    },
+    {
+      "x": 1,
+      "y": 9
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 3,
+      "y": 9
+    },
+    {
+      "x": 4,
+      "y": 9
+    },
+    {
+      "x": 5,
+      "y": 9
+    },
+    {
+      "x": 8,
+      "y": 9
+    },
+    {
+      "x": 9,
+      "y": 9
+    },
+    {
+      "x": 10,
+      "y": 9
+    },
+    {
+      "x": 11,
+      "y": 9
+    },
+    {
+      "x": 12,
+      "y": 9
+    },
+    {
+      "x": 13,
+      "y": 9
+    }
+  ],
+  "build_metadata": {
+    "generator_version": "worldsynth-gen-1",
+    "reproducible": true,
+    "source_schema_version": 1
+  },
+  "canonical_hash": "a8fee66b65a3ca57df32b6d7dba2b368fe93388f990eb5dcc39dade352a74af2",
+  "decorative_layers": [],
+  "diagnostics": [
+    {
+      "code": "generated_decorations",
+      "location": null,
+      "map_id": "research_lodge_interior",
+      "message": "Placed 0 of 0 requested decorations using seed 303.",
+      "repair": null,
+      "severity": "info"
+    }
+  ],
+  "display_name": "Field Scholar Lodge",
+  "edge_contracts": [],
+  "format_version": 1,
+  "height": 10,
+  "interactions": [
+    {
+      "id": "scholar_greeting",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "prompt": "Talk",
+      "radius": 1.5,
+      "text": "Ivo: Observe a habitat before naming what lives there."
+    },
+    {
+      "id": "ecology_notes",
+      "position": {
+        "x": 3,
+        "y": 3
+      },
+      "prompt": "Read",
+      "radius": 1.5,
+      "text": "Field notes: lantern-moths cluster near maintained trail lights."
+    }
+  ],
+  "landmarks": [],
+  "map_id": "research_lodge_interior",
+  "map_type": "interior",
+  "objects": [
+    {
+      "archetype_id": "bookshelf",
+      "asset_path": "assets/objects/bookshelf.svg",
+      "collision_cells": [
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 2
+        }
+      ],
+      "color": "#635047",
+      "generated": false,
+      "id": "west_shelves",
+      "interaction_id": "ecology_notes",
+      "landmark_id": null,
+      "position": {
+        "x": 3,
+        "y": 2
+      },
+      "tags": [
+        "interior",
+        "furniture",
+        "research"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 2,
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "archetype_id": "bookshelf",
+      "asset_path": "assets/objects/bookshelf.svg",
+      "collision_cells": [
+        {
+          "x": 10,
+          "y": 2
+        },
+        {
+          "x": 11,
+          "y": 2
+        }
+      ],
+      "color": "#635047",
+      "generated": false,
+      "id": "east_shelves",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 11,
+        "y": 2
+      },
+      "tags": [
+        "interior",
+        "furniture",
+        "research"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 2,
+        "x": 10,
+        "y": 2
+      }
+    },
+    {
+      "archetype_id": "tavern_table",
+      "asset_path": "assets/objects/tavern_table.svg",
+      "collision_cells": [
+        {
+          "x": 6,
+          "y": 5
+        },
+        {
+          "x": 7,
+          "y": 5
+        }
+      ],
+      "color": "#805537",
+      "generated": false,
+      "id": "specimen_table",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 7,
+        "y": 5
+      },
+      "tags": [
+        "interior",
+        "furniture"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 2,
+        "x": 6,
+        "y": 5
+      }
+    }
+  ],
+  "seed": 303,
+  "source_content_hash": "1cef771c3d5abe0a5bc41f51c71cedc760487f257104ec48b563df59ff92efbb",
+  "spawns": [
+    {
+      "id": "doorway_arrival",
+      "kind": "player",
+      "position": {
+        "x": 7,
+        "y": 7
+      },
+      "required": true
+    },
+    {
+      "id": "scholar_ivo",
+      "kind": "npc",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "required": true
+    }
+  ],
+  "terrain": [
+    [
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall"
+    ]
+  ],
+  "tile_size": 32,
+  "transitions": [
+    {
+      "id": "exit_to_market",
+      "kind": "door",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 2,
+        "x": 6,
+        "y": 9
+      },
+      "target_map": "lanternmarket",
+      "target_spawn": {
+        "x": 31,
+        "y": 11
+      },
+      "target_transition": "lodge_door"
+    }
+  ],
+  "walkability": [
+    "##############",
+    "#............#",
+    "#.##......##.#",
+    "#............#",
+    "#............#",
+    "#.....##.....#",
+    "#............#",
+    "#............#",
+    "#............#",
+    "######..######"
+  ],
+  "width": 14,
+  "zones": [
+    {
+      "encounter_table": null,
+      "id": "lodge_safe",
+      "kind": "safe",
+      "rate": 0.0,
+      "rect": {
+        "height": 8,
+        "width": 12,
+        "x": 1,
+        "y": 1
+      },
+      "tags": [
+        "settlement"
+      ]
+    }
+  ]
+}

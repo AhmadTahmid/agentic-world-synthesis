@@ -1,0 +1,583 @@
+{
+  "asset_references": [
+    "tavern_table",
+    "work_counter"
+  ],
+  "biome": "lantern_interior",
+  "blocked_cells": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "y": 0
+    },
+    {
+      "x": 3,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "y": 0
+    },
+    {
+      "x": 9,
+      "y": 0
+    },
+    {
+      "x": 10,
+      "y": 0
+    },
+    {
+      "x": 11,
+      "y": 0
+    },
+    {
+      "x": 12,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 1
+    },
+    {
+      "x": 13,
+      "y": 1
+    },
+    {
+      "x": 0,
+      "y": 2
+    },
+    {
+      "x": 6,
+      "y": 2
+    },
+    {
+      "x": 7,
+      "y": 2
+    },
+    {
+      "x": 8,
+      "y": 2
+    },
+    {
+      "x": 13,
+      "y": 2
+    },
+    {
+      "x": 0,
+      "y": 3
+    },
+    {
+      "x": 13,
+      "y": 3
+    },
+    {
+      "x": 0,
+      "y": 4
+    },
+    {
+      "x": 13,
+      "y": 4
+    },
+    {
+      "x": 0,
+      "y": 5
+    },
+    {
+      "x": 3,
+      "y": 5
+    },
+    {
+      "x": 4,
+      "y": 5
+    },
+    {
+      "x": 9,
+      "y": 5
+    },
+    {
+      "x": 10,
+      "y": 5
+    },
+    {
+      "x": 13,
+      "y": 5
+    },
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 13,
+      "y": 6
+    },
+    {
+      "x": 0,
+      "y": 7
+    },
+    {
+      "x": 13,
+      "y": 7
+    },
+    {
+      "x": 0,
+      "y": 8
+    },
+    {
+      "x": 13,
+      "y": 8
+    },
+    {
+      "x": 0,
+      "y": 9
+    },
+    {
+      "x": 1,
+      "y": 9
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 3,
+      "y": 9
+    },
+    {
+      "x": 4,
+      "y": 9
+    },
+    {
+      "x": 5,
+      "y": 9
+    },
+    {
+      "x": 8,
+      "y": 9
+    },
+    {
+      "x": 9,
+      "y": 9
+    },
+    {
+      "x": 10,
+      "y": 9
+    },
+    {
+      "x": 11,
+      "y": 9
+    },
+    {
+      "x": 12,
+      "y": 9
+    },
+    {
+      "x": 13,
+      "y": 9
+    }
+  ],
+  "build_metadata": {
+    "generator_version": "worldsynth-gen-1",
+    "reproducible": true,
+    "source_schema_version": 1
+  },
+  "canonical_hash": "0474d34df0f4047dc508c8e41c90c2c7f7c81b759674af7e57d3aa6e6077eb23",
+  "decorative_layers": [],
+  "diagnostics": [
+    {
+      "code": "generated_decorations",
+      "location": null,
+      "map_id": "tavern_interior",
+      "message": "Placed 0 of 0 requested decorations using seed 301.",
+      "repair": null,
+      "severity": "info"
+    }
+  ],
+  "display_name": "The Wayfarer's Wick",
+  "edge_contracts": [],
+  "format_version": 1,
+  "height": 10,
+  "interactions": [
+    {
+      "id": "innkeeper_greeting",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "prompt": "Talk",
+      "radius": 1.5,
+      "text": "Mara: Roads change their mood, but a lit window always means home."
+    }
+  ],
+  "landmarks": [],
+  "map_id": "tavern_interior",
+  "map_type": "interior",
+  "objects": [
+    {
+      "archetype_id": "tavern_table",
+      "asset_path": "assets/objects/tavern_table.svg",
+      "collision_cells": [
+        {
+          "x": 3,
+          "y": 5
+        },
+        {
+          "x": 4,
+          "y": 5
+        }
+      ],
+      "color": "#805537",
+      "generated": false,
+      "id": "west_table",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 4,
+        "y": 5
+      },
+      "tags": [
+        "interior",
+        "furniture"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 2,
+        "x": 3,
+        "y": 5
+      }
+    },
+    {
+      "archetype_id": "tavern_table",
+      "asset_path": "assets/objects/tavern_table.svg",
+      "collision_cells": [
+        {
+          "x": 9,
+          "y": 5
+        },
+        {
+          "x": 10,
+          "y": 5
+        }
+      ],
+      "color": "#805537",
+      "generated": false,
+      "id": "east_table",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 10,
+        "y": 5
+      },
+      "tags": [
+        "interior",
+        "furniture"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 2,
+        "x": 9,
+        "y": 5
+      }
+    },
+    {
+      "archetype_id": "work_counter",
+      "asset_path": "assets/objects/work_counter.svg",
+      "collision_cells": [
+        {
+          "x": 6,
+          "y": 2
+        },
+        {
+          "x": 7,
+          "y": 2
+        },
+        {
+          "x": 8,
+          "y": 2
+        }
+      ],
+      "color": "#684b4b",
+      "generated": false,
+      "id": "serving_bar",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 7,
+        "y": 2
+      },
+      "tags": [
+        "interior",
+        "furniture"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 3,
+        "x": 6,
+        "y": 2
+      }
+    }
+  ],
+  "seed": 301,
+  "source_content_hash": "be2187cdba82baa977b16f74294754f837c3b202405f4f6d34db206d289e8df2",
+  "spawns": [
+    {
+      "id": "doorway_arrival",
+      "kind": "player",
+      "position": {
+        "x": 7,
+        "y": 7
+      },
+      "required": true
+    },
+    {
+      "id": "innkeeper_mara",
+      "kind": "npc",
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "required": true
+    }
+  ],
+  "terrain": [
+    [
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall"
+    ]
+  ],
+  "tile_size": 32,
+  "transitions": [
+    {
+      "id": "exit_to_market",
+      "kind": "door",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 2,
+        "x": 6,
+        "y": 9
+      },
+      "target_map": "lanternmarket",
+      "target_spawn": {
+        "x": 9,
+        "y": 10
+      },
+      "target_transition": "tavern_door"
+    }
+  ],
+  "walkability": [
+    "##############",
+    "#............#",
+    "#.....###....#",
+    "#............#",
+    "#............#",
+    "#..##....##..#",
+    "#............#",
+    "#............#",
+    "#............#",
+    "######..######"
+  ],
+  "width": 14,
+  "zones": [
+    {
+      "encounter_table": null,
+      "id": "tavern_safe",
+      "kind": "safe",
+      "rate": 0.0,
+      "rect": {
+        "height": 8,
+        "width": 12,
+        "x": 1,
+        "y": 1
+      },
+      "tags": [
+        "settlement"
+      ]
+    }
+  ]
+}

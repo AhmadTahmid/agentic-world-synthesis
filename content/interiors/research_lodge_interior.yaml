@@ -1,0 +1,35 @@
+schema_version: 1
+map_id: research_lodge_interior
+display_name: Field Scholar Lodge
+map_type: interior
+biome: lantern_interior
+dimensions: {width: 14, height: 10}
+seed: 303
+base_terrain: wood_floor
+terrain_regions:
+  - {terrain_id: wall, rect: {x: 0, y: 0, width: 14, height: 1}}
+  - {terrain_id: wall, rect: {x: 0, y: 0, width: 1, height: 10}}
+  - {terrain_id: wall, rect: {x: 13, y: 0, width: 1, height: 10}}
+  - {terrain_id: wall, rect: {x: 0, y: 9, width: 14, height: 1}}
+  - {terrain_id: wood_floor, rect: {x: 6, y: 9, width: 2, height: 1}}
+paths: []
+structures: []
+props:
+  - {id: west_shelves, archetype_id: bookshelf, position: {x: 3, y: 2}, interaction_id: ecology_notes}
+  - {id: east_shelves, archetype_id: bookshelf, position: {x: 11, y: 2}}
+  - {id: specimen_table, archetype_id: tavern_table, position: {x: 7, y: 5}}
+transitions:
+  - {id: exit_to_market, rect: {x: 6, y: 9, width: 2, height: 1}, target_map: lanternmarket, target_transition: lodge_door, target_spawn: {x: 31, y: 11}, kind: door}
+spawns:
+  - {id: doorway_arrival, position: {x: 7, y: 7}, kind: player}
+  - {id: scholar_ivo, position: {x: 7, y: 3}, kind: npc}
+interactions:
+  - {id: scholar_greeting, position: {x: 7, y: 3}, prompt: Talk, text: "Ivo: Observe a habitat before naming what lives there."}
+  - {id: ecology_notes, position: {x: 3, y: 3}, prompt: Read, text: "Field notes: lantern-moths cluster near maintained trail lights."}
+zones:
+  - {id: lodge_safe, kind: safe, rect: {x: 1, y: 1, width: 12, height: 8}, tags: [settlement]}
+landmarks: []
+generation: {decoration_families: [], decoration_density: 0.0}
+narrative:
+  summary: A practical research room for habitat observations.
+  beats: [Meet Ivo, read the first ecology rule]

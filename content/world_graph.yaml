@@ -1,0 +1,51 @@
+schema_version: 1
+world_id: lumenfold
+start_map: lanternmarket
+regions:
+  hearth_vale: The settled center and surrounding roads.
+  resonant_deeps: Limestone hollows beneath Mosswood.
+nodes:
+  - {id: lanternmarket, kind: settlement, region: hearth_vale, danger_level: 0, tags: [hub]}
+  - {id: mosswood_route, kind: route, region: hearth_vale, danger_level: 1, tags: [forest]}
+  - {id: sunmeadow_route, kind: route, region: hearth_vale, danger_level: 1, tags: [meadow]}
+  - {id: echo_cave, kind: dungeon, region: resonant_deeps, danger_level: 2, tags: [cave]}
+  - {id: tavern_interior, kind: interior, region: hearth_vale, danger_level: 0, tags: [safe]}
+  - {id: alchemist_interior, kind: interior, region: hearth_vale, danger_level: 0, tags: [safe]}
+  - {id: research_lodge_interior, kind: interior, region: hearth_vale, danger_level: 0, tags: [safe]}
+connections:
+  - id: market_to_mosswood
+    from_map: lanternmarket
+    from_transition: mosswood_gate
+    to_map: mosswood_route
+    to_transition: market_gate
+    transition_type: edge
+  - id: market_to_sunmeadow
+    from_map: lanternmarket
+    from_transition: sunmeadow_gate
+    to_map: sunmeadow_route
+    to_transition: market_gate
+    transition_type: edge
+  - id: mosswood_to_echo
+    from_map: mosswood_route
+    from_transition: echo_cave_door
+    to_map: echo_cave
+    to_transition: mosswood_exit
+    transition_type: cave
+  - id: market_to_tavern
+    from_map: lanternmarket
+    from_transition: tavern_door
+    to_map: tavern_interior
+    to_transition: exit_to_market
+    transition_type: door
+  - id: market_to_alchemist
+    from_map: lanternmarket
+    from_transition: alchemist_door
+    to_map: alchemist_interior
+    to_transition: exit_to_market
+    transition_type: door
+  - id: market_to_lodge
+    from_map: lanternmarket
+    from_transition: lodge_door
+    to_map: research_lodge_interior
+    to_transition: exit_to_market
+    transition_type: door

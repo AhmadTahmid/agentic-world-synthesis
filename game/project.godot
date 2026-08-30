@@ -1,0 +1,22 @@
+; Agentic World Synthesis vertical slice — Godot 4.x
+config_version=5
+
+[application]
+config/name="Lumenfold WorldSynth Slice"
+run/main_scene="res://scenes/main.tscn"
+
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=640
+window/size/window_width_override=960
+window/size/window_height_override=640
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
+
+[physics]
+common/enable_pause_aware_picking=true

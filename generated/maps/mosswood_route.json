@@ -1,0 +1,3678 @@
+{
+  "asset_references": [
+    "broadleaf_tree",
+    "cave_mouth",
+    "mossy_stone",
+    "reward_chest"
+  ],
+  "biome": "mosswood",
+  "blocked_cells": [
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 1
+    },
+    {
+      "x": 10,
+      "y": 1
+    },
+    {
+      "x": 13,
+      "y": 1
+    },
+    {
+      "x": 24,
+      "y": 2
+    },
+    {
+      "x": 3,
+      "y": 3
+    },
+    {
+      "x": 35,
+      "y": 3
+    },
+    {
+      "x": 12,
+      "y": 4
+    },
+    {
+      "x": 8,
+      "y": 5
+    },
+    {
+      "x": 24,
+      "y": 5
+    },
+    {
+      "x": 26,
+      "y": 5
+    },
+    {
+      "x": 39,
+      "y": 5
+    },
+    {
+      "x": 22,
+      "y": 6
+    },
+    {
+      "x": 34,
+      "y": 6
+    },
+    {
+      "x": 35,
+      "y": 6
+    },
+    {
+      "x": 36,
+      "y": 6
+    },
+    {
+      "x": 10,
+      "y": 7
+    },
+    {
+      "x": 15,
+      "y": 7
+    },
+    {
+      "x": 26,
+      "y": 7
+    },
+    {
+      "x": 34,
+      "y": 7
+    },
+    {
+      "x": 36,
+      "y": 7
+    },
+    {
+      "x": 6,
+      "y": 8
+    },
+    {
+      "x": 18,
+      "y": 8
+    },
+    {
+      "x": 14,
+      "y": 9
+    },
+    {
+      "x": 20,
+      "y": 9
+    },
+    {
+      "x": 5,
+      "y": 11
+    },
+    {
+      "x": 17,
+      "y": 11
+    },
+    {
+      "x": 38,
+      "y": 11
+    },
+    {
+      "x": 2,
+      "y": 13
+    },
+    {
+      "x": 29,
+      "y": 14
+    },
+    {
+      "x": 38,
+      "y": 14
+    },
+    {
+      "x": 1,
+      "y": 15
+    },
+    {
+      "x": 4,
+      "y": 15
+    },
+    {
+      "x": 10,
+      "y": 15
+    },
+    {
+      "x": 32,
+      "y": 15
+    },
+    {
+      "x": 35,
+      "y": 15
+    },
+    {
+      "x": 12,
+      "y": 16
+    },
+    {
+      "x": 24,
+      "y": 16
+    },
+    {
+      "x": 8,
+      "y": 17
+    },
+    {
+      "x": 27,
+      "y": 17
+    },
+    {
+      "x": 28,
+      "y": 17
+    },
+    {
+      "x": 29,
+      "y": 17
+    },
+    {
+      "x": 30,
+      "y": 17
+    },
+    {
+      "x": 31,
+      "y": 17
+    },
+    {
+      "x": 32,
+      "y": 17
+    },
+    {
+      "x": 33,
+      "y": 17
+    },
+    {
+      "x": 34,
+      "y": 17
+    },
+    {
+      "x": 35,
+      "y": 17
+    },
+    {
+      "x": 37,
+      "y": 17
+    },
+    {
+      "x": 10,
+      "y": 18
+    },
+    {
+      "x": 25,
+      "y": 18
+    },
+    {
+      "x": 27,
+      "y": 18
+    },
+    {
+      "x": 28,
+      "y": 18
+    },
+    {
+      "x": 29,
+      "y": 18
+    },
+    {
+      "x": 30,
+      "y": 18
+    },
+    {
+      "x": 31,
+      "y": 18
+    },
+    {
+      "x": 32,
+      "y": 18
+    },
+    {
+      "x": 33,
+      "y": 18
+    },
+    {
+      "x": 34,
+      "y": 18
+    },
+    {
+      "x": 14,
+      "y": 19
+    },
+    {
+      "x": 27,
+      "y": 19
+    },
+    {
+      "x": 28,
+      "y": 19
+    },
+    {
+      "x": 29,
+      "y": 19
+    },
+    {
+      "x": 30,
+      "y": 19
+    },
+    {
+      "x": 31,
+      "y": 19
+    },
+    {
+      "x": 32,
+      "y": 19
+    },
+    {
+      "x": 33,
+      "y": 19
+    },
+    {
+      "x": 34,
+      "y": 19
+    },
+    {
+      "x": 11,
+      "y": 20
+    },
+    {
+      "x": 24,
+      "y": 20
+    },
+    {
+      "x": 27,
+      "y": 20
+    },
+    {
+      "x": 28,
+      "y": 20
+    },
+    {
+      "x": 29,
+      "y": 20
+    },
+    {
+      "x": 30,
+      "y": 20
+    },
+    {
+      "x": 31,
+      "y": 20
+    },
+    {
+      "x": 32,
+      "y": 20
+    },
+    {
+      "x": 33,
+      "y": 20
+    },
+    {
+      "x": 34,
+      "y": 20
+    },
+    {
+      "x": 15,
+      "y": 21
+    },
+    {
+      "x": 26,
+      "y": 21
+    },
+    {
+      "x": 27,
+      "y": 21
+    },
+    {
+      "x": 28,
+      "y": 21
+    },
+    {
+      "x": 29,
+      "y": 21
+    },
+    {
+      "x": 30,
+      "y": 21
+    },
+    {
+      "x": 31,
+      "y": 21
+    },
+    {
+      "x": 32,
+      "y": 21
+    },
+    {
+      "x": 33,
+      "y": 21
+    },
+    {
+      "x": 34,
+      "y": 21
+    },
+    {
+      "x": 39,
+      "y": 21
+    },
+    {
+      "x": 1,
+      "y": 23
+    },
+    {
+      "x": 5,
+      "y": 24
+    },
+    {
+      "x": 11,
+      "y": 24
+    },
+    {
+      "x": 24,
+      "y": 24
+    },
+    {
+      "x": 37,
+      "y": 24
+    },
+    {
+      "x": 2,
+      "y": 25
+    },
+    {
+      "x": 26,
+      "y": 25
+    },
+    {
+      "x": 29,
+      "y": 25
+    },
+    {
+      "x": 37,
+      "y": 26
+    },
+    {
+      "x": 4,
+      "y": 27
+    },
+    {
+      "x": 7,
+      "y": 27
+    },
+    {
+      "x": 9,
+      "y": 27
+    },
+    {
+      "x": 27,
+      "y": 27
+    },
+    {
+      "x": 34,
+      "y": 27
+    }
+  ],
+  "build_metadata": {
+    "generator_version": "worldsynth-gen-1",
+    "reproducible": true,
+    "source_schema_version": 1
+  },
+  "canonical_hash": "e9a7daac6670c07081e3d76f2095b904a48f836b0dedcd8ab2b06d5ba83eacc2",
+  "decorative_layers": [
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 12,
+          "y": 16
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0000",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 12,
+        "y": 16
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 12,
+        "y": 16
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 26,
+          "y": 25
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0001",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 26,
+        "y": 25
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 26,
+        "y": 25
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 15,
+          "y": 21
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0002",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 15,
+        "y": 21
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 15,
+        "y": 21
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 22,
+          "y": 6
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0003",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 22,
+        "y": 6
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 22,
+        "y": 6
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 17,
+          "y": 11
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0004",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 17,
+        "y": 11
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 16,
+        "y": 9
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 26,
+          "y": 5
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0005",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 26,
+        "y": 5
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 25,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 39,
+          "y": 21
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0006",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 39,
+        "y": 21
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 38,
+        "y": 19
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 4,
+          "y": 15
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0007",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 4,
+        "y": 15
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 3,
+        "y": 13
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 7,
+          "y": 27
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0008",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 7,
+        "y": 27
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 6,
+        "y": 25
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 38,
+          "y": 11
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0009",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 38,
+        "y": 11
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 38,
+        "y": 11
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 37,
+          "y": 17
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0010",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 37,
+        "y": 17
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 36,
+        "y": 15
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 14,
+          "y": 19
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0011",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 14,
+        "y": 19
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 14,
+        "y": 19
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 24,
+          "y": 2
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0012",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 24,
+        "y": 2
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 23,
+        "y": 0
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 15,
+          "y": 7
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0013",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 15,
+        "y": 7
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 14,
+        "y": 5
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 13,
+          "y": 1
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0014",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 13,
+        "y": 1
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 13,
+        "y": 1
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 38,
+          "y": 14
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0015",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 38,
+        "y": 14
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 38,
+        "y": 14
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 18,
+          "y": 8
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0016",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 18,
+        "y": 8
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 18,
+        "y": 8
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 11,
+          "y": 20
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0017",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 11,
+        "y": 20
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 10,
+        "y": 18
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 10,
+          "y": 18
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0018",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 10,
+        "y": 18
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 10,
+        "y": 18
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 26,
+          "y": 7
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0019",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 26,
+        "y": 7
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 26,
+        "y": 7
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 2,
+          "y": 13
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0020",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 2,
+        "y": 13
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 1,
+        "y": 11
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 35,
+          "y": 17
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0021",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 35,
+        "y": 17
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 34,
+        "y": 15
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 20,
+          "y": 9
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0022",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 20,
+        "y": 9
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 20,
+        "y": 9
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 35,
+          "y": 15
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0023",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 35,
+        "y": 15
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 34,
+        "y": 13
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 24,
+          "y": 24
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0024",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 24,
+        "y": 24
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 24,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 37,
+          "y": 24
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0025",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 37,
+        "y": 24
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 37,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 1,
+          "y": 15
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0026",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 1,
+        "y": 15
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 0,
+        "y": 13
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 5,
+          "y": 24
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0027",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 5,
+        "y": 24
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 4,
+        "y": 22
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 29,
+          "y": 25
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0028",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 29,
+        "y": 25
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 28,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 4,
+          "y": 27
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0029",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 4,
+        "y": 27
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 4,
+        "y": 27
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 12,
+          "y": 4
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0030",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 12,
+        "y": 4
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 12,
+        "y": 4
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 10,
+          "y": 7
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0031",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 10,
+        "y": 7
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 10,
+        "y": 7
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 11,
+          "y": 24
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0032",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 11,
+        "y": 24
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 11,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 10,
+          "y": 1
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0033",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 10,
+        "y": 1
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 10,
+        "y": 1
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 29,
+          "y": 14
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0034",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 29,
+        "y": 14
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 29,
+        "y": 14
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 8,
+          "y": 5
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0035",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 8,
+        "y": 5
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 7,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 24,
+          "y": 20
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0036",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 24,
+        "y": 20
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 23,
+        "y": 18
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 35,
+          "y": 3
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0037",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 35,
+        "y": 3
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 34,
+        "y": 1
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 25,
+          "y": 18
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0038",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 25,
+        "y": 18
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 24,
+        "y": 16
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 0,
+          "y": 1
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0039",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 0,
+        "y": 1
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 32,
+          "y": 15
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0040",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 32,
+        "y": 15
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 32,
+        "y": 15
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 39,
+          "y": 5
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0041",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 39,
+        "y": 5
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 38,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 10,
+          "y": 15
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0042",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 10,
+        "y": 15
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 10,
+        "y": 15
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 5,
+          "y": 11
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0043",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 5,
+        "y": 11
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 5,
+        "y": 11
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 1,
+          "y": 23
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0044",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 1,
+        "y": 23
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 0,
+        "y": 21
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 14,
+          "y": 9
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0045",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 14,
+        "y": 9
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 14,
+        "y": 9
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 24,
+          "y": 5
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0046",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 24,
+        "y": 5
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 24,
+        "y": 5
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 24,
+          "y": 16
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0047",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 24,
+        "y": 16
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 23,
+        "y": 14
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 34,
+          "y": 27
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0048",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 34,
+        "y": 27
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 34,
+        "y": 27
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 8,
+          "y": 17
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0049",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 8,
+        "y": 17
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 7,
+        "y": 15
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 37,
+          "y": 26
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0050",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 37,
+        "y": 26
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 36,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 26,
+          "y": 21
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0051",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 26,
+        "y": 21
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 25,
+        "y": 19
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 2,
+          "y": 25
+        }
+      ],
+      "color": "#315f3e",
+      "generated": true,
+      "id": "generated_broadleaf_tree_0052",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 2,
+        "y": 25
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 1,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 27,
+          "y": 27
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0053",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 27,
+        "y": 27
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 27,
+        "y": 27
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 4,
+          "y": 0
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0054",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 4,
+        "y": 0
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 4,
+        "y": 0
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 9,
+          "y": 27
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0055",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 9,
+        "y": 27
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 9,
+        "y": 27
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "generated_decorations",
+      "location": null,
+      "map_id": "mosswood_route",
+      "message": "Placed 56 of 56 requested decorations using seed 7729.",
+      "repair": null,
+      "severity": "info"
+    }
+  ],
+  "display_name": "Mosswood Way",
+  "edge_contracts": [
+    {
+      "biome": "mosswood",
+      "elevation": 0,
+      "feature": "road",
+      "neighbor_map": "lanternmarket",
+      "position": 19,
+      "side": "south",
+      "transition_type": "edge",
+      "traversable": true,
+      "width": 3
+    }
+  ],
+  "format_version": 1,
+  "height": 28,
+  "interactions": [
+    {
+      "id": "listener_bark",
+      "position": {
+        "x": 7,
+        "y": 8
+      },
+      "prompt": "Listen",
+      "radius": 1.5,
+      "text": "The ancient bark hums in answer to something below the hill."
+    },
+    {
+      "id": "moss_cache",
+      "position": {
+        "x": 4,
+        "y": 3
+      },
+      "prompt": "Open",
+      "radius": 1.5,
+      "text": "A glass seed glimmers inside. (Reward placeholder)"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "old_listener",
+      "position": {
+        "x": 7,
+        "y": 8
+      },
+      "required": true,
+      "unique_key": "old_listener_tree"
+    },
+    {
+      "id": "mosswood_secret",
+      "position": {
+        "x": 4,
+        "y": 3
+      },
+      "required": false,
+      "unique_key": "glass_seed_cache"
+    }
+  ],
+  "map_id": "mosswood_route",
+  "map_type": "route",
+  "objects": [
+    {
+      "archetype_id": "cave_mouth",
+      "asset_path": "assets/objects/cave_mouth.svg",
+      "collision_cells": [
+        {
+          "x": 34,
+          "y": 6
+        },
+        {
+          "x": 34,
+          "y": 7
+        },
+        {
+          "x": 35,
+          "y": 6
+        },
+        {
+          "x": 36,
+          "y": 6
+        },
+        {
+          "x": 36,
+          "y": 7
+        }
+      ],
+      "color": "#4b5355",
+      "generated": false,
+      "id": "echo_cave_mouth",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 35,
+        "y": 7
+      },
+      "tags": [
+        "cave",
+        "stone",
+        "doorway"
+      ],
+      "transition_id": "echo_cave_door",
+      "visual_rect": {
+        "height": 2,
+        "width": 3,
+        "x": 34,
+        "y": 6
+      }
+    },
+    {
+      "archetype_id": "broadleaf_tree",
+      "asset_path": "assets/objects/broadleaf_tree.svg",
+      "collision_cells": [
+        {
+          "x": 6,
+          "y": 8
+        }
+      ],
+      "color": "#315f3e",
+      "generated": false,
+      "id": "old_listener_tree",
+      "interaction_id": "listener_bark",
+      "landmark_id": "old_listener",
+      "position": {
+        "x": 6,
+        "y": 8
+      },
+      "tags": [
+        "forest",
+        "temperate",
+        "tree"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 3,
+        "width": 2,
+        "x": 5,
+        "y": 6
+      }
+    },
+    {
+      "archetype_id": "reward_chest",
+      "asset_path": "assets/objects/reward_chest.svg",
+      "collision_cells": [
+        {
+          "x": 3,
+          "y": 3
+        }
+      ],
+      "color": "#c79039",
+      "generated": false,
+      "id": "hidden_cache",
+      "interaction_id": "moss_cache",
+      "landmark_id": "mosswood_secret",
+      "position": {
+        "x": 3,
+        "y": 3
+      },
+      "tags": [
+        "reward",
+        "interactable"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 3,
+        "y": 3
+      }
+    }
+  ],
+  "seed": 7729,
+  "source_content_hash": "f889faef0d64e66f19e4724028f81283bf3040a85f73e2ff46b1e2292ac65540",
+  "spawns": [
+    {
+      "id": "route_arrival",
+      "kind": "player",
+      "position": {
+        "x": 20,
+        "y": 25
+      },
+      "required": true
+    },
+    {
+      "id": "moss_scout",
+      "kind": "npc",
+      "position": {
+        "x": 16,
+        "y": 14
+      },
+      "required": true
+    }
+  ],
+  "terrain": [
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ],
+    [
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor",
+      "forest_floor"
+    ]
+  ],
+  "tile_size": 32,
+  "transitions": [
+    {
+      "id": "market_gate",
+      "kind": "edge",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 3,
+        "x": 19,
+        "y": 27
+      },
+      "target_map": "lanternmarket",
+      "target_spawn": {
+        "x": 20,
+        "y": 2
+      },
+      "target_transition": "mosswood_gate"
+    },
+    {
+      "id": "echo_cave_door",
+      "kind": "cave",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 1,
+        "x": 35,
+        "y": 7
+      },
+      "target_map": "echo_cave",
+      "target_spawn": {
+        "x": 2,
+        "y": 9
+      },
+      "target_transition": "mosswood_exit"
+    }
+  ],
+  "walkability": [
+    "....#...................................",
+    "#.........#..#..........................",
+    "........................#...............",
+    "...#...............................#....",
+    "............#...........................",
+    "........#...............#.#............#",
+    "......................#...........###...",
+    "..........#....#..........#.......#.#...",
+    "......#...........#.....................",
+    "..............#.....#...................",
+    "........................................",
+    ".....#...........#....................#.",
+    "........................................",
+    "..#.....................................",
+    ".............................#........#.",
+    ".#..#.....#.....................#..#....",
+    "............#...........#...............",
+    "........#..................#########.#..",
+    "..........#..............#.########.....",
+    "..............#............########.....",
+    "...........#............#..########.....",
+    "...............#..........#########....#",
+    "........................................",
+    ".#......................................",
+    ".....#.....#............#............#..",
+    "..#.......................#..#..........",
+    ".....................................#..",
+    "....#..#.#.................#......#....."
+  ],
+  "width": 40,
+  "zones": [
+    {
+      "encounter_table": "mosswood_common",
+      "id": "lantern_moth_grove",
+      "kind": "encounter",
+      "rate": 0.08,
+      "rect": {
+        "height": 11,
+        "width": 13,
+        "x": 1,
+        "y": 14
+      },
+      "tags": [
+        "forest"
+      ]
+    },
+    {
+      "encounter_table": "mosswood_rare",
+      "id": "whisper_canopy",
+      "kind": "encounter",
+      "rate": 0.05,
+      "rect": {
+        "height": 7,
+        "width": 11,
+        "x": 22,
+        "y": 1
+      },
+      "tags": [
+        "forest",
+        "rare"
+      ]
+    },
+    {
+      "encounter_table": null,
+      "id": "trail_rest",
+      "kind": "safe",
+      "rate": 0.0,
+      "rect": {
+        "height": 6,
+        "width": 8,
+        "x": 16,
+        "y": 20
+      },
+      "tags": [
+        "lantern"
+      ]
+    },
+    {
+      "encounter_table": null,
+      "id": "hidden_root_hollow",
+      "kind": "secret",
+      "rate": 0.0,
+      "rect": {
+        "height": 5,
+        "width": 6,
+        "x": 1,
+        "y": 1
+      },
+      "tags": [
+        "reward"
+      ]
+    }
+  ]
+}

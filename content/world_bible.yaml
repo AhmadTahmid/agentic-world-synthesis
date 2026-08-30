@@ -1,0 +1,73 @@
+schema_version: 1
+world_id: lumenfold
+version: "0.1"
+title: Lumenfold
+description: A valley where cultivated lantern-moss marks safe roads between old resonant places.
+art_direction: Clean storybook shapes, dark evergreen outlines, warm amber architecture, and cool violet magical accents.
+tile_size: 32
+perspective: top_down
+palette:
+  grass: "#6f9f58"
+  forest_floor: "#476a45"
+  meadow: "#9abc65"
+  stone_floor: "#747b78"
+  wood_floor: "#b5895a"
+  cobble: "#b7a98b"
+  dirt_path: "#aa8a5c"
+  cave_path: "#929083"
+  water: "#4d88a8"
+  wall: "#343c3b"
+  void: "#171b22"
+biomes:
+  - id: lanternmarket
+    base_terrain: grass
+    path_terrain: cobble
+    decoration_density: 0.025
+    allowed_decoration_tags: [temperate, town]
+    safe_zone_tags: [settlement]
+  - id: mosswood
+    base_terrain: forest_floor
+    path_terrain: dirt_path
+    decoration_density: 0.055
+    allowed_decoration_tags: [forest, damp]
+  - id: sunmeadow
+    base_terrain: meadow
+    path_terrain: dirt_path
+    decoration_density: 0.035
+    allowed_decoration_tags: [meadow, dry]
+  - id: echo_cave
+    base_terrain: stone_floor
+    path_terrain: cave_path
+    decoration_density: 0.022
+    allowed_decoration_tags: [cave, crystal]
+  - id: lantern_interior
+    base_terrain: wood_floor
+    path_terrain: wood_floor
+    decoration_density: 0.0
+    allowed_decoration_tags: [interior]
+    safe_zone_tags: [settlement]
+architectural_cultures:
+  - id: emberwright
+    description: Compact timber-and-plaster buildings organized around public lanterns.
+    preferred_tags: [warm, timber, lantern]
+factions:
+  lantern_guild: Maintains safe luminous roads and the town beacon.
+  field_scholars: Study creatures without removing them from their habitats.
+monster_ecology_rules:
+  - Meadow creatures avoid dense cave terrain.
+  - Echo creatures concentrate near resonant crystal and water.
+  - Settlement safe zones cannot contain wild encounter zones.
+traversal:
+  passable_terrain: [grass, forest_floor, meadow, stone_floor, wood_floor, cobble, dirt_path, cave_path]
+  blocked_terrain: [water, wall, void]
+  diagonal_movement: true
+  max_danger_step: 2
+density:
+  min_open_fraction: 0.35
+  max_prop_fraction: 0.22
+  max_featureless_path: 18
+  landmark_min_distance: 4
+prohibited_combinations:
+  - [settlement, encounter]
+  - [meadow, deep_cave]
+global_tags: [original_setting, deterministic, replaceable_art]

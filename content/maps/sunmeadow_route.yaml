@@ -1,0 +1,50 @@
+schema_version: 1
+map_id: sunmeadow_route
+display_name: Sunmeadow Road
+map_type: route
+biome: sunmeadow
+dimensions: {width: 40, height: 28}
+seed: 88931
+base_terrain: meadow
+terrain_regions:
+  - {terrain_id: water, rect: {x: 31, y: 8, width: 6, height: 4}}
+paths:
+  - id: market_road
+    points: [{x: 0, y: 14}, {x: 12, y: 14}, {x: 22, y: 16}, {x: 31, y: 15}, {x: 39, y: 14}]
+    width: 3
+    terrain_id: dirt_path
+  - id: spring_path
+    points: [{x: 22, y: 16}, {x: 29, y: 11}, {x: 34, y: 5}]
+    width: 1
+    terrain_id: dirt_path
+props:
+  - {id: field_sign, archetype_id: signpost, position: {x: 8, y: 12}, interaction_id: field_notice, required: true}
+  - {id: spring_cache, archetype_id: reward_chest, position: {x: 34, y: 4}, interaction_id: spring_reward, landmark_id: windglass_spring}
+structures: []
+transitions:
+  - {id: market_gate, rect: {x: 0, y: 13, width: 1, height: 3}, target_map: lanternmarket, target_transition: sunmeadow_gate, target_spawn: {x: 37, y: 14}, kind: edge}
+spawns:
+  - {id: route_arrival, position: {x: 2, y: 14}, kind: player}
+  - {id: meadow_keeper, position: {x: 15, y: 13}, kind: npc}
+interactions:
+  - {id: field_notice, position: {x: 8, y: 13}, prompt: Read, text: "Keep to the ochre trail when cloudrams are grazing."}
+  - {id: spring_reward, position: {x: 34, y: 5}, prompt: Open, text: "A wind-polished charm waits in the box. (Reward placeholder)"}
+encounter_zones:
+  - {id: pollen_fields, kind: encounter, rect: {x: 4, y: 2, width: 13, height: 8}, encounter_table: sunmeadow_common, rate: 0.07, tags: [meadow]}
+  - {id: warm_grass, kind: encounter, rect: {x: 22, y: 19, width: 14, height: 7}, encounter_table: sunmeadow_grazer, rate: 0.06, tags: [meadow, grazer]}
+zones:
+  - {id: windglass_nook, kind: secret, rect: {x: 31, y: 2, width: 7, height: 5}, tags: [reward]}
+landmarks:
+  - {id: windglass_spring, position: {x: 34, y: 5}, unique_key: windglass_charm, required: false}
+edge_contracts:
+  - {side: west, feature: road, position: 13, width: 3, elevation: 0, biome: sunmeadow, transition_type: edge, traversable: true, neighbor_map: lanternmarket}
+generation:
+  decoration_families: [meadow_shrub, mossy_stone]
+  decoration_density: 0.035
+  protected_path_radius: 1
+  min_object_spacing: 1
+narrative:
+  summary: A broad, bright route of grazing terraces and wind-polished grass.
+  beats: [Leave the town shade, cross the pollen fields, find the windglass spring]
+  optional_area: A thin trail climbs northeast beyond the main road.
+  secret: The spring cache holds a charm shaped by constant wind.

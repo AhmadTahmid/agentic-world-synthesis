@@ -1,0 +1,55 @@
+schema_version: 1
+map_id: mosswood_route
+display_name: Mosswood Way
+map_type: route
+biome: mosswood
+dimensions: {width: 40, height: 28}
+seed: 7729
+base_terrain: forest_floor
+terrain_regions:
+  - {terrain_id: water, rect: {x: 27, y: 17, width: 8, height: 5}}
+paths:
+  - id: lantern_road
+    points: [{x: 20, y: 27}, {x: 20, y: 19}, {x: 18, y: 14}, {x: 25, y: 11}, {x: 35, y: 7}]
+    width: 3
+    terrain_id: dirt_path
+  - id: elder_loop
+    points: [{x: 18, y: 14}, {x: 11, y: 11}, {x: 7, y: 9}, {x: 4, y: 5}]
+    width: 2
+    terrain_id: dirt_path
+structures:
+  - {id: echo_cave_mouth, archetype_id: cave_mouth, position: {x: 35, y: 7}, transition_id: echo_cave_door, required: true}
+  - {id: old_listener_tree, archetype_id: broadleaf_tree, position: {x: 6, y: 8}, interaction_id: listener_bark, landmark_id: old_listener, required: true}
+props:
+  - {id: hidden_cache, archetype_id: reward_chest, position: {x: 3, y: 3}, interaction_id: moss_cache, landmark_id: mosswood_secret}
+transitions:
+  - {id: market_gate, rect: {x: 19, y: 27, width: 3, height: 1}, target_map: lanternmarket, target_transition: mosswood_gate, target_spawn: {x: 20, y: 2}, kind: edge}
+  - {id: echo_cave_door, rect: {x: 35, y: 7, width: 1, height: 1}, target_map: echo_cave, target_transition: mosswood_exit, target_spawn: {x: 2, y: 9}, kind: cave}
+spawns:
+  - {id: route_arrival, position: {x: 20, y: 25}, kind: player}
+  - {id: moss_scout, position: {x: 16, y: 14}, kind: npc}
+interactions:
+  - {id: listener_bark, position: {x: 7, y: 8}, prompt: Listen, text: "The ancient bark hums in answer to something below the hill."}
+  - {id: moss_cache, position: {x: 4, y: 3}, prompt: Open, text: "A glass seed glimmers inside. (Reward placeholder)"}
+encounter_zones:
+  - {id: lantern_moth_grove, kind: encounter, rect: {x: 1, y: 14, width: 13, height: 11}, encounter_table: mosswood_common, rate: 0.08, tags: [forest]}
+  - {id: whisper_canopy, kind: encounter, rect: {x: 22, y: 1, width: 11, height: 7}, encounter_table: mosswood_rare, rate: 0.05, tags: [forest, rare]}
+zones:
+  - {id: trail_rest, kind: safe, rect: {x: 16, y: 20, width: 8, height: 6}, tags: [lantern]}
+  - {id: hidden_root_hollow, kind: secret, rect: {x: 1, y: 1, width: 6, height: 5}, tags: [reward]}
+landmarks:
+  - {id: old_listener, position: {x: 7, y: 8}, unique_key: old_listener_tree, required: true}
+  - {id: mosswood_secret, position: {x: 4, y: 3}, unique_key: glass_seed_cache, required: false}
+edge_contracts:
+  - {side: south, feature: road, position: 19, width: 3, elevation: 0, biome: mosswood, transition_type: edge, traversable: true, neighbor_map: lanternmarket}
+generation:
+  decoration_families: [broadleaf_tree, mossy_stone]
+  decoration_density: 0.05
+  protected_path_radius: 1
+  min_object_spacing: 1
+  reserve: [{x: 33, y: 5, width: 5, height: 5}]
+narrative:
+  summary: A shaded route where lantern-moths gather and old trees answer the cave.
+  beats: [Follow the maintained road, discover the old listener, enter Echo Cave]
+  optional_area: The elder loop curls west into an overgrown hollow.
+  secret: A glass seed cache lies beyond the listener tree.

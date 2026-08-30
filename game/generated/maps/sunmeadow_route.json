@@ -1,0 +1,2650 @@
+{
+  "asset_references": [
+    "meadow_shrub",
+    "mossy_stone",
+    "reward_chest",
+    "signpost"
+  ],
+  "biome": "sunmeadow",
+  "blocked_cells": [
+    {
+      "x": 15,
+      "y": 0
+    },
+    {
+      "x": 31,
+      "y": 4
+    },
+    {
+      "x": 34,
+      "y": 4
+    },
+    {
+      "x": 29,
+      "y": 5
+    },
+    {
+      "x": 31,
+      "y": 8
+    },
+    {
+      "x": 33,
+      "y": 8
+    },
+    {
+      "x": 34,
+      "y": 8
+    },
+    {
+      "x": 35,
+      "y": 8
+    },
+    {
+      "x": 36,
+      "y": 8
+    },
+    {
+      "x": 6,
+      "y": 9
+    },
+    {
+      "x": 32,
+      "y": 9
+    },
+    {
+      "x": 33,
+      "y": 9
+    },
+    {
+      "x": 34,
+      "y": 9
+    },
+    {
+      "x": 35,
+      "y": 9
+    },
+    {
+      "x": 36,
+      "y": 9
+    },
+    {
+      "x": 31,
+      "y": 10
+    },
+    {
+      "x": 32,
+      "y": 10
+    },
+    {
+      "x": 33,
+      "y": 10
+    },
+    {
+      "x": 34,
+      "y": 10
+    },
+    {
+      "x": 35,
+      "y": 10
+    },
+    {
+      "x": 36,
+      "y": 10
+    },
+    {
+      "x": 31,
+      "y": 11
+    },
+    {
+      "x": 32,
+      "y": 11
+    },
+    {
+      "x": 33,
+      "y": 11
+    },
+    {
+      "x": 34,
+      "y": 11
+    },
+    {
+      "x": 35,
+      "y": 11
+    },
+    {
+      "x": 36,
+      "y": 11
+    },
+    {
+      "x": 8,
+      "y": 12
+    },
+    {
+      "x": 11,
+      "y": 18
+    },
+    {
+      "x": 13,
+      "y": 22
+    },
+    {
+      "x": 16,
+      "y": 22
+    },
+    {
+      "x": 20,
+      "y": 23
+    },
+    {
+      "x": 30,
+      "y": 23
+    },
+    {
+      "x": 14,
+      "y": 26
+    },
+    {
+      "x": 28,
+      "y": 26
+    }
+  ],
+  "build_metadata": {
+    "generator_version": "worldsynth-gen-1",
+    "reproducible": true,
+    "source_schema_version": 1
+  },
+  "canonical_hash": "d223764b83dfb9fb94cf6964e84357a602e911c65ac6979332fb491042ca38e4",
+  "decorative_layers": [
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0000",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 32,
+        "y": 25
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 32,
+        "y": 25
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0001",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 11,
+        "y": 23
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 11,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 13,
+          "y": 22
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0002",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 13,
+        "y": 22
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 13,
+        "y": 22
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0003",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 2,
+        "y": 21
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 2,
+        "y": 21
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0004",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 17,
+        "y": 8
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 17,
+        "y": 8
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 14,
+          "y": 26
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0005",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 14,
+        "y": 26
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 14,
+        "y": 26
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0006",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 4,
+        "y": 2
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 4,
+        "y": 2
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0007",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 37,
+        "y": 23
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 37,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0008",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 28,
+        "y": 22
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 28,
+        "y": 22
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0009",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 5,
+        "y": 26
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 5,
+        "y": 26
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0010",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 5,
+        "y": 27
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 5,
+        "y": 27
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0011",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 35,
+        "y": 21
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 35,
+        "y": 21
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 6,
+          "y": 9
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0012",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 6,
+        "y": 9
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 6,
+        "y": 9
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0013",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 39,
+        "y": 24
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 39,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 28,
+          "y": 26
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0014",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 28,
+        "y": 26
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 28,
+        "y": 26
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0015",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 10,
+        "y": 22
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 10,
+        "y": 22
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 30,
+          "y": 23
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0016",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 30,
+        "y": 23
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 30,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 20,
+          "y": 23
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0017",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 20,
+        "y": 23
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 20,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0018",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 4,
+        "y": 7
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 4,
+        "y": 7
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0019",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 10,
+        "y": 11
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 10,
+        "y": 11
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0020",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 25,
+        "y": 8
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 25,
+        "y": 8
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 11,
+          "y": 18
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0021",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 11,
+        "y": 18
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 11,
+        "y": 18
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 16,
+          "y": 22
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0022",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 16,
+        "y": 22
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 16,
+        "y": 22
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0023",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 23,
+        "y": 23
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 23,
+        "y": 23
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0024",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 21,
+        "y": 1
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 21,
+        "y": 1
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0025",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 15,
+        "y": 6
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 15,
+        "y": 6
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0026",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 14,
+        "y": 1
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 14,
+        "y": 1
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 29,
+          "y": 5
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0027",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 29,
+        "y": 5
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 29,
+        "y": 5
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 15,
+          "y": 0
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0028",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 15,
+        "y": 0
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 15,
+        "y": 0
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0029",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 6,
+        "y": 22
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 6,
+        "y": 22
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0030",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 14,
+        "y": 24
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 14,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0031",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 25,
+        "y": 9
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 25,
+        "y": 9
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0032",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 4,
+        "y": 6
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 4,
+        "y": 6
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0033",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 23,
+        "y": 8
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 23,
+        "y": 8
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0034",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 28,
+        "y": 24
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 28,
+        "y": 24
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0035",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 9,
+        "y": 3
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 9,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0036",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 3,
+        "y": 8
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 3,
+        "y": 8
+      }
+    },
+    {
+      "archetype_id": "meadow_shrub",
+      "asset_path": "assets/objects/meadow_shrub.svg",
+      "collision_cells": [],
+      "color": "#d2ba55",
+      "generated": true,
+      "id": "generated_meadow_shrub_0037",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 35,
+        "y": 2
+      },
+      "tags": [
+        "meadow",
+        "dry",
+        "temperate"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 35,
+        "y": 2
+      }
+    },
+    {
+      "archetype_id": "mossy_stone",
+      "asset_path": "assets/objects/mossy_stone.svg",
+      "collision_cells": [
+        {
+          "x": 31,
+          "y": 4
+        }
+      ],
+      "color": "#68775d",
+      "generated": true,
+      "id": "generated_mossy_stone_0038",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 31,
+        "y": 4
+      },
+      "tags": [
+        "forest",
+        "damp",
+        "stone"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 31,
+        "y": 4
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "code": "generated_decorations",
+      "location": null,
+      "map_id": "sunmeadow_route",
+      "message": "Placed 39 of 39 requested decorations using seed 88931.",
+      "repair": null,
+      "severity": "info"
+    }
+  ],
+  "display_name": "Sunmeadow Road",
+  "edge_contracts": [
+    {
+      "biome": "sunmeadow",
+      "elevation": 0,
+      "feature": "road",
+      "neighbor_map": "lanternmarket",
+      "position": 13,
+      "side": "west",
+      "transition_type": "edge",
+      "traversable": true,
+      "width": 3
+    }
+  ],
+  "format_version": 1,
+  "height": 28,
+  "interactions": [
+    {
+      "id": "field_notice",
+      "position": {
+        "x": 8,
+        "y": 13
+      },
+      "prompt": "Read",
+      "radius": 1.5,
+      "text": "Keep to the ochre trail when cloudrams are grazing."
+    },
+    {
+      "id": "spring_reward",
+      "position": {
+        "x": 34,
+        "y": 5
+      },
+      "prompt": "Open",
+      "radius": 1.5,
+      "text": "A wind-polished charm waits in the box. (Reward placeholder)"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "windglass_spring",
+      "position": {
+        "x": 34,
+        "y": 5
+      },
+      "required": false,
+      "unique_key": "windglass_charm"
+    }
+  ],
+  "map_id": "sunmeadow_route",
+  "map_type": "route",
+  "objects": [
+    {
+      "archetype_id": "signpost",
+      "asset_path": "assets/objects/signpost.svg",
+      "collision_cells": [
+        {
+          "x": 8,
+          "y": 12
+        }
+      ],
+      "color": "#8d613d",
+      "generated": false,
+      "id": "field_sign",
+      "interaction_id": "field_notice",
+      "landmark_id": null,
+      "position": {
+        "x": 8,
+        "y": 12
+      },
+      "tags": [
+        "sign",
+        "town"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 8,
+        "y": 12
+      }
+    },
+    {
+      "archetype_id": "reward_chest",
+      "asset_path": "assets/objects/reward_chest.svg",
+      "collision_cells": [
+        {
+          "x": 34,
+          "y": 4
+        }
+      ],
+      "color": "#c79039",
+      "generated": false,
+      "id": "spring_cache",
+      "interaction_id": "spring_reward",
+      "landmark_id": "windglass_spring",
+      "position": {
+        "x": 34,
+        "y": 4
+      },
+      "tags": [
+        "reward",
+        "interactable"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 1,
+        "x": 34,
+        "y": 4
+      }
+    }
+  ],
+  "seed": 88931,
+  "source_content_hash": "c306cb25c41a8e5cdef0e25eb65caf9b1481a4c8b1583629713f40f7ed028d83",
+  "spawns": [
+    {
+      "id": "route_arrival",
+      "kind": "player",
+      "position": {
+        "x": 2,
+        "y": 14
+      },
+      "required": true
+    },
+    {
+      "id": "meadow_keeper",
+      "kind": "npc",
+      "position": {
+        "x": 15,
+        "y": 13
+      },
+      "required": true
+    }
+  ],
+  "terrain": [
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "water",
+      "dirt_path",
+      "water",
+      "water",
+      "water",
+      "water",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "meadow",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "water",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path"
+    ],
+    [
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path"
+    ],
+    [
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "dirt_path",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ],
+    [
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow",
+      "meadow"
+    ]
+  ],
+  "tile_size": 32,
+  "transitions": [
+    {
+      "id": "market_gate",
+      "kind": "edge",
+      "mandatory": true,
+      "rect": {
+        "height": 3,
+        "width": 1,
+        "x": 0,
+        "y": 13
+      },
+      "target_map": "lanternmarket",
+      "target_spawn": {
+        "x": 37,
+        "y": 14
+      },
+      "target_transition": "sunmeadow_gate"
+    }
+  ],
+  "walkability": [
+    "...............#........................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "...............................#..#.....",
+    ".............................#..........",
+    "........................................",
+    "........................................",
+    "...............................#.####...",
+    "......#.........................#####...",
+    "...............................######...",
+    "...............................######...",
+    "........#...............................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "........................................",
+    "...........#............................",
+    "........................................",
+    "........................................",
+    "........................................",
+    ".............#..#.......................",
+    "....................#.........#.........",
+    "........................................",
+    "........................................",
+    "..............#.............#...........",
+    "........................................"
+  ],
+  "width": 40,
+  "zones": [
+    {
+      "encounter_table": "sunmeadow_common",
+      "id": "pollen_fields",
+      "kind": "encounter",
+      "rate": 0.07,
+      "rect": {
+        "height": 8,
+        "width": 13,
+        "x": 4,
+        "y": 2
+      },
+      "tags": [
+        "meadow"
+      ]
+    },
+    {
+      "encounter_table": "sunmeadow_grazer",
+      "id": "warm_grass",
+      "kind": "encounter",
+      "rate": 0.06,
+      "rect": {
+        "height": 7,
+        "width": 14,
+        "x": 22,
+        "y": 19
+      },
+      "tags": [
+        "meadow",
+        "grazer"
+      ]
+    },
+    {
+      "encounter_table": null,
+      "id": "windglass_nook",
+      "kind": "secret",
+      "rate": 0.0,
+      "rect": {
+        "height": 5,
+        "width": 7,
+        "x": 31,
+        "y": 2
+      },
+      "tags": [
+        "reward"
+      ]
+    }
+  ]
+}

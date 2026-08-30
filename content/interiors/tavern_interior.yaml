@@ -1,0 +1,34 @@
+schema_version: 1
+map_id: tavern_interior
+display_name: The Wayfarer's Wick
+map_type: interior
+biome: lantern_interior
+dimensions: {width: 14, height: 10}
+seed: 301
+base_terrain: wood_floor
+terrain_regions: &room_walls
+  - {terrain_id: wall, rect: {x: 0, y: 0, width: 14, height: 1}}
+  - {terrain_id: wall, rect: {x: 0, y: 0, width: 1, height: 10}}
+  - {terrain_id: wall, rect: {x: 13, y: 0, width: 1, height: 10}}
+  - {terrain_id: wall, rect: {x: 0, y: 9, width: 14, height: 1}}
+  - {terrain_id: wood_floor, rect: {x: 6, y: 9, width: 2, height: 1}}
+paths: []
+structures: []
+props:
+  - {id: west_table, archetype_id: tavern_table, position: {x: 4, y: 5}}
+  - {id: east_table, archetype_id: tavern_table, position: {x: 10, y: 5}}
+  - {id: serving_bar, archetype_id: work_counter, position: {x: 7, y: 2}}
+transitions:
+  - {id: exit_to_market, rect: {x: 6, y: 9, width: 2, height: 1}, target_map: lanternmarket, target_transition: tavern_door, target_spawn: {x: 9, y: 10}, kind: door}
+spawns:
+  - {id: doorway_arrival, position: {x: 7, y: 7}, kind: player}
+  - {id: innkeeper_mara, position: {x: 7, y: 3}, kind: npc}
+interactions:
+  - {id: innkeeper_greeting, position: {x: 7, y: 3}, prompt: Talk, text: "Mara: Roads change their mood, but a lit window always means home."}
+zones:
+  - {id: tavern_safe, kind: safe, rect: {x: 1, y: 1, width: 12, height: 8}, tags: [settlement]}
+landmarks: []
+generation: {decoration_families: [], decoration_density: 0.0}
+narrative:
+  summary: A warm public room where route rumors surface.
+  beats: [Meet Mara, hear a Mosswood rumor]

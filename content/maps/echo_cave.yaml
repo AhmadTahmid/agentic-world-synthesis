@@ -1,0 +1,51 @@
+schema_version: 1
+map_id: echo_cave
+display_name: Echo Cave
+map_type: dungeon
+biome: echo_cave
+dimensions: {width: 28, height: 18}
+seed: 11939
+base_terrain: stone_floor
+terrain_regions:
+  - {terrain_id: wall, rect: {x: 0, y: 0, width: 28, height: 1}}
+  - {terrain_id: wall, rect: {x: 0, y: 17, width: 28, height: 1}}
+  - {terrain_id: wall, rect: {x: 0, y: 0, width: 1, height: 18}}
+  - {terrain_id: wall, rect: {x: 27, y: 0, width: 1, height: 18}}
+  - {terrain_id: wall, rect: {x: 12, y: 2, width: 2, height: 10}}
+  - {terrain_id: water, rect: {x: 4, y: 2, width: 5, height: 3}}
+  - {terrain_id: stone_floor, rect: {x: 0, y: 8, width: 3, height: 3}}
+paths:
+  - id: resonant_spine
+    points: [{x: 0, y: 9}, {x: 7, y: 9}, {x: 10, y: 13}, {x: 19, y: 14}, {x: 24, y: 5}]
+    width: 2
+    terrain_id: cave_path
+  - id: lower_loop
+    points: [{x: 10, y: 13}, {x: 8, y: 16}, {x: 18, y: 16}, {x: 19, y: 14}]
+    width: 1
+    terrain_id: cave_path
+structures: []
+props:
+  - {id: echo_cache, archetype_id: reward_chest, position: {x: 24, y: 4}, interaction_id: crystal_cache, landmark_id: singing_vault, required: true}
+transitions:
+  - {id: mosswood_exit, rect: {x: 0, y: 8, width: 1, height: 3}, target_map: mosswood_route, target_transition: echo_cave_door, target_spawn: {x: 33, y: 8}, kind: cave}
+spawns:
+  - {id: cave_arrival, position: {x: 2, y: 9}, kind: player}
+interactions:
+  - {id: crystal_cache, position: {x: 24, y: 5}, prompt: Open, text: "The cache answers your touch with a three-note chord. (Reward placeholder)"}
+encounter_zones:
+  - {id: echo_bat_gallery, kind: encounter, rect: {x: 2, y: 11, width: 8, height: 5}, encounter_table: echo_cave_common, rate: 0.10, tags: [cave]}
+  - {id: crystal_chamber, kind: encounter, rect: {x: 16, y: 2, width: 10, height: 7}, encounter_table: echo_cave_resonant, rate: 0.08, tags: [cave, crystal]}
+zones:
+  - {id: singing_vault_zone, kind: secret, rect: {x: 21, y: 2, width: 5, height: 5}, tags: [reward]}
+landmarks:
+  - {id: singing_vault, position: {x: 24, y: 5}, unique_key: first_echo_cache, required: true}
+generation:
+  decoration_families: [echo_crystal, mossy_stone]
+  decoration_density: 0.025
+  protected_path_radius: 1
+  min_object_spacing: 1
+narrative:
+  summary: A compact limestone dungeon split by a resonant stone rib.
+  beats: [Hear the first echo, loop beneath the stone rib, reach the singing vault]
+  optional_area: The lower loop avoids the crystal chamber but hosts denser encounters.
+  secret: The vault cache resonates with the town beacon.

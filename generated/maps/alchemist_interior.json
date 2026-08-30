@@ -1,0 +1,552 @@
+{
+  "asset_references": [
+    "bookshelf",
+    "work_counter"
+  ],
+  "biome": "lantern_interior",
+  "blocked_cells": [
+    {
+      "x": 0,
+      "y": 0
+    },
+    {
+      "x": 1,
+      "y": 0
+    },
+    {
+      "x": 2,
+      "y": 0
+    },
+    {
+      "x": 3,
+      "y": 0
+    },
+    {
+      "x": 4,
+      "y": 0
+    },
+    {
+      "x": 5,
+      "y": 0
+    },
+    {
+      "x": 6,
+      "y": 0
+    },
+    {
+      "x": 7,
+      "y": 0
+    },
+    {
+      "x": 8,
+      "y": 0
+    },
+    {
+      "x": 9,
+      "y": 0
+    },
+    {
+      "x": 10,
+      "y": 0
+    },
+    {
+      "x": 11,
+      "y": 0
+    },
+    {
+      "x": 12,
+      "y": 0
+    },
+    {
+      "x": 13,
+      "y": 0
+    },
+    {
+      "x": 0,
+      "y": 1
+    },
+    {
+      "x": 13,
+      "y": 1
+    },
+    {
+      "x": 0,
+      "y": 2
+    },
+    {
+      "x": 2,
+      "y": 2
+    },
+    {
+      "x": 3,
+      "y": 2
+    },
+    {
+      "x": 13,
+      "y": 2
+    },
+    {
+      "x": 0,
+      "y": 3
+    },
+    {
+      "x": 6,
+      "y": 3
+    },
+    {
+      "x": 7,
+      "y": 3
+    },
+    {
+      "x": 8,
+      "y": 3
+    },
+    {
+      "x": 13,
+      "y": 3
+    },
+    {
+      "x": 0,
+      "y": 4
+    },
+    {
+      "x": 13,
+      "y": 4
+    },
+    {
+      "x": 0,
+      "y": 5
+    },
+    {
+      "x": 13,
+      "y": 5
+    },
+    {
+      "x": 0,
+      "y": 6
+    },
+    {
+      "x": 13,
+      "y": 6
+    },
+    {
+      "x": 0,
+      "y": 7
+    },
+    {
+      "x": 13,
+      "y": 7
+    },
+    {
+      "x": 0,
+      "y": 8
+    },
+    {
+      "x": 13,
+      "y": 8
+    },
+    {
+      "x": 0,
+      "y": 9
+    },
+    {
+      "x": 1,
+      "y": 9
+    },
+    {
+      "x": 2,
+      "y": 9
+    },
+    {
+      "x": 3,
+      "y": 9
+    },
+    {
+      "x": 4,
+      "y": 9
+    },
+    {
+      "x": 5,
+      "y": 9
+    },
+    {
+      "x": 8,
+      "y": 9
+    },
+    {
+      "x": 9,
+      "y": 9
+    },
+    {
+      "x": 10,
+      "y": 9
+    },
+    {
+      "x": 11,
+      "y": 9
+    },
+    {
+      "x": 12,
+      "y": 9
+    },
+    {
+      "x": 13,
+      "y": 9
+    }
+  ],
+  "build_metadata": {
+    "generator_version": "worldsynth-gen-1",
+    "reproducible": true,
+    "source_schema_version": 1
+  },
+  "canonical_hash": "2043bb5af6953b02b54192ac8e661923849f6057493ac4e54a277084a969b902",
+  "decorative_layers": [],
+  "diagnostics": [
+    {
+      "code": "generated_decorations",
+      "location": null,
+      "map_id": "alchemist_interior",
+      "message": "Placed 0 of 0 requested decorations using seed 302.",
+      "repair": null,
+      "severity": "info"
+    }
+  ],
+  "display_name": "The Violet Alembic",
+  "edge_contracts": [],
+  "format_version": 1,
+  "height": 10,
+  "interactions": [
+    {
+      "id": "alchemist_greeting",
+      "position": {
+        "x": 8,
+        "y": 4
+      },
+      "prompt": "Talk",
+      "radius": 1.5,
+      "text": "Sera: Dawn-dew remembers the first color it reflects."
+    },
+    {
+      "id": "formula_notes",
+      "position": {
+        "x": 3,
+        "y": 3
+      },
+      "prompt": "Read",
+      "radius": 1.5,
+      "text": "A formula links cave resonance to lantern-moss growth."
+    }
+  ],
+  "landmarks": [],
+  "map_id": "alchemist_interior",
+  "map_type": "interior",
+  "objects": [
+    {
+      "archetype_id": "work_counter",
+      "asset_path": "assets/objects/work_counter.svg",
+      "collision_cells": [
+        {
+          "x": 6,
+          "y": 3
+        },
+        {
+          "x": 7,
+          "y": 3
+        },
+        {
+          "x": 8,
+          "y": 3
+        }
+      ],
+      "color": "#684b4b",
+      "generated": false,
+      "id": "reagent_counter",
+      "interaction_id": null,
+      "landmark_id": null,
+      "position": {
+        "x": 7,
+        "y": 3
+      },
+      "tags": [
+        "interior",
+        "furniture"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 3,
+        "x": 6,
+        "y": 3
+      }
+    },
+    {
+      "archetype_id": "bookshelf",
+      "asset_path": "assets/objects/bookshelf.svg",
+      "collision_cells": [
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 2
+        }
+      ],
+      "color": "#635047",
+      "generated": false,
+      "id": "formula_shelf",
+      "interaction_id": "formula_notes",
+      "landmark_id": null,
+      "position": {
+        "x": 3,
+        "y": 2
+      },
+      "tags": [
+        "interior",
+        "furniture",
+        "research"
+      ],
+      "transition_id": null,
+      "visual_rect": {
+        "height": 1,
+        "width": 2,
+        "x": 2,
+        "y": 2
+      }
+    }
+  ],
+  "seed": 302,
+  "source_content_hash": "469bd132e3d757ea8e6f2d3b6b856c914e8900d8544bdf73f47a7baca1d7ba5f",
+  "spawns": [
+    {
+      "id": "doorway_arrival",
+      "kind": "player",
+      "position": {
+        "x": 7,
+        "y": 7
+      },
+      "required": true
+    },
+    {
+      "id": "alchemist_sera",
+      "kind": "npc",
+      "position": {
+        "x": 8,
+        "y": 4
+      },
+      "required": true
+    }
+  ],
+  "terrain": [
+    [
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wall"
+    ],
+    [
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wood_floor",
+      "wood_floor",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall",
+      "wall"
+    ]
+  ],
+  "tile_size": 32,
+  "transitions": [
+    {
+      "id": "exit_to_market",
+      "kind": "door",
+      "mandatory": true,
+      "rect": {
+        "height": 1,
+        "width": 2,
+        "x": 6,
+        "y": 9
+      },
+      "target_map": "lanternmarket",
+      "target_spawn": {
+        "x": 20,
+        "y": 10
+      },
+      "target_transition": "alchemist_door"
+    }
+  ],
+  "walkability": [
+    "##############",
+    "#............#",
+    "#.##.........#",
+    "#.....###....#",
+    "#............#",
+    "#............#",
+    "#............#",
+    "#............#",
+    "#............#",
+    "######..######"
+  ],
+  "width": 14,
+  "zones": [
+    {
+      "encounter_table": null,
+      "id": "shop_safe",
+      "kind": "safe",
+      "rate": 0.0,
+      "rect": {
+        "height": 8,
+        "width": 12,
+        "x": 1,
+        "y": 1
+      },
+      "tags": [
+        "settlement"
+      ]
+    }
+  ]
+}

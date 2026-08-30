@@ -1,0 +1,152 @@
+schema_version: 1
+tile_size: 32
+archetypes:
+  - id: tavern_house
+    asset_path: assets/objects/tavern_house.svg
+    pixel_size: {width: 160, height: 128}
+    tile_size: {width: 5, height: 4}
+    ground_anchor: {x: 2, y: 3}
+    render_category: structure
+    collision: {kind: rect, rect: {x: -2, y: -3, width: 5, height: 4}}
+    interaction_sockets: [{id: sign, offset: {x: -2, y: 0}, prompt: Read tavern sign}]
+    doorway_sockets: [{id: main_door, offset: {x: 0, y: 0}, prompt: Enter}]
+    tags: [building, warm, timber, tavern]
+    color: "#c77945"
+    license: &project_license {creator: WorldSynth sample project, source_url: project://assets, license: CC0-1.0, attribution_required: false}
+  - id: alchemist_house
+    asset_path: assets/objects/alchemist_house.svg
+    pixel_size: {width: 160, height: 128}
+    tile_size: {width: 5, height: 4}
+    ground_anchor: {x: 2, y: 3}
+    render_category: structure
+    collision: {kind: rect, rect: {x: -2, y: -3, width: 5, height: 4}}
+    doorway_sockets: [{id: main_door, offset: {x: 0, y: 0}, prompt: Enter}]
+    tags: [building, warm, timber, alchemy]
+    color: "#7a6cb0"
+    license: *project_license
+  - id: research_lodge
+    asset_path: assets/objects/research_lodge.svg
+    pixel_size: {width: 160, height: 128}
+    tile_size: {width: 5, height: 4}
+    ground_anchor: {x: 2, y: 3}
+    render_category: structure
+    collision: {kind: rect, rect: {x: -2, y: -3, width: 5, height: 4}}
+    doorway_sockets: [{id: main_door, offset: {x: 0, y: 0}, prompt: Enter}]
+    tags: [building, warm, timber, research]
+    color: "#598c8c"
+    license: *project_license
+  - id: beacon_fountain
+    asset_path: assets/objects/beacon_fountain.svg
+    pixel_size: {width: 96, height: 96}
+    tile_size: {width: 3, height: 3}
+    ground_anchor: {x: 1, y: 2}
+    render_category: structure
+    collision: {kind: rect, rect: {x: -1, y: -1, width: 3, height: 2}}
+    interaction_sockets: [{id: inscription, offset: {x: 0, y: 1}, prompt: Read inscription}]
+    tags: [landmark, lantern, stone]
+    color: "#e0b44f"
+    license: *project_license
+  - id: cave_mouth
+    asset_path: assets/objects/cave_mouth.svg
+    pixel_size: {width: 96, height: 64}
+    tile_size: {width: 3, height: 2}
+    ground_anchor: {x: 1, y: 1}
+    render_category: structure
+    collision: {kind: rect, rect: {x: -1, y: -1, width: 3, height: 2}}
+    doorway_sockets: [{id: opening, offset: {x: 0, y: 0}, prompt: Enter cave}]
+    tags: [cave, stone, doorway]
+    color: "#4b5355"
+    license: *project_license
+  - id: broadleaf_tree
+    asset_path: assets/objects/broadleaf_tree.svg
+    pixel_size: {width: 64, height: 96}
+    tile_size: {width: 2, height: 3}
+    ground_anchor: {x: 1, y: 2}
+    render_category: prop
+    collision: {kind: rect, rect: {x: 0, y: 0, width: 1, height: 1}}
+    tags: [forest, temperate, tree]
+    variants: [round, forked]
+    color: "#315f3e"
+    license: *project_license
+  - id: meadow_shrub
+    asset_path: assets/objects/meadow_shrub.svg
+    pixel_size: {width: 32, height: 32}
+    tile_size: {width: 1, height: 1}
+    ground_anchor: {x: 0, y: 0}
+    render_category: prop
+    collision: {kind: none}
+    tags: [meadow, dry, temperate]
+    variants: [gold, green]
+    color: "#d2ba55"
+    license: *project_license
+  - id: mossy_stone
+    asset_path: assets/objects/mossy_stone.svg
+    pixel_size: {width: 32, height: 32}
+    tile_size: {width: 1, height: 1}
+    ground_anchor: {x: 0, y: 0}
+    render_category: prop
+    collision: {kind: rect, rect: {x: 0, y: 0, width: 1, height: 1}}
+    tags: [forest, damp, stone]
+    color: "#68775d"
+    license: *project_license
+  - id: echo_crystal
+    asset_path: assets/objects/echo_crystal.svg
+    pixel_size: {width: 32, height: 32}
+    tile_size: {width: 1, height: 1}
+    ground_anchor: {x: 0, y: 0}
+    render_category: prop
+    collision: {kind: rect, rect: {x: 0, y: 0, width: 1, height: 1}}
+    tags: [cave, crystal]
+    color: "#9a76cf"
+    license: *project_license
+  - id: signpost
+    asset_path: assets/objects/signpost.svg
+    pixel_size: {width: 32, height: 32}
+    tile_size: {width: 1, height: 1}
+    ground_anchor: {x: 0, y: 0}
+    render_category: prop
+    collision: {kind: rect, rect: {x: 0, y: 0, width: 1, height: 1}}
+    interaction_sockets: [{id: face, offset: {x: 0, y: 1}, prompt: Read}]
+    tags: [sign, town]
+    color: "#8d613d"
+    license: *project_license
+  - id: reward_chest
+    asset_path: assets/objects/reward_chest.svg
+    pixel_size: {width: 32, height: 32}
+    tile_size: {width: 1, height: 1}
+    ground_anchor: {x: 0, y: 0}
+    render_category: prop
+    collision: {kind: rect, rect: {x: 0, y: 0, width: 1, height: 1}}
+    tags: [reward, interactable]
+    color: "#c79039"
+    license: *project_license
+  - id: tavern_table
+    asset_path: assets/objects/tavern_table.svg
+    pixel_size: {width: 64, height: 32}
+    tile_size: {width: 2, height: 1}
+    ground_anchor: {x: 1, y: 0}
+    render_category: prop
+    collision: {kind: rect, rect: {x: -1, y: 0, width: 2, height: 1}}
+    tags: [interior, furniture]
+    color: "#805537"
+    license: *project_license
+  - id: work_counter
+    asset_path: assets/objects/work_counter.svg
+    pixel_size: {width: 96, height: 32}
+    tile_size: {width: 3, height: 1}
+    ground_anchor: {x: 1, y: 0}
+    render_category: prop
+    collision: {kind: rect, rect: {x: -1, y: 0, width: 3, height: 1}}
+    tags: [interior, furniture]
+    color: "#684b4b"
+    license: *project_license
+  - id: bookshelf
+    asset_path: assets/objects/bookshelf.svg
+    pixel_size: {width: 64, height: 32}
+    tile_size: {width: 2, height: 1}
+    ground_anchor: {x: 1, y: 0}
+    render_category: prop
+    collision: {kind: rect, rect: {x: -1, y: 0, width: 2, height: 1}}
+    tags: [interior, furniture, research]
+    color: "#635047"
+    license: *project_license

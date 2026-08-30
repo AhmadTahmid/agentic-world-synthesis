@@ -1,0 +1,73 @@
+schema_version: 1
+map_id: lanternmarket
+display_name: Lanternmarket
+map_type: settlement
+biome: lanternmarket
+dimensions: {width: 40, height: 28}
+seed: 41021
+base_terrain: grass
+terrain_regions:
+  - {terrain_id: water, rect: {x: 31, y: 2, width: 7, height: 4}}
+paths:
+  - id: north_south_way
+    points: [{x: 20, y: 0}, {x: 20, y: 11}, {x: 18, y: 15}, {x: 20, y: 19}, {x: 20, y: 27}]
+    width: 3
+    terrain_id: cobble
+  - id: sunmeadow_way
+    points: [{x: 18, y: 15}, {x: 29, y: 14}, {x: 39, y: 14}]
+    width: 3
+    terrain_id: cobble
+  - id: market_branch
+    points: [{x: 18, y: 15}, {x: 9, y: 13}, {x: 9, y: 8}]
+    width: 2
+    terrain_id: cobble
+  - id: guild_branch
+    points: [{x: 20, y: 11}, {x: 20, y: 8}, {x: 31, y: 9}]
+    width: 2
+    terrain_id: cobble
+  - id: west_grove_path
+    points: [{x: 9, y: 16}, {x: 5, y: 20}, {x: 4, y: 23}]
+    width: 1
+    terrain_id: dirt_path
+structures:
+  - {id: wayfarer_tavern, archetype_id: tavern_house, position: {x: 9, y: 8}, interaction_id: tavern_sign, transition_id: tavern_door, required: true}
+  - {id: violet_alembic, archetype_id: alchemist_house, position: {x: 20, y: 8}, transition_id: alchemist_door, required: true}
+  - {id: field_lodge, archetype_id: research_lodge, position: {x: 31, y: 9}, transition_id: lodge_door, required: true}
+  - {id: heart_beacon, archetype_id: beacon_fountain, position: {x: 20, y: 15}, interaction_id: beacon_inscription, landmark_id: town_beacon, required: true}
+props:
+  - {id: road_sign, archetype_id: signpost, position: {x: 23, y: 23}, interaction_id: route_sign, required: true}
+  - {id: grove_cache, archetype_id: reward_chest, position: {x: 4, y: 22}, interaction_id: grove_reward, landmark_id: secret_grove}
+transitions:
+  - {id: mosswood_gate, rect: {x: 19, y: 0, width: 3, height: 1}, target_map: mosswood_route, target_transition: market_gate, target_spawn: {x: 20, y: 25}, kind: edge}
+  - {id: sunmeadow_gate, rect: {x: 39, y: 13, width: 1, height: 3}, target_map: sunmeadow_route, target_transition: market_gate, target_spawn: {x: 2, y: 14}, kind: edge}
+  - {id: tavern_door, rect: {x: 9, y: 8, width: 1, height: 1}, target_map: tavern_interior, target_transition: exit_to_market, target_spawn: {x: 7, y: 7}, kind: door}
+  - {id: alchemist_door, rect: {x: 20, y: 8, width: 1, height: 1}, target_map: alchemist_interior, target_transition: exit_to_market, target_spawn: {x: 7, y: 7}, kind: door}
+  - {id: lodge_door, rect: {x: 31, y: 9, width: 1, height: 1}, target_map: research_lodge_interior, target_transition: exit_to_market, target_spawn: {x: 7, y: 7}, kind: door}
+spawns:
+  - {id: player_start, position: {x: 20, y: 23}, kind: player}
+  - {id: market_warden, position: {x: 16, y: 16}, kind: npc}
+interactions:
+  - {id: tavern_sign, position: {x: 7, y: 9}, prompt: Read, text: "The Wayfarer's Wick — hot broth, dry boots, brighter stories."}
+  - {id: beacon_inscription, position: {x: 20, y: 16}, prompt: Read, text: "Carry light outward; bring wonder home."}
+  - {id: route_sign, position: {x: 23, y: 24}, prompt: Read, text: "North: Mosswood. East: Sunmeadow. Mind the singing stones."}
+  - {id: grove_reward, position: {x: 4, y: 23}, prompt: Open, text: "You found a sealed vial of dawn-dew. (Reward placeholder)"}
+zones:
+  - {id: market_safe_area, kind: safe, rect: {x: 5, y: 4, width: 30, height: 20}, tags: [settlement]}
+  - {id: quiet_west_grove, kind: secret, rect: {x: 1, y: 19, width: 7, height: 7}, tags: [reward]}
+landmarks:
+  - {id: town_beacon, position: {x: 20, y: 16}, unique_key: lumenfold_heart, required: true}
+  - {id: secret_grove, position: {x: 4, y: 23}, unique_key: dawn_dew_cache, required: false}
+edge_contracts:
+  - {side: north, feature: road, position: 19, width: 3, elevation: 0, biome: mosswood, transition_type: edge, traversable: true, neighbor_map: mosswood_route}
+  - {side: east, feature: road, position: 13, width: 3, elevation: 0, biome: sunmeadow, transition_type: edge, traversable: true, neighbor_map: sunmeadow_route}
+generation:
+  decoration_families: [broadleaf_tree, meadow_shrub]
+  decoration_density: 0.024
+  protected_path_radius: 1
+  min_object_spacing: 1
+  reserve: [{x: 29, y: 1, width: 10, height: 10}]
+narrative:
+  summary: A compact market town built around the valley's original beacon.
+  beats: [Meet the field scholars, choose a first route, learn why the cave echoes]
+  optional_area: A narrow path leads to the quiet west grove.
+  secret: A dawn-dew cache rests behind the old hedges.
