@@ -1,0 +1,84 @@
+{
+  "renderer": "Chrome headless SwiftShader",
+  "viewport": [
+    1440,
+    900
+  ],
+  "presets": {
+    "forest-arrival": {
+      "worldId": "willowwater_way",
+      "seed": 731942,
+      "scatterInstances": 1176,
+      "collisionShapes": 333,
+      "playerPosition": [
+        -2,
+        -39
+      ],
+      "visibleObjects": 138,
+      "instancedObjects": 1987,
+      "drawCalls": 94,
+      "triangles": 223866,
+      "fps": 22.2
+    },
+    "bridge-reveal": {
+      "worldId": "willowwater_way",
+      "seed": 731942,
+      "scatterInstances": 1176,
+      "collisionShapes": 333,
+      "playerPosition": [
+        1,
+        -11
+      ],
+      "visibleObjects": 138,
+      "instancedObjects": 1987,
+      "drawCalls": 116,
+      "triangles": 235322,
+      "fps": 20
+    },
+    "lodge-meadow": {
+      "worldId": "willowwater_way",
+      "seed": 731942,
+      "scatterInstances": 1176,
+      "collisionShapes": 333,
+      "playerPosition": [
+        0,
+        16
+      ],
+      "visibleObjects": 138,
+      "instancedObjects": 1987,
+      "drawCalls": 117,
+      "triangles": 314200,
+      "fps": 25.9
+    },
+    "reactive-grass": {
+      "worldId": "willowwater_way",
+      "seed": 731942,
+      "scatterInstances": 1176,
+      "collisionShapes": 333,
+      "playerPosition": [
+        14,
+        29
+      ],
+      "visibleObjects": 138,
+      "instancedObjects": 1987,
+      "drawCalls": 117,
+      "triangles": 312216,
+      "fps": 27.2
+    },
+    "semantic-debug": {
+      "worldId": "willowwater_way",
+      "seed": 731942,
+      "scatterInstances": 1176,
+      "collisionShapes": 333,
+      "playerPosition": [
+        0,
+        -7
+      ],
+      "visibleObjects": 487,
+      "instancedObjects": 1987,
+      "drawCalls": 169,
+      "triangles": 315150,
+      "fps": 24.6
+    }
+  }
+}

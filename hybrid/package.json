@@ -1,0 +1,26 @@
+{
+  "name": "worldsynth-hybrid-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "npm run typecheck && vite build",
+    "capture": "node scripts/capture.mjs",
+    "verify": "npm run test && npm run build && npm run capture"
+  },
+  "dependencies": {
+    "three": "0.185.1",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.0",
+    "@types/three": "0.185.0",
+    "playwright-core": "1.62.1",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "4.1.11"
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "formatVersion": 1,
+  "metadata": {
+    "id": "willowwater_way",
+    "title": "The Willowwater Way",
+    "description": "A lantern road leaves the deep woods, crosses a bright river, and reaches a ranger lodge at the edge of Lumenfold.",
+    "seed": 731942,
+    "visualIntent": [
+      "forest walls frame a readable northbound path",
+      "the river and bridge create the primary reveal",
+      "the ranger lodge is a warm mid-route destination",
+      "the waterfall and distant windmill establish depth",
+      "dense margins surround calm navigable negative space"
+    ]
+  },
+  "grid": { "width": 76, "height": 112, "cellSize": 1 },
+  "terrain": {
+    "base": "lush_temperate_grass",
+    "detailScale": 0.22,
+    "visualElevation": 0.34
+  },
+  "paths": [
+    {
+      "id": "lantern_road",
+      "points": [
+        [-3, -56],
+        [-2, -44],
+        [2, -33],
+        [5, -21],
+        [2, -10],
+        [0, 0],
+        [-3, 12],
+        [0, 25],
+        [4, 37],
+        [3, 56]
+      ],
+      "width": 5.3,
+      "material": "warm_compacted_earth"
+    },
+    {
+      "id": "lodge_walk",
+      "points": [
+        [-2, 15],
+        [7, 17],
+        [14, 18]
+      ],
+      "width": 3.2,
+      "material": "warm_compacted_earth"
+    }
+  ],
+  "waterBodies": [
+    {
+      "id": "willowwater",
+      "centerline": [
+        [-38, 5],
+        [-29, 4],
+        [-20, 2],
+        [-11, 1],
+        [0, 0],
+        [10, -2],
+        [20, -3],
+        [29, -5],
+        [38, -4]
+      ],
+      "width": 8.5,
+      "blocked": true,
+      "bankWidth": 2.2
+    }
+  ],
+  "zones": [
+    {
+      "id": "meadow",
+      "biome": "lush_meadow",
+      "polygon": [
+        [-27, -42],
+        [27, -42],
+        [29, 42],
+        [-27, 42]
+      ],
+      "tags": ["meadow", "open"]
+    },
+    {
+      "id": "forest_west",
+      "biome": "temperate_forest",
+      "polygon": [
+        [-38, -56],
+        [-24, -56],
+        [-25, 56],
+        [-38, 56]
+      ],
+      "tags": ["forest", "boundary"]
+    },
+    {
+      "id": "forest_east",
+      "biome": "temperate_forest",
+      "polygon": [
+        [25, -56],
+        [38, -56],
+        [38, 56],
+        [26, 56]
+      ],
+      "tags": ["forest", "boundary"]
+    },
+    {
+      "id": "forest_gate",
+      "biome": "temperate_forest",
+      "polygon": [
+        [-24, -56],
+        [25, -56],
+        [24, -38],
+        [-23, -38]
+      ],
+      "tags": ["forest", "entrance", "framing"]
+    },
+    {
+      "id": "north_forest",
+      "biome": "temperate_forest",
+      "polygon": [
+        [-26, 40],
+        [28, 40],
+        [38, 56],
+        [-38, 56]
+      ],
+      "tags": ["forest", "town-edge", "framing"]
+    },
+    {
+      "id": "tall_grass_field",
+      "biome": "encounter_meadow",
+      "polygon": [
+        [7, 24],
+        [11, 21.5],
+        [20.5, 22],
+        [24, 26],
+        [24.5, 34],
+        [20, 37],
+        [10, 37.5],
+        [7.5, 33]
+      ],
+      "tags": ["meadow", "tall-grass", "reactive"]
+    },
+    {
+      "id": "river_corridor",
+      "biome": "riverbank",
+      "polygon": [
+        [-38, -10],
+        [38, -13],
+        [38, 12],
+        [-38, 15]
+      ],
+      "tags": ["water-edge", "riverbank"]
+    },
+    {
+      "id": "lodge_garden",
+      "biome": "cottage_garden",
+      "polygon": [
+        [8, 10],
+        [25, 10],
+        [26, 25],
+        [8, 26]
+      ],
+      "tags": ["garden", "cottage", "flowers"]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "willow_bridge",
+      "asset": "bridge.wood.01",
+      "position": [0, 0],
+      "rotation": 1.5707963268,
+      "scale": 1,
+      "semanticRole": "critical_crossing"
+    },
+    {
+      "id": "ranger_lodge",
+      "asset": "building.ranger-lodge.01",
+      "position": [17, 18],
+      "rotation": 1.5707963268,
+      "scale": 1,
+      "semanticRole": "route_landmark",
+      "interaction": "A hand-painted plaque reads: Willowmere Ranger Lodge."
+    },
+    {
+      "id": "silverstep_falls",
+      "asset": "landmark.waterfall.01",
+      "position": [-29, 32],
+      "rotation": 1.5707963268,
+      "scale": 1,
+      "semanticRole": "distant_landmark"
+    },
+    {
+      "id": "lumenfold_windmill",
+      "asset": "landmark.windmill.01",
+      "position": [24, 48],
+      "rotation": 3.1415926536,
+      "scale": 1,
+      "semanticRole": "town_silhouette"
+    }
+  ],
+  "objects": [
+    {
+      "id": "south_sign",
+      "asset": "prop.signpost.01",
+      "position": [-6, -39],
+      "rotation": 0.3,
+      "scale": 1,
+      "semanticRole": "wayfinding",
+      "interaction": "North: Lumenfold. South: Mosswood."
+    },
+    {
+      "id": "bridge_lantern_w",
+      "asset": "prop.lantern.01",
+      "position": [-3.4, -5.6],
+      "rotation": 0,
+      "scale": 1,
+      "semanticRole": "leading_light"
+    },
+    {
+      "id": "bridge_lantern_e",
+      "asset": "prop.lantern.01",
+      "position": [3.4, 5.6],
+      "rotation": 3.1415926536,
+      "scale": 1,
+      "semanticRole": "leading_light"
+    },
+    {
+      "id": "lodge_lantern",
+      "asset": "prop.lantern.01",
+      "position": [11.5, 16],
+      "rotation": 0,
+      "scale": 1,
+      "semanticRole": "building_light"
+    },
+    {
+      "id": "town_stall",
+      "asset": "prop.market-stall.01",
+      "position": [-8, 45],
+      "rotation": 1.5707963268,
+      "scale": 1,
+      "semanticRole": "town_edge"
+    },
+    {
+      "id": "supply_cart",
+      "asset": "prop.cart.01",
+      "position": [14, 34],
+      "rotation": -0.35,
+      "scale": 1,
+      "semanticRole": "human_presence"
+    },
+    {
+      "id": "fallen_log",
+      "asset": "prop.log.01",
+      "position": [-17, -25],
+      "rotation": 0.4,
+      "scale": 1,
+      "semanticRole": "forest_detail"
+    },
+    {
+      "id": "fence_1",
+      "asset": "prop.fence.wood.01",
+      "position": [10, 12],
+      "rotation": 0,
+      "scale": 1,
+      "semanticRole": "lodge_setback"
+    },
+    {
+      "id": "fence_2",
+      "asset": "prop.fence.wood.01",
+      "position": [12, 12],
+      "rotation": 0,
+      "scale": 1,
+      "semanticRole": "lodge_setback"
+    },
+    {
+      "id": "fence_3",
+      "asset": "prop.fence.wood.01",
+      "position": [20, 11],
+      "rotation": 0,
+      "scale": 1,
+      "semanticRole": "lodge_setback"
+    },
+    {
+      "id": "fence_4",
+      "asset": "prop.fence.wood.01",
+      "position": [22, 11],
+      "rotation": 0,
+      "scale": 1,
+      "semanticRole": "lodge_setback"
+    },
+    {
+      "id": "fence_5",
+      "asset": "prop.fence.wood.01",
+      "position": [25, 15],
+      "rotation": 1.5707963268,
+      "scale": 1,
+      "semanticRole": "lodge_setback"
+    },
+    {
+      "id": "fence_6",
+      "asset": "prop.fence.wood.01",
+      "position": [25, 17],
+      "rotation": 1.5707963268,
+      "scale": 1,
+      "semanticRole": "lodge_setback"
+    }
+  ],
+  "scatterRules": [
+    {
+      "id": "west_forest_canopy",
+      "zone": "forest_west",
+      "assetSet": ["tree.oak.01", "tree.broadleaf.01", "tree.pine.01"],
+      "density": 0.82,
+      "maxInstances": 145,
+      "scaleRange": [0.82, 1.2],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.62,
+      "minSpacing": 2.2,
+      "edgeBias": "forest",
+      "avoidTags": ["path", "water", "player-corridor"],
+      "avoidanceRadius": 2.4
+    },
+    {
+      "id": "east_forest_canopy",
+      "zone": "forest_east",
+      "assetSet": ["tree.oak.01", "tree.broadleaf.01", "tree.pine.01"],
+      "density": 0.84,
+      "maxInstances": 145,
+      "scaleRange": [0.84, 1.22],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.66,
+      "minSpacing": 2.15,
+      "edgeBias": "forest",
+      "avoidTags": ["path", "water", "building", "player-corridor"],
+      "avoidanceRadius": 2.5
+    },
+    {
+      "id": "south_gate_canopy",
+      "zone": "forest_gate",
+      "assetSet": ["tree.oak.01", "tree.broadleaf.01", "tree.young.01"],
+      "density": 0.58,
+      "maxInstances": 100,
+      "scaleRange": [0.82, 1.18],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.72,
+      "minSpacing": 2.15,
+      "edgeBias": "forest",
+      "avoidTags": ["path", "player-corridor"],
+      "avoidanceRadius": 3.8
+    },
+    {
+      "id": "north_frame_canopy",
+      "zone": "north_forest",
+      "assetSet": ["tree.oak.01", "tree.pine.01", "tree.broadleaf.01"],
+      "density": 0.62,
+      "maxInstances": 125,
+      "scaleRange": [0.84, 1.22],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.7,
+      "minSpacing": 2.2,
+      "edgeBias": "forest",
+      "avoidTags": ["path", "building", "player-corridor"],
+      "avoidanceRadius": 3.4
+    },
+    {
+      "id": "meadow_shrubs",
+      "zone": "meadow",
+      "assetSet": ["shrub.lush.01", "shrub.small.01", "grass.leaf.01"],
+      "density": 0.42,
+      "maxInstances": 260,
+      "scaleRange": [0.72, 1.24],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.48,
+      "minSpacing": 0.85,
+      "edgeBias": "forest",
+      "avoidTags": ["path", "water", "building", "bridge", "player-corridor"],
+      "avoidanceRadius": 1.5
+    },
+    {
+      "id": "meadow_flowers",
+      "zone": "meadow",
+      "assetSet": ["flower.purple.01", "flower.purple.02", "flower.yellow.01"],
+      "density": 0.56,
+      "maxInstances": 420,
+      "scaleRange": [0.72, 1.22],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.82,
+      "minSpacing": 0.42,
+      "edgeBias": "none",
+      "avoidTags": ["path", "water", "building", "player-corridor"],
+      "avoidanceRadius": 1.15
+    },
+    {
+      "id": "reactive_grass",
+      "zone": "tall_grass_field",
+      "assetSet": ["grass.tall.01"],
+      "density": 0.68,
+      "maxInstances": 520,
+      "scaleRange": [0.8, 1.28],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.32,
+      "minSpacing": 0.38,
+      "edgeBias": "none",
+      "edgeSoftness": 2.2,
+      "avoidTags": ["path", "building"],
+      "avoidanceRadius": 0.65
+    },
+    {
+      "id": "river_stones",
+      "zone": "river_corridor",
+      "assetSet": ["rock.river.01", "rock.river.02", "rock.landmark.01"],
+      "density": 0.6,
+      "maxInstances": 105,
+      "scaleRange": [0.65, 1.18],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.54,
+      "minSpacing": 0.9,
+      "edgeBias": "water",
+      "avoidTags": ["water", "bridge", "path", "player-corridor"],
+      "avoidanceRadius": 0.35
+    },
+    {
+      "id": "forest_understory",
+      "zone": "forest_west",
+      "assetSet": ["mushroom.red.01", "shrub.small.01"],
+      "density": 0.34,
+      "maxInstances": 120,
+      "scaleRange": [0.7, 1.2],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.86,
+      "minSpacing": 0.55,
+      "edgeBias": "forest",
+      "avoidTags": ["path", "water"],
+      "avoidanceRadius": 1
+    },
+    {
+      "id": "lodge_flowers",
+      "zone": "lodge_garden",
+      "assetSet": ["flower.red.01", "flower.yellow.01", "flower.purple.01"],
+      "density": 0.72,
+      "maxInstances": 120,
+      "scaleRange": [0.84, 1.18],
+      "rotationRange": [0, 6.2831853072],
+      "clustering": 0.78,
+      "minSpacing": 0.36,
+      "edgeBias": "none",
+      "avoidTags": ["path", "building", "player-corridor"],
+      "avoidanceRadius": 1.2
+    }
+  ],
+  "blockers": [
+    { "center": [-37, 0], "size": [2, 112], "rotation": 0 },
+    { "center": [37, 0], "size": [2, 112], "rotation": 0 }
+  ],
+  "bridgeCrossings": [{ "center": [0, 0], "size": [6.5, 12], "rotation": 0 }],
+  "lighting": {
+    "sky": "#b9d8cd",
+    "ground": "#536e58",
+    "sun": "#ffe4ae",
+    "sunIntensity": 3.15,
+    "azimuth": -0.75,
+    "elevation": 0.92,
+    "exposure": 1.08,
+    "fogDensity": 0.009
+  },
+  "atmosphere": {
+    "particleCount": 150,
+    "particleColor": "#fff2bd",
+    "wind": [0.7, 0.25]
+  },
+  "camera": {
+    "mode": "orthographic",
+    "pitch": 0.92,
+    "yaw": 0,
+    "zoom": 14.5,
+    "followSmoothing": 4.8,
+    "lookAhead": 3.5
+  },
+  "player": {
+    "asset": "player.wayfarer.01",
+    "spawn": [-2, -43],
+    "speed": 8,
+    "radius": 0.42
+  },
+  "capturePresets": {
+    "forest-arrival": {
+      "player": [-2, -39],
+      "cameraTarget": [0, -36],
+      "inspector": false
+    },
+    "bridge-reveal": {
+      "player": [1, -11],
+      "cameraTarget": [0, -2],
+      "inspector": false
+    },
+    "lodge-meadow": {
+      "player": [0, 16],
+      "cameraTarget": [10, 19],
+      "inspector": false
+    },
+    "reactive-grass": {
+      "player": [14, 29],
+      "cameraTarget": [12, 29],
+      "inspector": false
+    },
+    "semantic-debug": {
+      "player": [0, -7],
+      "cameraTarget": [0, 0],
+      "inspector": true
+    }
+  }
+}

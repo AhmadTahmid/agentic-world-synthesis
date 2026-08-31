@@ -1,0 +1,359 @@
+{
+  "tree.oak.01": {
+    "triangles": 196,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.6405540110000001,
+      1.22623992,
+      0.739648
+    ],
+    "bytes": 14644,
+    "animations": []
+  },
+  "tree.broadleaf.01": {
+    "triangles": 402,
+    "meshes": 3,
+    "materials": 3,
+    "dimensions": [
+      0.84711504,
+      1.332417,
+      0.761602491
+    ],
+    "bytes": 31412,
+    "animations": []
+  },
+  "tree.pine.01": {
+    "triangles": 206,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.48038429,
+      1.252853,
+      0.5547
+    ],
+    "bytes": 15332,
+    "animations": []
+  },
+  "tree.young.01": {
+    "triangles": 62,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.354637354,
+      1.11003745,
+      0.409499944
+    ],
+    "bytes": 6500,
+    "animations": []
+  },
+  "shrub.lush.01": {
+    "triangles": 104,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      0.602543712,
+      0.360410929,
+      0.602543712
+    ],
+    "bytes": 10172,
+    "animations": []
+  },
+  "shrub.small.01": {
+    "triangles": 16,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      0.382977158,
+      0.2072925,
+      0.336342276
+    ],
+    "bytes": 3212,
+    "animations": []
+  },
+  "grass.tall.01": {
+    "triangles": 224,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      0.408997834,
+      0.254,
+      0.407888984
+    ],
+    "bytes": 18504,
+    "animations": []
+  },
+  "grass.leaf.01": {
+    "triangles": 36,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      0.234485998,
+      0.14250000000000018,
+      0.25730825199999996
+    ],
+    "bytes": 4608,
+    "animations": []
+  },
+  "flower.purple.01": {
+    "triangles": 76,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.15909752,
+      0.242499992,
+      0.18105906
+    ],
+    "bytes": 7112,
+    "animations": []
+  },
+  "flower.purple.02": {
+    "triangles": 98,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.20733457,
+      0.208499983,
+      0.239179536
+    ],
+    "bytes": 8084,
+    "animations": []
+  },
+  "flower.red.01": {
+    "triangles": 76,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.15909752,
+      0.2925,
+      0.18105906
+    ],
+    "bytes": 7104,
+    "animations": []
+  },
+  "flower.yellow.01": {
+    "triangles": 76,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.15909752,
+      0.1925,
+      0.18105906
+    ],
+    "bytes": 7120,
+    "animations": []
+  },
+  "rock.river.01": {
+    "triangles": 16,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.3608,
+      0.19122400899999997,
+      0.3608
+    ],
+    "bytes": 3044,
+    "animations": []
+  },
+  "rock.river.02": {
+    "triangles": 24,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.3608,
+      0.17679201099999997,
+      0.3608
+    ],
+    "bytes": 3528,
+    "animations": []
+  },
+  "rock.landmark.01": {
+    "triangles": 85,
+    "meshes": 3,
+    "materials": 3,
+    "dimensions": [
+      0.76671511,
+      0.43025400000000064,
+      1.0154614
+    ],
+    "bytes": 8560,
+    "animations": []
+  },
+  "mushroom.red.01": {
+    "triangles": 144,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.269630998,
+      0.250488,
+      0.254196599
+    ],
+    "bytes": 14960,
+    "animations": []
+  },
+  "bridge.wood.01": {
+    "triangles": 2880,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      6.93807899951934,
+      2.6174806610901555,
+      2.637635153415907
+    ],
+    "bytes": 72792,
+    "animations": []
+  },
+  "prop.fence.wood.01": {
+    "triangles": 64,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      1,
+      0.3450273,
+      0.07
+    ],
+    "bytes": 5712,
+    "animations": []
+  },
+  "prop.signpost.01": {
+    "triangles": 44,
+    "meshes": 3,
+    "materials": 3,
+    "dimensions": [
+      0.3,
+      0.4087705,
+      0.0699999982
+    ],
+    "bytes": 5040,
+    "animations": []
+  },
+  "prop.log.01": {
+    "triangles": 200,
+    "meshes": 2,
+    "materials": 2,
+    "dimensions": [
+      0.233961009,
+      0.17320509300056366,
+      0.71
+    ],
+    "bytes": 14288,
+    "animations": []
+  },
+  "landmark.waterfall.01": {
+    "triangles": 34,
+    "meshes": 3,
+    "materials": 3,
+    "dimensions": [
+      1,
+      1.0000000000000002,
+      0.16849999999999998
+    ],
+    "bytes": 4488,
+    "animations": []
+  },
+  "building.ranger-lodge.01": {
+    "triangles": 5758,
+    "meshes": 9,
+    "materials": 9,
+    "dimensions": [
+      2.1439230069518,
+      3.3900040643487745,
+      2.658825992615613
+    ],
+    "bytes": 410268,
+    "animations": []
+  },
+  "landmark.windmill.01": {
+    "triangles": 732,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      0.47099998593330383,
+      3.113214373588562,
+      3.1132144927978516
+    ],
+    "bytes": 71160,
+    "animations": []
+  },
+  "prop.lantern.01": {
+    "triangles": 158,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      0.21644848585128784,
+      1.555999994277954,
+      0.22431999444961548
+    ],
+    "bytes": 14984,
+    "animations": []
+  },
+  "prop.market-stall.01": {
+    "triangles": 322,
+    "meshes": 1,
+    "materials": 1,
+    "dimensions": [
+      1,
+      1.236982822418213,
+      1
+    ],
+    "bytes": 27120,
+    "animations": []
+  },
+  "prop.cart.01": {
+    "triangles": 608,
+    "meshes": 3,
+    "materials": 1,
+    "dimensions": [
+      0.8930241884086456,
+      0.5355013608932495,
+      1.3399999737739563
+    ],
+    "bytes": 52920,
+    "animations": []
+  },
+  "player.wayfarer.01": {
+    "triangles": 876,
+    "meshes": 2,
+    "materials": 1,
+    "dimensions": [
+      1.0987870321264648,
+      0.7755282862186432,
+      0.49953030049800873
+    ],
+    "bytes": 273448,
+    "animations": [
+      "static",
+      "idle",
+      "walk",
+      "sprint",
+      "jump",
+      "fall",
+      "crouch",
+      "sit",
+      "drive",
+      "die",
+      "pick-up",
+      "emote-yes",
+      "emote-no",
+      "holding-right",
+      "holding-left",
+      "holding-both",
+      "holding-right-shoot",
+      "holding-left-shoot",
+      "holding-both-shoot",
+      "attack-melee-right",
+      "attack-melee-left",
+      "attack-kick-right",
+      "attack-kick-left",
+      "interact-right",
+      "interact-left",
+      "wheelchair-sit",
+      "wheelchair-look-left",
+      "wheelchair-look-right",
+      "wheelchair-move-forward",
+      "wheelchair-move-back",
+      "wheelchair-move-left",
+      "wheelchair-move-right"
+    ]
+  }
+}

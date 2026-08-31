@@ -11,3 +11,5 @@ game/.import/
 *.import
 *.uid
 *.tmp
+node_modules/
+hybrid/dist/

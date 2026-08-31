@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#8eb6a0" />
+    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" />
+    <title>Lumenfold - Hybrid World Proof</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="world" aria-label="Lumenfold route"></canvas>
+      <header id="title-card">
+        <span class="eyebrow">Lumenfold · Westmere Approach</span>
+        <h1>The Willowwater Way</h1>
+        <p>Follow the lantern road north through the meadow.</p>
+      </header>
+      <div id="interaction" role="status"></div>
+      <div id="controls-hint">WASD / arrows · Shift to stroll · I inspector · B assets</div>
+      <section id="performance" class="hud-panel"></section>
+      <section id="inspector" class="hud-panel" aria-label="World inspector"></section>
+      <section id="asset-browser" class="hud-panel" aria-label="Asset browser">
+        <div class="asset-browser-layout">
+          <div id="asset-list"></div>
+          <div class="asset-detail">
+            <canvas id="asset-preview" width="440" height="320"></canvas>
+            <div id="asset-metadata"></div>
+          </div>
+        </div>
+      </section>
+      <div id="loading"><div class="loading-mark"></div><p>Composing Willowwater Way…</p></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

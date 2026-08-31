@@ -1,0 +1,557 @@
+{
+  "formatVersion": 1,
+  "family": "Cohesive Kenney + Quaternius stylized low-poly",
+  "sources": {
+    "kenney.nature-kit.2.1": {
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit",
+      "download": "https://kenney.nl/media/pages/assets/nature-kit/37ac38a37b-1677698939/kenney_nature-kit.zip",
+      "license": "CC0 1.0"
+    },
+    "kenney.fantasy-town-kit.2.0": {
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/fantasy-town-kit",
+      "download": "https://kenney.nl/media/pages/assets/fantasy-town-kit/efe948d309-1754222374/kenney_fantasy-town-kit_2.0.zip",
+      "license": "CC0 1.0"
+    },
+    "kenney.mini-characters.1.0": {
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/mini-characters",
+      "download": "https://kenney.nl/media/pages/assets/mini-characters/bfc7e272b4-1774770718/kenney_mini-characters.zip",
+      "license": "CC0 1.0"
+    },
+    "quaternius.medieval-village": {
+      "creator": "Quaternius",
+      "source": "https://poly.pizza/bundle/Medieval-Village-Pack-NsHhjhlrfY",
+      "download": "https://static.poly.pizza/341c9305-c6dd-4427-ad00-620ad57eb14e.glb",
+      "license": "CC0 1.0"
+    },
+    "quaternius.small-bridge": {
+      "creator": "Quaternius",
+      "source": "https://poly.pizza/m/j4KsIuJYnq",
+      "download": "https://static.poly.pizza/e36966b4-e13e-46e8-aa2c-f9b643536d46.glb",
+      "license": "CC0 1.0"
+    }
+  },
+  "assets": [
+    {
+      "id": "tree.oak.01",
+      "type": "tree",
+      "path": "/assets/kenney/nature/tree_oak.glb",
+      "tags": ["deciduous", "canopy", "forest", "lush"],
+      "dimensions": [0.64, 1.23, 0.74],
+      "scale": 4,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.25 },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 74 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "tree.broadleaf.01",
+      "type": "tree",
+      "path": "/assets/kenney/nature/tree_detailed.glb",
+      "tags": ["deciduous", "canopy", "forest", "hero"],
+      "dimensions": [0.85, 1.33, 0.76],
+      "scale": 3.7,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.28 },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 78 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "tree.pine.01",
+      "type": "tree",
+      "path": "/assets/kenney/nature/tree_pineRoundC.glb",
+      "tags": ["evergreen", "forest", "tall"],
+      "dimensions": [0.48, 1.25, 0.55],
+      "scale": 4.1,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.22 },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 80 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "tree.young.01",
+      "type": "tree",
+      "path": "/assets/kenney/nature/tree_small.glb",
+      "tags": ["deciduous", "forest-edge", "small"],
+      "dimensions": [0.35, 1.11, 0.41],
+      "scale": 2.8,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.16 },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 64 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "shrub.lush.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/plant_bushDetailed.glb",
+      "tags": ["shrub", "lush", "forest-edge"],
+      "dimensions": [0.6, 0.36, 0.6],
+      "scale": 2.3,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 55 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "shrub.small.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/plant_bushSmall.glb",
+      "tags": ["shrub", "small", "roadside"],
+      "dimensions": [0.38, 0.21, 0.34],
+      "scale": 2.5,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 48 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "grass.tall.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/grass_large.glb",
+      "tags": ["grass", "tall", "reactive", "encounter"],
+      "dimensions": [0.41, 0.25, 0.41],
+      "scale": 2.9,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": false,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 46 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "grass.leaf.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/grass_leafs.glb",
+      "tags": ["grass", "detail", "roadside"],
+      "dimensions": [0.23, 0.14, 0.26],
+      "scale": 3.4,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": false,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 42 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "flower.purple.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/flower_purpleA.glb",
+      "tags": ["flower", "purple", "meadow"],
+      "dimensions": [0.16, 0.24, 0.18],
+      "scale": 2.8,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": false,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 42 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "flower.purple.02",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/flower_purpleB.glb",
+      "tags": ["flower", "purple", "meadow"],
+      "dimensions": [0.21, 0.21, 0.24],
+      "scale": 2.8,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": false,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 42 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "flower.red.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/flower_redA.glb",
+      "tags": ["flower", "red", "cottage"],
+      "dimensions": [0.16, 0.29, 0.18],
+      "scale": 2.6,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": false,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 42 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "flower.yellow.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/flower_yellowA.glb",
+      "tags": ["flower", "yellow", "meadow"],
+      "dimensions": [0.16, 0.19, 0.18],
+      "scale": 3,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": false,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 42 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "rock.river.01",
+      "type": "rock",
+      "path": "/assets/kenney/nature/rock_smallA.glb",
+      "tags": ["rock", "riverbank", "small"],
+      "dimensions": [0.36, 0.19, 0.36],
+      "scale": 1.6,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 58 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "rock.river.02",
+      "type": "rock",
+      "path": "/assets/kenney/nature/rock_smallB.glb",
+      "tags": ["rock", "riverbank", "small"],
+      "dimensions": [0.36, 0.18, 0.36],
+      "scale": 1.7,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 58 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "rock.landmark.01",
+      "type": "rock",
+      "path": "/assets/kenney/nature/rock_largeB.glb",
+      "tags": ["rock", "large", "blocked"],
+      "dimensions": [0.77, 0.43, 1.02],
+      "scale": 2.6,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.32 },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 70 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "mushroom.red.01",
+      "type": "vegetation",
+      "path": "/assets/kenney/nature/mushroom_redGroup.glb",
+      "tags": ["mushroom", "understory", "forest"],
+      "dimensions": [0.27, 0.25, 0.25],
+      "scale": 2.3,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "none" },
+      "instanced": true,
+      "castShadow": false,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 38 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "bridge.wood.01",
+      "type": "bridge",
+      "path": "/assets/quaternius/medieval-village/small-bridge.glb",
+      "tags": ["bridge", "wood", "traversable"],
+      "dimensions": [6.938, 2.617, 2.638],
+      "scale": 1.45,
+      "rotationRules": { "mode": "cardinal", "values": [0, 1.5707963268] },
+      "collision": { "type": "none" },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "none" },
+      "source": "quaternius.small-bridge",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/quaternius/medieval-village/LICENSE.txt"
+      }
+    },
+    {
+      "id": "prop.fence.wood.01",
+      "type": "prop",
+      "path": "/assets/kenney/nature/fence_simple.glb",
+      "tags": ["fence", "wood", "boundary"],
+      "dimensions": [1, 0.35, 0.07],
+      "scale": 2.5,
+      "rotationRules": { "mode": "cardinal", "values": [0, 1.5707963268] },
+      "collision": { "type": "box", "size": [0.92, 0.12] },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 65 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "prop.signpost.01",
+      "type": "prop",
+      "path": "/assets/kenney/nature/sign.glb",
+      "tags": ["sign", "interactive", "roadside"],
+      "dimensions": [0.3, 0.41, 0.07],
+      "scale": 3.8,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.08 },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "none" },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "prop.log.01",
+      "type": "prop",
+      "path": "/assets/kenney/nature/log.glb",
+      "tags": ["log", "forest", "blocked"],
+      "dimensions": [0.23, 0.17, 0.71],
+      "scale": 3.4,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "box", "size": [0.25, 0.65] },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 62 },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "landmark.waterfall.01",
+      "type": "landmark",
+      "path": "/assets/kenney/nature/cliff_waterfall_rock.glb",
+      "tags": ["cliff", "waterfall", "landmark", "blocked"],
+      "dimensions": [1, 1, 0.17],
+      "scale": 8,
+      "rotationRules": { "mode": "fixed" },
+      "collision": { "type": "box", "size": [0.9, 0.2] },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "none" },
+      "source": "kenney.nature-kit.2.1",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/nature/LICENSE.txt"
+      }
+    },
+    {
+      "id": "building.ranger-lodge.01",
+      "type": "building",
+      "path": "/assets/quaternius/medieval-village/fantasy-house.glb",
+      "tags": ["building", "cottage", "ranger-lodge", "blocked"],
+      "dimensions": [2.144, 3.39, 2.659],
+      "scale": 2,
+      "rotationRules": {
+        "mode": "cardinal",
+        "values": [0, 1.5707963268, 3.1415926536, 4.7123889804]
+      },
+      "collision": { "type": "box", "size": [1.9, 2.25] },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "none" },
+      "source": "quaternius.medieval-village",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/quaternius/medieval-village/LICENSE.txt"
+      }
+    },
+    {
+      "id": "landmark.windmill.01",
+      "type": "landmark",
+      "path": "/assets/kenney/fantasy-town/windmill.glb",
+      "tags": ["building", "windmill", "landmark", "town-edge"],
+      "dimensions": [0.47, 3.11, 3.11],
+      "scale": 2.4,
+      "rotationRules": {
+        "mode": "cardinal",
+        "values": [0, 1.5707963268, 3.1415926536, 4.7123889804]
+      },
+      "collision": { "type": "box", "size": [0.6, 0.6] },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "none" },
+      "source": "kenney.fantasy-town-kit.2.0",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/fantasy-town/LICENSE.txt"
+      }
+    },
+    {
+      "id": "prop.lantern.01",
+      "type": "prop",
+      "path": "/assets/kenney/fantasy-town/lantern.glb",
+      "tags": ["lantern", "roadside", "light"],
+      "dimensions": [0.8, 2.8, 0.8],
+      "scale": 1.35,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.28 },
+      "instanced": true,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "distance-cull", "maxDistance": 62 },
+      "source": "kenney.fantasy-town-kit.2.0",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/fantasy-town/LICENSE.txt"
+      }
+    },
+    {
+      "id": "prop.market-stall.01",
+      "type": "prop",
+      "path": "/assets/kenney/fantasy-town/stall-green.glb",
+      "tags": ["market", "stall", "town-edge", "blocked"],
+      "dimensions": [1, 1.24, 1],
+      "scale": 2.2,
+      "rotationRules": { "mode": "cardinal", "values": [0, 1.5707963268] },
+      "collision": { "type": "box", "size": [0.9, 0.7] },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "none" },
+      "source": "kenney.fantasy-town-kit.2.0",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/fantasy-town/LICENSE.txt"
+      }
+    },
+    {
+      "id": "prop.cart.01",
+      "type": "prop",
+      "path": "/assets/kenney/fantasy-town/cart.glb",
+      "tags": ["cart", "town-edge", "blocked"],
+      "dimensions": [0.89, 0.54, 1.34],
+      "scale": 1.35,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "box", "size": [0.85, 1.15] },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": true,
+      "lodInfo": { "strategy": "none" },
+      "source": "kenney.fantasy-town-kit.2.0",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/fantasy-town/LICENSE.txt"
+      }
+    },
+    {
+      "id": "player.wayfarer.01",
+      "type": "character",
+      "path": "/assets/kenney/characters/character-female-a.glb",
+      "tags": ["player", "animated", "character"],
+      "dimensions": [1.1, 0.78, 0.5],
+      "scale": 1.9,
+      "rotationRules": { "mode": "free" },
+      "collision": { "type": "circle", "radius": 0.35 },
+      "instanced": false,
+      "castShadow": true,
+      "receiveShadow": false,
+      "lodInfo": { "strategy": "none" },
+      "source": "kenney.mini-characters.1.0",
+      "licenseMetadata": {
+        "license": "CC0 1.0",
+        "licensePath": "/assets/kenney/characters/LICENSE.txt"
+      }
+    }
+  ]
+}

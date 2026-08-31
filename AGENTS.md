@@ -8,6 +8,8 @@
 - `assets/` contains project-owned or explicitly licensed visual assets. Every third-party asset must have a matching license record.
 - `game/` is the lightweight Godot 4 runtime. It consumes compiled JSON and never calls Python or an AI provider.
 - `tests/` contains behavior tests; fixtures belong in `tests/fixtures/`.
+- `hybrid/` is the Three.js visual proof. Its canonical inputs are `hybrid/public/data/*.json`; models live under `hybrid/public/assets/`, and all placement logic must remain declarative or seeded.
+- `generated/hybrid-evaluation/` contains reproducible browser captures and measurement reports. It is output, not an input to either runtime.
 
 ## Commands
 
@@ -20,6 +22,14 @@ python -m venv .venv
 .venv\Scripts\pytest
 .venv\Scripts\ruff check .
 .venv\Scripts\mypy src
+```
+
+Hybrid renderer setup and verification:
+
+```powershell
+cd hybrid
+npm.cmd install
+npm.cmd run verify
 ```
 
 Run the game after installing Godot 4.x:
@@ -47,6 +57,12 @@ The same source specifications, registered asset bytes, asset registry, generato
 ## Licensing
 
 Never add ripped or ambiguously licensed assets. Use original project-owned work, CC0, or similarly commercial-safe assets. Record creator, source URL, license, and attribution requirements in the registry and `assets/licenses/`.
+
+## Hybrid visual-art rule
+
+New visible environmental objects in `hybrid/` must normally be selected from registered GLB/GLTF or sprite assets. Do not create final houses, trees, rocks, fences, or scenery as agent-authored SVG, CSS/canvas drawings, hand-coded polygons, or Box/Sphere primitive assemblies. Primitive geometry remains appropriate for terrain foundations, water planes, particles, effects, invisible collision, and semantic debug views. If a placeholder is unavoidable, label it explicitly and remove it before a visual milestone is considered done.
+
+LLM-authored data should scale with meaningful composition decisions. Repeated grass, flowers, rocks, and shrubs belong in deterministic scatter rules, not thousands of authored coordinates. Gameplay collision and topology remain semantic data; never derive them from a visible model mesh.
 
 ## Definition of done
 
